@@ -3,6 +3,8 @@
 
 //Do not allocate extra space for another array, you must do this by modifying the
 //input array in - place with O(1) extra memory.
+
+//sulution1
 class Solution
 {
 public:
@@ -21,3 +23,12 @@ public:
 	}
 };
 
+//solution 2
+class Solution
+{
+public:
+	int removeDuplicates(vector<int>& nums)
+	{
+		return distance(nums.begin(), unique(nums.begin(), nums.end()));
+	}
+};
