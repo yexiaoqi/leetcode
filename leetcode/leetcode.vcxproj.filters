@@ -38,5 +38,8 @@
     <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="33. Search in Rotated Sorted Array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
