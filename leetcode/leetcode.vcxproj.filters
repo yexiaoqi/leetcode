@@ -44,5 +44,8 @@
     <ClCompile Include="81. Search in Rotated Sorted Array II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1. Two Sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

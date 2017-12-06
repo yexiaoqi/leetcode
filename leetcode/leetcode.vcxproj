@@ -149,6 +149,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1. Two Sum.cpp" />
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
     <ClCompile Include="33. Search in Rotated Sorted Array.cpp" />
     <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp" />
