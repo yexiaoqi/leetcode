@@ -47,5 +47,14 @@
     <ClCompile Include="1. Two Sum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="15.3Sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="16. 3Sum Closest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="18. 4Sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
