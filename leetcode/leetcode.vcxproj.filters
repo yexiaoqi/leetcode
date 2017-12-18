@@ -56,5 +56,8 @@
     <ClCompile Include="18. 4Sum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="31.Next Permutation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
