@@ -62,5 +62,8 @@
     <ClCompile Include="60. Permutation Sequence.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="46. Permutations.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
