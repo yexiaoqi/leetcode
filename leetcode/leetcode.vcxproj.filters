@@ -77,5 +77,8 @@
     <ClCompile Include="70. Climbing Stairs.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="89. Gray Code.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
