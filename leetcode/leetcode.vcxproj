@@ -156,6 +156,7 @@
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
     <ClCompile Include="31.Next Permutation.cpp" />
     <ClCompile Include="33. Search in Rotated Sorted Array.cpp" />
+    <ClCompile Include="36. Valid Sudoku.cpp" />
     <ClCompile Include="46. Permutations.cpp" />
     <ClCompile Include="60. Permutation Sequence.cpp" />
     <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp" />
