@@ -162,6 +162,7 @@
     <ClCompile Include="60. Permutation Sequence.cpp" />
     <ClCompile Include="66. Plus One.cpp" />
     <ClCompile Include="70. Climbing Stairs.cpp" />
+    <ClCompile Include="73. Set Matrix Zeroes.cpp" />
     <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp" />
     <ClCompile Include="81. Search in Rotated Sorted Array II.cpp" />
     <ClCompile Include="89. Gray Code.cpp" />
