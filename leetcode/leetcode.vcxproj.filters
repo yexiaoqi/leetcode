@@ -89,5 +89,8 @@
     <ClCompile Include="136. Single Number.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="137. Single Number II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -152,6 +152,7 @@
     <ClCompile Include="1. Two Sum.cpp" />
     <ClCompile Include="134. Gas Station.cpp" />
     <ClCompile Include="136. Single Number.cpp" />
+    <ClCompile Include="137. Single Number II.cpp" />
     <ClCompile Include="15.3Sum.cpp" />
     <ClCompile Include="16. 3Sum Closest.cpp" />
     <ClCompile Include="18. 4Sum.cpp" />
