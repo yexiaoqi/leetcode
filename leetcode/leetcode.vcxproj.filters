@@ -95,5 +95,8 @@
     <ClCompile Include="2. Add Two Numbers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="92. Reverse Linked List II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
