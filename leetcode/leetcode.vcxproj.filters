@@ -101,5 +101,8 @@
     <ClCompile Include="86. Partition List.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="83. Remove Duplicates from Sorted List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
