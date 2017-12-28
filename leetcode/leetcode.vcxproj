@@ -156,6 +156,7 @@
     <ClCompile Include="15.3Sum.cpp" />
     <ClCompile Include="16. 3Sum Closest.cpp" />
     <ClCompile Include="18. 4Sum.cpp" />
+    <ClCompile Include="2. Add Two Numbers.cpp" />
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
     <ClCompile Include="31.Next Permutation.cpp" />
     <ClCompile Include="33. Search in Rotated Sorted Array.cpp" />
