@@ -169,6 +169,7 @@
     <ClCompile Include="73. Set Matrix Zeroes.cpp" />
     <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp" />
     <ClCompile Include="81. Search in Rotated Sorted Array II.cpp" />
+    <ClCompile Include="86. Partition List.cpp" />
     <ClCompile Include="89. Gray Code.cpp" />
     <ClCompile Include="92. Reverse Linked List II.cpp" />
     <ClCompile Include="leetcode.cpp" />
