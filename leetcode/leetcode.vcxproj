@@ -164,6 +164,7 @@
     <ClCompile Include="46. Permutations.cpp" />
     <ClCompile Include="48. Rotate Image.cpp" />
     <ClCompile Include="60. Permutation Sequence.cpp" />
+    <ClCompile Include="61. Rotate List.cpp" />
     <ClCompile Include="66. Plus One.cpp" />
     <ClCompile Include="70. Climbing Stairs.cpp" />
     <ClCompile Include="73. Set Matrix Zeroes.cpp" />
