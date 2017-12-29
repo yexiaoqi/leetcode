@@ -104,5 +104,8 @@
     <ClCompile Include="83. Remove Duplicates from Sorted List.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="82. Remove Duplicates from Sorted List II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
