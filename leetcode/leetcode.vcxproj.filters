@@ -110,5 +110,8 @@
     <ClCompile Include="61. Rotate List.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="19. Remove Nth Node From End of List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
