@@ -22,7 +22,7 @@ public:
 		}
 		ListNode *runner = head;
 		ListNode *walker = head;
-		while (runner->next&&runner->next->next)
+		while (runner&&runner->next)
 		//不能是while(walker->next&&runner->next->next)，以快的runner为准，
 		//如果写成walker->next，runner->next可能已经不存在，这时候用runner->next->next就不对了
 		{
