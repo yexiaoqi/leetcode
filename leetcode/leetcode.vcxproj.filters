@@ -116,5 +116,8 @@
     <ClCompile Include="24. Swap Nodes in Pairs.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="138. Copy List with Random Pointer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
