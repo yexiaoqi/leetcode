@@ -158,6 +158,7 @@
     <ClCompile Include="18. 4Sum.cpp" />
     <ClCompile Include="19. Remove Nth Node From End of List.cpp" />
     <ClCompile Include="2. Add Two Numbers.cpp" />
+    <ClCompile Include="24. Swap Nodes in Pairs.cpp" />
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
     <ClCompile Include="31.Next Permutation.cpp" />
     <ClCompile Include="33. Search in Rotated Sorted Array.cpp" />
