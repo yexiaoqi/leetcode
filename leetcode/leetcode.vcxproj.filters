@@ -158,5 +158,8 @@
     <ClCompile Include="71. Simplify Path.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="58. Length of Last Word.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
