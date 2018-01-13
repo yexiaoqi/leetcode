@@ -155,5 +155,8 @@
     <ClCompile Include="49. Group Anagrams.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="71. Simplify Path.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
