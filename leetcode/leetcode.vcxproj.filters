@@ -143,5 +143,8 @@
     <ClCompile Include="14. Longest Common Prefix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="12. Integer to Roman.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
