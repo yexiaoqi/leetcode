@@ -155,6 +155,7 @@
     <ClCompile Include="136. Single Number.cpp" />
     <ClCompile Include="137. Single Number II.cpp" />
     <ClCompile Include="138. Copy List with Random Pointer.cpp" />
+    <ClCompile Include="14. Longest Common Prefix.cpp" />
     <ClCompile Include="141. Linked List Cycle.cpp" />
     <ClCompile Include="142. Linked List Cycle II.cpp" />
     <ClCompile Include="143. Reorder List.cpp" />

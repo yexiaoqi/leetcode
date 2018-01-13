@@ -140,5 +140,8 @@
     <ClCompile Include="67. Add Binary.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="14. Longest Common Prefix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
