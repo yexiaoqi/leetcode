@@ -152,5 +152,8 @@
     <ClCompile Include="38. Count and Say.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="49. Group Anagrams.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

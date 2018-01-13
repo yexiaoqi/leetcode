@@ -175,6 +175,7 @@
     <ClCompile Include="38. Count and Say.cpp" />
     <ClCompile Include="46. Permutations.cpp" />
     <ClCompile Include="48. Rotate Image.cpp" />
+    <ClCompile Include="49. Group Anagrams.cpp" />
     <ClCompile Include="60. Permutation Sequence.cpp" />
     <ClCompile Include="61. Rotate List.cpp" />
     <ClCompile Include="66. Plus One.cpp" />
