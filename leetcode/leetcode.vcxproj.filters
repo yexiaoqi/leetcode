@@ -125,5 +125,20 @@
     <ClCompile Include="142. Linked List Cycle II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="143. Reorder List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="125. Valid Palindrome.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="28. Implement strStr().cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="8. String to Integer (atoi).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="67. Add Binary.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
