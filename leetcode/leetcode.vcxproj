@@ -152,6 +152,7 @@
     <ClCompile Include="1. Two Sum.cpp" />
     <ClCompile Include="12. Integer to Roman.cpp" />
     <ClCompile Include="125. Valid Palindrome.cpp" />
+    <ClCompile Include="13. Roman to Integer.cpp" />
     <ClCompile Include="134. Gas Station.cpp" />
     <ClCompile Include="136. Single Number.cpp" />
     <ClCompile Include="137. Single Number II.cpp" />
