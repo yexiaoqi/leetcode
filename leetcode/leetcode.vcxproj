@@ -150,6 +150,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1. Two Sum.cpp" />
+    <ClCompile Include="103. Binary Tree Zigzag Level Order Traversal.cpp" />
+    <ClCompile Include="107. Binary Tree Level Order Traversal II.cpp" />
     <ClCompile Include="12. Integer to Roman.cpp" />
     <ClCompile Include="125. Valid Palindrome.cpp" />
     <ClCompile Include="13. Roman to Integer.cpp" />
@@ -161,11 +163,14 @@
     <ClCompile Include="141. Linked List Cycle.cpp" />
     <ClCompile Include="142. Linked List Cycle II.cpp" />
     <ClCompile Include="143. Reorder List.cpp" />
+    <ClCompile Include="144. Binary Tree Preorder Traversal.cpp" />
     <ClCompile Include="15.3Sum.cpp" />
+    <ClCompile Include="150. Evaluate Reverse Polish Notation.cpp" />
     <ClCompile Include="16. 3Sum Closest.cpp" />
     <ClCompile Include="18. 4Sum.cpp" />
     <ClCompile Include="19. Remove Nth Node From End of List.cpp" />
     <ClCompile Include="2. Add Two Numbers.cpp" />
+    <ClCompile Include="20. Valid Parentheses.cpp" />
     <ClCompile Include="24. Swap Nodes in Pairs.cpp" />
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
     <ClCompile Include="28. Implement strStr().cpp" />
@@ -192,6 +197,8 @@
     <ClCompile Include="86. Partition List.cpp" />
     <ClCompile Include="89. Gray Code.cpp" />
     <ClCompile Include="92. Reverse Linked List II.cpp" />
+    <ClCompile Include="94. Binary Tree Inorder Traversal.cpp" />
+    <ClCompile Include="102. Binary Tree Level Order Traversal.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

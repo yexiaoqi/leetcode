@@ -161,5 +161,26 @@
     <ClCompile Include="58. Length of Last Word.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="20. Valid Parentheses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="150. Evaluate Reverse Polish Notation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="144. Binary Tree Preorder Traversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="94. Binary Tree Inorder Traversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="107. Binary Tree Level Order Traversal II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="103. Binary Tree Zigzag Level Order Traversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="102. Binary Tree Level Order Traversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
