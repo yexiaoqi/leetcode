@@ -151,6 +151,7 @@
   <ItemGroup>
     <ClCompile Include="1. Two Sum.cpp" />
     <ClCompile Include="100. Same Tree.cpp" />
+    <ClCompile Include="101. Symmetric Tree.cpp" />
     <ClCompile Include="103. Binary Tree Zigzag Level Order Traversal.cpp" />
     <ClCompile Include="107. Binary Tree Level Order Traversal II.cpp" />
     <ClCompile Include="12. Integer to Roman.cpp" />
