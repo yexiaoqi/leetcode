@@ -191,5 +191,8 @@
     <ClCompile Include="110. Balanced Binary Tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="114. Flatten Binary Tree to Linked List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
