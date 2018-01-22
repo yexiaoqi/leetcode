@@ -156,6 +156,7 @@
     <ClCompile Include="107. Binary Tree Level Order Traversal II.cpp" />
     <ClCompile Include="110. Balanced Binary Tree.cpp" />
     <ClCompile Include="114. Flatten Binary Tree to Linked List.cpp" />
+    <ClCompile Include="116. Populating Next Right Pointers in Each Node.cpp" />
     <ClCompile Include="12. Integer to Roman.cpp" />
     <ClCompile Include="125. Valid Palindrome.cpp" />
     <ClCompile Include="13. Roman to Integer.cpp" />
