@@ -197,5 +197,8 @@
     <ClCompile Include="116. Populating Next Right Pointers in Each Node.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="117. Populating Next Right Pointers in Each Node I.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
