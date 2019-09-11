@@ -29,9 +29,11 @@ public:
 		{
 			for (int j = res.size() - 1;j >= 0;--j)
 			{
-				res.push_back(res[j] | 1 << i);
+				res.push_back(res[j] | 1 << i);//1×óÒÆiÎ»
 			}
 		}
 		return res;
 	}
 };
+
+//https://www.cnblogs.com/grandyang/p/4315649.html
