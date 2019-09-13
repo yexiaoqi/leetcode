@@ -40,3 +40,33 @@ public:
 		return node1->next;
 	}
 };
+
+//https://www.cnblogs.com/grandyang/p/4321292.html
+class Solution {
+public:
+	ListNode* partition(ListNode* head, int x) {
+		ListNode* dummy = new ListNode(-1), *pre = dummy;
+		dummy->next = head;
+		while (pre->next&&pre->next->val<x)
+		{
+			pre = pre->next;
+		}
+		ListNode*cur = pre;
+		while (cur->next)
+		{
+			ListNode *t = cur->next;
+			if (cur->next->val<x)
+			{
+				cur->next = t->next;
+				t->next = pre->next;
+				pre->next = t;
+				pre = pre->next;
+			}
+			else
+			{
+				cur = cur->next;
+			}
+		}
+		return dummy->next;
+	}
+};
