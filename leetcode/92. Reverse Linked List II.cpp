@@ -56,3 +56,28 @@ public:
 	}
 
 };
+
+
+//https://www.cnblogs.com/grandyang/p/4306611.html
+class Solution {
+public:
+	ListNode* reverseBetween(ListNode* head, int m, int n) {
+		ListNode*dummy = new ListNode(-1), *pre = dummy;
+		//建一个dummy，防止从第一个节点就开始翻转（这样head节点其实就变成最后一个节点了）
+		dummy->next = head;
+		for (int i = 0; i<m - 1; ++i)
+		{
+			pre = pre->next;
+		}
+		ListNode* cur = pre->next;
+		for (int j = 0; j<n - m; ++j)
+		{
+			ListNode* t = cur->next;
+			cur->next = t->next;
+			// t->next=cur;//只有在第一次pre->next才等于cur，我们的目的是为了把t放到pre的后面，第二次以后pre的后面不是cur
+			t->next = pre->next;
+			pre->next = t;
+		}
+		return dummy->next;
+	}
+};
