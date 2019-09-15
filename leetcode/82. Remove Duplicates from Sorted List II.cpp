@@ -20,7 +20,7 @@ public:
 		if (head == NULL)
 		{
 			return NULL;
-		}
+		}//加这个判断会快一点
 		ListNode *Fakehead = new ListNode(0);
 		Fakehead->next = head;
 		ListNode *pre = Fakehead;
@@ -42,5 +42,27 @@ public:
 			cur = cur->next;
 		}
 		return Fakehead->next;
+	}
+};
+
+//https://www.cnblogs.com/grandyang/p/4069003.html
+
+class Solution {
+public:
+	ListNode* deleteDuplicates(ListNode* head) {
+		if (!head)
+		{
+			return head;
+		}
+		if (head->next&&head->val == head->next->val)
+		{
+			while (head->next&&head->val == head->next->val)
+			{
+				head = head->next;
+			}
+			return deleteDuplicates(head->next);
+		}
+		head->next = deleteDuplicates(head->next);
+		return head;
 	}
 };
