@@ -50,3 +50,41 @@ public:
 		return par.empty();
 	}
 };
+
+
+
+
+class Solution {
+public:
+	bool isValid(string s) {
+		stack<char> parentheses;
+		/*if(s.size()==0)
+		{
+		return false;
+		}*///空字符串是有效的
+		for (int i = 0; i<s.size(); ++i)
+		{
+			if (s[i] == '(' || s[i] == '{' || s[i] == '[')
+			{
+				parentheses.push(s[i]);
+			}
+			else
+			{
+				if (parentheses.empty()) return false;//针对没有左括号就出现右括号的情况
+													  /* if (s[i] == ')' && parentheses.top() != '(') return false;
+													  if (s[i] == ']' && parentheses.top() != '[') return false;
+													  if (s[i] == '}' && parentheses.top() != '{') return false;
+													  parentheses.pop();*/
+
+				if ((s[i] == ')'&&parentheses.top() != '(') || (s[i] == '}'&&parentheses.top() != '{') || (s[i] == ']'&&parentheses.top() != '['))
+				{
+					return false;
+				}
+				parentheses.pop();
+			}
+
+
+		}
+		return parentheses.empty();
+	}
+};

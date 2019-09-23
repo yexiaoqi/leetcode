@@ -181,6 +181,7 @@
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
     <ClCompile Include="28. Implement strStr().cpp" />
     <ClCompile Include="31.Next Permutation.cpp" />
+    <ClCompile Include="32. Longest Valid Parentheses.cpp" />
     <ClCompile Include="33. Search in Rotated Sorted Array.cpp" />
     <ClCompile Include="36. Valid Sudoku.cpp" />
     <ClCompile Include="38. Count and Say.cpp" />
