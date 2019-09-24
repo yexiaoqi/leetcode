@@ -191,6 +191,7 @@
     <ClCompile Include="58. Length of Last Word.cpp" />
     <ClCompile Include="60. Permutation Sequence.cpp" />
     <ClCompile Include="61. Rotate List.cpp" />
+    <ClCompile Include="621. Task Scheduler.cpp" />
     <ClCompile Include="66. Plus One.cpp" />
     <ClCompile Include="67. Add Binary.cpp" />
     <ClCompile Include="70. Climbing Stairs.cpp" />

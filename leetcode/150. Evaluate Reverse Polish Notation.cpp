@@ -48,3 +48,44 @@ public:
 		}
 	}
 };
+
+
+
+class Solution {
+public:
+	int evalRPN(vector<string>& tokens) {
+		stack<int> res;
+		for (int i = 0; i<tokens.size(); ++i)
+		{
+			if ((tokens[i] != "+") && (tokens[i] != "-") && (tokens[i] != "*") && (tokens[i] != "/"))
+				//输入不是+而是+"
+			{
+				res.push(stoi(tokens[i]));//stoi()把数字字符串转换成int输出，会做范围检查，默认范围是在int的范围内的，如果超出范围的话则会runtime error
+			}
+			else
+			{
+				int one = res.top();
+				res.pop();
+				int two = res.top();
+				res.pop();
+				if (tokens[i] == "+")
+				{
+					res.push(one + two);
+				}
+				if (tokens[i] == "-")
+				{
+					res.push(two - one);
+				}
+				if (tokens[i] == "*")
+				{
+					res.push(one*two);
+				}
+				if (tokens[i] == "/")
+				{
+					res.push(two / one);
+				}
+			}
+		}
+		return res.top();
+	}
+};
