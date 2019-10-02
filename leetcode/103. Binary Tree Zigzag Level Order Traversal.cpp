@@ -52,3 +52,87 @@ public:
 	}
 
 };
+
+
+class Solution
+{
+public:
+	vector<vector<int> > zigzagLevelOrder(TreeNode *root) {
+		if (!root)
+		{
+			return{};
+		}
+		vector<vector<int>> res;
+		queue<TreeNode*> q{ { root } };
+		int cnt = 0;
+		while (!q.empty())
+		{
+			vector<int> onelevel;
+			for (int i = q.size(); i>0; --i)
+			{
+				TreeNode* t = q.front();
+				q.pop();
+				onelevel.push_back(t->val);//->val不要忘了！！！
+				if (t->left)
+				{
+					q.push(t->left);
+				}
+				if (t->right)
+				{
+					q.push(t->right);
+				}
+			}
+			if (cnt % 2 == 1)
+			{
+				reverse(onelevel.begin(), onelevel.end());
+			}
+			cnt += 1;
+			res.push_back(onelevel);
+		}
+		return res;
+	}
+
+};
+
+class Solution
+{
+public:
+	vector<vector<int> > zigzagLevelOrder(TreeNode *root) {
+		if (!root)
+		{
+			return{};
+		}
+		vector<vector<int>> res;
+		queue<TreeNode*> q{ { root } };
+		// int cnt=0;
+		bool reve = true;
+		while (!q.empty())
+		{
+			int size = q.size();
+			vector<int> onelevel(size);
+			for (int i = size - 1; i >= 0; --i)
+			{
+				TreeNode* t = q.front();
+				q.pop();
+				int idx = reve ? (size - 1 - i) : i;
+				// int idx = reve ? i : (size - 1 - i);
+				//int idx=reve?i:(size-i-1);
+				onelevel[idx] = t->val;
+				//onelevel.push_back(t->val);//->val不要忘了！！！
+				if (t->left)
+				{
+					q.push(t->left);
+				}
+				if (t->right)
+				{
+					q.push(t->right);
+				}
+			}
+
+			reve = !reve;
+			res.push_back(onelevel);
+		}
+		return res;
+	}
+
+};

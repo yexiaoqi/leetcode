@@ -44,3 +44,81 @@ public:
 		return ret;
 	}
 };
+
+
+class Solution {
+public:
+	vector<vector<int> > levelOrderBottom(TreeNode *root) {
+		if (!root)
+		{
+			return{};
+		}
+		vector<vector<int>> res;
+		queue<TreeNode*> q{ { root } };
+		while (!q.empty())
+		{
+			vector<int> onelevel;
+
+			for (int i = q.size(); i>0; --i)
+			{
+				TreeNode* t = q.front();
+				q.pop();
+				onelevel.push_back(t->val);
+				if (t->left)
+				{
+					q.push(t->left);
+				}
+				if (t->right)
+				{
+					q.push(t->right);
+				}
+			}
+
+			res.insert(res.begin(), onelevel);//使用insert而不是push_back
+		}
+		return res;
+	}
+};
+
+
+/**
+* Definition for a binary tree node.
+* struct TreeNode {
+*     int val;
+*     TreeNode *left;
+*     TreeNode *right;
+*     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+* };
+*/
+class Solution {
+public:
+	vector<vector<int> > levelOrderBottom(TreeNode *root) {
+		vector<vector<int>> res;
+		order(root, 0, res);
+		//return res;
+		return vector<vector<int>>(res.rbegin(), res.rend());//c.rbegin() 返回一个逆序迭代器，它指向容器c的最后一个元素
+
+															 //c.rend() 返回一个逆序迭代器，它指向容器c的第一个元素前面的位置
+	}
+	void order(TreeNode* node, int level, vector<vector<int>> &res)//传引用，谢谢！！
+	{
+		if (!node)
+		{
+			return;
+		}
+		if (res.size() == level)
+		{
+			//res.insert(res.begin(),{});//c.begin() 返回一个迭代器，它指向容器c的第一个元素,这样如果没有第一个元素的时候就会指向空指针报错
+			res.push_back({});
+		}
+		res[level].push_back(node->val);
+		if (node->left)
+		{
+			order(node->left, level + 1, res);
+		}
+		if (node->right)
+		{
+			order(node->right, level + 1, res);
+		}
+	}
+};
