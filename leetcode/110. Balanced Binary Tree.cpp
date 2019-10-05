@@ -74,3 +74,64 @@ public:
 		return depth(root) != -1;
 	}
 };
+
+
+class Solution {
+public:
+	bool isBalanced(TreeNode* root) {
+		if (!root)
+		{
+			return true;
+		}
+		if (abs(getdepth(root->left) - getdepth(root->right))>1)
+		{
+			return false;
+		}
+		return isBalanced(root->left) && isBalanced(root->right);
+	}
+	int getdepth(TreeNode* root)
+	{
+		if (!root)
+		{
+			return 0;
+		}
+		return 1 + max(getdepth(root->left), getdepth(root->right));
+	}
+
+};
+
+class Solution {
+public:
+	bool isBalanced(TreeNode* root) {
+		if (checkdepth(root) == -1)
+		{
+			return false;
+		}
+		return true;
+	}
+	int checkdepth(TreeNode* root)
+	{
+		if (!root)
+		{
+			return 0;
+		}
+		int left = checkdepth(root->left);
+		int right = checkdepth(root->right);
+		if (left == -1)
+		{
+			return -1;
+		}
+		if (right == -1)
+		{
+			return -1;
+		}
+		if (abs(left - right)>1)
+		{
+			return -1;
+		}
+		else
+		{
+			return 1 + max(left, right);
+		}
+	}
+};
