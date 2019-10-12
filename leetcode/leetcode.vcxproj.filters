@@ -218,5 +218,14 @@
     <ClCompile Include="45. Jump Game II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="34. Find First and Last Position of Element in Sorted Array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="35. Search Insert Position.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="290. Word Pattern.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
