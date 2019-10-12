@@ -227,5 +227,8 @@
     <ClCompile Include="290. Word Pattern.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="409. Longest Palindrome.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
