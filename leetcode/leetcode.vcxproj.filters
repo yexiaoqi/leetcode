@@ -230,5 +230,14 @@
     <ClCompile Include="409. Longest Palindrome.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="113. Path Sum II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="236. Lowest Common Ancestor of a Binary Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="120. Triangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

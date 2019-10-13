@@ -157,10 +157,12 @@
     <ClCompile Include="106. Construct Binary Tree from Inorder and Postorder Traversal.cpp" />
     <ClCompile Include="107. Binary Tree Level Order Traversal II.cpp" />
     <ClCompile Include="110. Balanced Binary Tree.cpp" />
+    <ClCompile Include="113. Path Sum II.cpp" />
     <ClCompile Include="114. Flatten Binary Tree to Linked List.cpp" />
     <ClCompile Include="116. Populating Next Right Pointers in Each Node.cpp" />
     <ClCompile Include="117. Populating Next Right Pointers in Each Node I.cpp" />
     <ClCompile Include="12. Integer to Roman.cpp" />
+    <ClCompile Include="120. Triangle.cpp" />
     <ClCompile Include="125. Valid Palindrome.cpp" />
     <ClCompile Include="13. Roman to Integer.cpp" />
     <ClCompile Include="134. Gas Station.cpp" />
@@ -179,6 +181,7 @@
     <ClCompile Include="19. Remove Nth Node From End of List.cpp" />
     <ClCompile Include="2. Add Two Numbers.cpp" />
     <ClCompile Include="20. Valid Parentheses.cpp" />
+    <ClCompile Include="236. Lowest Common Ancestor of a Binary Tree.cpp" />
     <ClCompile Include="24. Swap Nodes in Pairs.cpp" />
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
     <ClCompile Include="28. Implement strStr().cpp" />
