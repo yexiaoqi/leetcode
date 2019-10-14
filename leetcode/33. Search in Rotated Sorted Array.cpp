@@ -38,3 +38,64 @@ public:
 		return -1;
 	}
 };
+//https://www.bilibili.com/video/av29912609/?p=6 Àı3
+class Solution {
+public:
+	int search(vector<int>& nums, int target) {
+		int begin = 0, end = nums.size() - 1;
+		while (begin <= end)
+		{
+			int mid = (begin + end) / 2;
+			if (nums[mid] == target)
+			{
+				return mid;
+			}
+			else if (nums[mid]>target)
+			{
+				if (nums[mid]>nums[begin])
+				{
+					if (target >= nums[begin])
+					{
+						end = mid - 1;
+					}
+					else
+					{
+						begin = mid + 1;
+					}
+				}
+				else if (nums[mid]<nums[begin])
+				{
+					end = mid - 1;
+				}
+				else
+				{
+					begin = mid + 1;
+				}
+			}
+			else
+			{
+				if (nums[mid]>nums[begin])
+				{
+					begin = mid + 1;
+				}
+				else if (nums[mid]<nums[begin])
+				{
+					if (target >= nums[begin])
+					{
+						end = mid - 1;
+					}
+					else
+					{
+						begin = mid + 1;
+					}
+				}
+				else
+				{
+					begin = mid + 1;
+				}
+			}
+
+		}
+		return -1;
+	}
+};

@@ -179,6 +179,8 @@
     <ClCompile Include="16. 3Sum Closest.cpp" />
     <ClCompile Include="18. 4Sum.cpp" />
     <ClCompile Include="19. Remove Nth Node From End of List.cpp" />
+    <ClCompile Include="198. House Robber.cpp" />
+    <ClCompile Include="199. Binary Tree Right Side View.cpp" />
     <ClCompile Include="2. Add Two Numbers.cpp" />
     <ClCompile Include="20. Valid Parentheses.cpp" />
     <ClCompile Include="236. Lowest Common Ancestor of a Binary Tree.cpp" />
@@ -198,6 +200,7 @@
     <ClCompile Include="46. Permutations.cpp" />
     <ClCompile Include="48. Rotate Image.cpp" />
     <ClCompile Include="49. Group Anagrams.cpp" />
+    <ClCompile Include="53. Maximum Subarray.cpp" />
     <ClCompile Include="58. Length of Last Word.cpp" />
     <ClCompile Include="60. Permutation Sequence.cpp" />
     <ClCompile Include="61. Rotate List.cpp" />
