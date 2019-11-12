@@ -248,5 +248,14 @@
     <ClCompile Include="198. House Robber.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="3. Longest Substring Without Repeating Characters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="187. Repeated DNA Sequences.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="449. Serialize and Deserialize BST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
