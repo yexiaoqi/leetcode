@@ -92,3 +92,52 @@ public:
 		}
 	}
 };
+
+/**
+* Definition for a binary tree node.
+* struct TreeNode {
+*     int val;
+*     TreeNode *left;
+*     TreeNode *right;
+*     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+* };
+*/
+class Solution {
+public:
+	void flatten(TreeNode* root) {
+		TreeNode* last = NULL;
+		preorder(root, last);
+	}
+	void preorder(TreeNode* root, TreeNode* &last)//这里得传引用
+	{
+		if (!root)
+		{
+			return;
+		}
+		if (!root->left && !root->right)
+		{
+			last = root;
+			return;
+		}
+		TreeNode* left = root->left;
+		TreeNode* right = root->right;//需要先备份，否则下面root->right修改过后又使用left_last->right会出错
+		TreeNode* left_last = NULL;
+		TreeNode* right_last = NULL;
+		if (left)
+		{
+			preorder(root->left, left_last);
+			root->left = NULL;
+			root->right = left;
+			last = left_last;
+		}
+		if (right)
+		{
+			preorder(right, right_last);
+			if (left_last)
+			{
+				left_last->right = right;
+			}
+			last = right_last;
+		}
+	}
+};

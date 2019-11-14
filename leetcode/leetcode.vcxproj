@@ -184,6 +184,7 @@
     <ClCompile Include="199. Binary Tree Right Side View.cpp" />
     <ClCompile Include="2. Add Two Numbers.cpp" />
     <ClCompile Include="20. Valid Parentheses.cpp" />
+    <ClCompile Include="207. Course Schedule.cpp" />
     <ClCompile Include="236. Lowest Common Ancestor of a Binary Tree.cpp" />
     <ClCompile Include="24. Swap Nodes in Pairs.cpp" />
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
