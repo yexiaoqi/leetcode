@@ -260,5 +260,14 @@
     <ClCompile Include="207. Course Schedule.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="225. Implement Stack using Queues.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="232. Implement Queue using Stacks.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="155. Min Stack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -176,6 +176,7 @@
     <ClCompile Include="144. Binary Tree Preorder Traversal.cpp" />
     <ClCompile Include="15.3Sum.cpp" />
     <ClCompile Include="150. Evaluate Reverse Polish Notation.cpp" />
+    <ClCompile Include="155. Min Stack.cpp" />
     <ClCompile Include="16. 3Sum Closest.cpp" />
     <ClCompile Include="18. 4Sum.cpp" />
     <ClCompile Include="187. Repeated DNA Sequences.cpp" />
@@ -185,6 +186,8 @@
     <ClCompile Include="2. Add Two Numbers.cpp" />
     <ClCompile Include="20. Valid Parentheses.cpp" />
     <ClCompile Include="207. Course Schedule.cpp" />
+    <ClCompile Include="225. Implement Stack using Queues.cpp" />
+    <ClCompile Include="232. Implement Queue using Stacks.cpp" />
     <ClCompile Include="236. Lowest Common Ancestor of a Binary Tree.cpp" />
     <ClCompile Include="24. Swap Nodes in Pairs.cpp" />
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
