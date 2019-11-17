@@ -70,3 +70,32 @@ public:
 		return dummy->next;
 	}
 };
+
+//·½·¨2
+class Solution {
+public:
+	ListNode* partition(ListNode* head, int x) {
+		ListNode *left = new ListNode(-1);
+		ListNode *right = new ListNode(-1);
+		ListNode *left_ptr = left;
+		ListNode *right_ptr = right;
+		while (head)
+		{
+			if (head->val<x)
+			{
+				left_ptr->next = head;
+				left_ptr = head;
+			}
+			else
+			{
+				right_ptr->next = head;
+				right_ptr = head;
+			}
+			head = head->next;
+		}
+		left_ptr->next = right->next;
+		right_ptr->next = NULL;
+		return  left->next;
+
+	}
+};
