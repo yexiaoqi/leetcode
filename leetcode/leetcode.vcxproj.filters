@@ -269,5 +269,14 @@
     <ClCompile Include="155. Min Stack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="215. Kth Largest Element in an Array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="206. Reverse Linked List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="160. Intersection of Two Linked Lists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -64,6 +64,7 @@ public:
 	ListNode* reverseBetween(ListNode* head, int m, int n) {
 		ListNode*dummy = new ListNode(-1), *pre = dummy;
 		//建一个dummy，防止从第一个节点就开始翻转（这样head节点其实就变成最后一个节点了）
+		//不能写成*pre =head,然后下面for (int i = 0; i<m -2; ++i)，以为m可能为1，这样pre应该是dummy而不是head
 		dummy->next = head;
 		for (int i = 0; i<m - 1; ++i)
 		{
@@ -79,5 +80,48 @@ public:
 			pre->next = t;
 		}
 		return dummy->next;
+	}
+};
+
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	ListNode* reverseBetween(ListNode* head, int m, int n) {
+		int count = n - m + 1;//需要在这边定义，因为后面--m改变了m的值了
+		ListNode* result = head, *pre_head = NULL;
+		while (head&&--m)
+		{
+			pre_head = head;
+			head = head->next;
+		}
+		ListNode* first_tail = head;
+		ListNode* new_head = NULL;
+
+		while (head&&count)
+		{
+			ListNode *next2 = head->next;
+			head->next = new_head;
+			new_head = head;
+			head = next2;
+			count--;
+		}
+		first_tail->next = head;
+		if (pre_head)
+		{
+			pre_head->next = new_head;
+		}
+		else
+		{
+			result = new_head;
+		}
+		return result;
+
 	}
 };

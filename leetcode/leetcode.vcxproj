@@ -178,6 +178,7 @@
     <ClCompile Include="150. Evaluate Reverse Polish Notation.cpp" />
     <ClCompile Include="155. Min Stack.cpp" />
     <ClCompile Include="16. 3Sum Closest.cpp" />
+    <ClCompile Include="160. Intersection of Two Linked Lists.cpp" />
     <ClCompile Include="18. 4Sum.cpp" />
     <ClCompile Include="187. Repeated DNA Sequences.cpp" />
     <ClCompile Include="19. Remove Nth Node From End of List.cpp" />
@@ -185,7 +186,9 @@
     <ClCompile Include="199. Binary Tree Right Side View.cpp" />
     <ClCompile Include="2. Add Two Numbers.cpp" />
     <ClCompile Include="20. Valid Parentheses.cpp" />
+    <ClCompile Include="206. Reverse Linked List.cpp" />
     <ClCompile Include="207. Course Schedule.cpp" />
+    <ClCompile Include="215. Kth Largest Element in an Array.cpp" />
     <ClCompile Include="225. Implement Stack using Queues.cpp" />
     <ClCompile Include="232. Implement Queue using Stacks.cpp" />
     <ClCompile Include="236. Lowest Common Ancestor of a Binary Tree.cpp" />

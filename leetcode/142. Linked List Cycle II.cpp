@@ -6,7 +6,7 @@
 //Can you solve it without using extra space ?
 //
 
-
+//使用快慢指针法
 /**
 * Definition for singly-linked list.
 * struct ListNode {
@@ -46,5 +46,80 @@ public:
 			walker = walker->next;
 		}
 		return walker;
+	}
+};
+
+
+
+//使用快慢指针法，这样写更清晰一点
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	ListNode *detectCycle(ListNode *head) {
+		ListNode* fast = head;
+		ListNode* slow = head;
+		ListNode* meet = NULL;
+		while (fast)
+		{
+			slow = slow->next;
+			fast = fast->next;
+			if (!fast)
+			{
+				return NULL;
+			}
+			fast = fast->next;
+			if (fast == slow)
+			{
+				meet = fast;
+				break;
+			}
+		}
+		if (meet == NULL)
+		{
+			return NULL;
+		}
+		while (1)
+		{
+			if (head == meet)
+			{
+				return head;
+			}
+			head = head->next;
+			meet = meet->next;
+		}
+	}
+};
+
+
+//使用集合set方法
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	ListNode *detectCycle(ListNode *head) {
+		set<ListNode *> node_set;
+		while (head)
+		{
+			if (node_set.find(head) != node_set.end())
+			{
+				return head;
+			}
+			node_set.insert(head);
+			head = head->next;
+		}
+		return NULL;
 	}
 };
