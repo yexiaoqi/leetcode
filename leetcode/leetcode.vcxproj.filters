@@ -284,5 +284,11 @@
     <ClCompile Include="23. Merge k Sorted Lists.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="455. Assign Cookies.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="376. Wiggle Subsequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
