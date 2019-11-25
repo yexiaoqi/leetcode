@@ -188,8 +188,10 @@
     <ClCompile Include="20. Valid Parentheses.cpp" />
     <ClCompile Include="206. Reverse Linked List.cpp" />
     <ClCompile Include="207. Course Schedule.cpp" />
+    <ClCompile Include="21. Merge Two Sorted Lists.cpp" />
     <ClCompile Include="215. Kth Largest Element in an Array.cpp" />
     <ClCompile Include="225. Implement Stack using Queues.cpp" />
+    <ClCompile Include="23. Merge k Sorted Lists.cpp" />
     <ClCompile Include="232. Implement Queue using Stacks.cpp" />
     <ClCompile Include="236. Lowest Common Ancestor of a Binary Tree.cpp" />
     <ClCompile Include="24. Swap Nodes in Pairs.cpp" />

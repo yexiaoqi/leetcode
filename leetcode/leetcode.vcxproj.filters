@@ -278,5 +278,11 @@
     <ClCompile Include="160. Intersection of Two Linked Lists.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="21. Merge Two Sorted Lists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="23. Merge k Sorted Lists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

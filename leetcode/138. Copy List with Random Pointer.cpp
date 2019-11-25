@@ -11,6 +11,69 @@
 * };
 */
 //深拷贝一个链表，链表除了含有next指针外，还包含一个random指针，该指针指向字符串中的某个节点或者为空。
+
+
+//1. 在原链表的每个节点后面拷贝出一个新的节点。
+//
+//2. 依次给新的节点的随机指针赋值，而且这个赋值非常容易 cur->next->random = cur->random->next。
+//
+//3. 断开链表可得到深度拷贝后的新链表。
+/*
+// Definition for a Node.
+class Node {
+public:
+int val;
+Node* next;
+Node* random;
+
+Node() {}
+
+Node(int _val, Node* _next, Node* _random) {
+val = _val;
+next = _next;
+random = _random;
+}
+};
+*/
+class Solution {
+public:
+	Node* copyRandomList(Node* head) {
+		if (!head)
+		{
+			return NULL;
+		}
+		Node* cur = head;
+		while (cur)
+		{
+			Node* t = new Node(cur->val, NULL, NULL);
+			t->next = cur->next;
+			cur->next = t;
+			cur = t->next;
+		}
+		cur = head;
+		while (cur)
+		{
+			if (cur->random)
+			{
+				cur->next->random = cur->random->next;
+			}
+			cur = cur->next->next;
+		}
+		cur = head;
+		Node* res = cur->next;
+		while (cur)
+		{
+			Node* t = cur->next;
+			cur->next = t->next;
+			if (t->next)
+			{
+				t->next = t->next->next;
+			}
+			cur = cur->next;
+		}
+		return res;
+	}
+};
 class Solution
 {
 public:
@@ -48,5 +111,65 @@ public:
 			}
 		}
 		return newhead;
+	}
+};
+
+
+//使用 HashMap
+/*
+// Definition for a Node.
+class Node {
+public:
+int val;
+Node* next;
+Node* random;
+
+Node() {}
+
+Node(int _val, Node* _next, Node* _random) {
+val = _val;
+next = _next;
+random = _random;
+}
+};
+*/
+class Solution {
+public:
+	Node* copyRandomList(Node* head) {
+		if (!head)
+		{
+			return NULL;
+		}
+		map<Node*, int> listmap;
+		vector<Node*> newlist;
+		Node* cur = head;
+		int i = 0;
+		while (cur)
+		{
+			newlist.push_back(new Node(cur->val, NULL, NULL));
+			//newlist[i]->next=NULL;
+			// newlist[i]->random=NULL;//注意要有这句,因为random指向NULL的没有建立映射//修改为在上面初始化new Node(cur->val,NULL,NULL)
+			listmap[cur] = i;
+			++i;
+			cur = cur->next;
+		}
+		newlist.push_back(NULL);//这样不用对最后一个特殊处理了
+		cur = head;
+		i = 0;
+		while (cur)
+		{
+			if (cur->random)
+			{
+				int id = listmap[cur->random];
+				newlist[i]->random = newlist[id];
+			}
+
+			newlist[i]->next = newlist[i + 1];
+			cur = cur->next;
+
+			++i;
+		}
+		return newlist[0];
+
 	}
 };
