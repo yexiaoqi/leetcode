@@ -207,6 +207,7 @@
     <ClCompile Include="36. Valid Sudoku.cpp" />
     <ClCompile Include="376. Wiggle Subsequence.cpp" />
     <ClCompile Include="38. Count and Say.cpp" />
+    <ClCompile Include="402. Remove K Digits.cpp" />
     <ClCompile Include="409. Longest Palindrome.cpp" />
     <ClCompile Include="449. Serialize and Deserialize BST.cpp" />
     <ClCompile Include="45. Jump Game II.cpp" />
