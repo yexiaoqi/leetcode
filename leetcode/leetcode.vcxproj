@@ -190,6 +190,7 @@
     <ClCompile Include="207. Course Schedule.cpp" />
     <ClCompile Include="21. Merge Two Sorted Lists.cpp" />
     <ClCompile Include="215. Kth Largest Element in an Array.cpp" />
+    <ClCompile Include="22. Generate Parentheses.cpp" />
     <ClCompile Include="225. Implement Stack using Queues.cpp" />
     <ClCompile Include="23. Merge k Sorted Lists.cpp" />
     <ClCompile Include="232. Implement Queue using Stacks.cpp" />
@@ -207,6 +208,7 @@
     <ClCompile Include="36. Valid Sudoku.cpp" />
     <ClCompile Include="376. Wiggle Subsequence.cpp" />
     <ClCompile Include="38. Count and Say.cpp" />
+    <ClCompile Include="40. Combination Sum II.cpp" />
     <ClCompile Include="402. Remove K Digits.cpp" />
     <ClCompile Include="409. Longest Palindrome.cpp" />
     <ClCompile Include="449. Serialize and Deserialize BST.cpp" />
@@ -226,6 +228,7 @@
     <ClCompile Include="70. Climbing Stairs.cpp" />
     <ClCompile Include="71. Simplify Path.cpp" />
     <ClCompile Include="73. Set Matrix Zeroes.cpp" />
+    <ClCompile Include="78. Subsets.cpp" />
     <ClCompile Include="8. String to Integer (atoi).cpp" />
     <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp" />
     <ClCompile Include="81. Search in Rotated Sorted Array II.cpp" />
@@ -233,6 +236,7 @@
     <ClCompile Include="83. Remove Duplicates from Sorted List.cpp" />
     <ClCompile Include="86. Partition List.cpp" />
     <ClCompile Include="89. Gray Code.cpp" />
+    <ClCompile Include="90. Subsets II.cpp" />
     <ClCompile Include="92. Reverse Linked List II.cpp" />
     <ClCompile Include="94. Binary Tree Inorder Traversal.cpp" />
     <ClCompile Include="102. Binary Tree Level Order Traversal.cpp" />
