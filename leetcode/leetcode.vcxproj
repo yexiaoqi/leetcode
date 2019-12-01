@@ -211,6 +211,7 @@
     <ClCompile Include="409. Longest Palindrome.cpp" />
     <ClCompile Include="449. Serialize and Deserialize BST.cpp" />
     <ClCompile Include="45. Jump Game II.cpp" />
+    <ClCompile Include="452. Minimum Number of Arrows to Burst Balloons.cpp" />
     <ClCompile Include="455. Assign Cookies.cpp" />
     <ClCompile Include="46. Permutations.cpp" />
     <ClCompile Include="48. Rotate Image.cpp" />

@@ -293,5 +293,8 @@
     <ClCompile Include="402. Remove K Digits.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="452. Minimum Number of Arrows to Burst Balloons.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
