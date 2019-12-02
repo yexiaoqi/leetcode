@@ -293,6 +293,15 @@
     <ClCompile Include="402. Remove K Digits.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="55. Jump Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="22. Generate Parentheses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="40. Combination Sum II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="452. Minimum Number of Arrows to Burst Balloons.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -302,10 +311,7 @@
     <ClCompile Include="90. Subsets II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="40. Combination Sum II.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="22. Generate Parentheses.cpp">
+    <ClCompile Include="322. Coin Change.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -31,3 +31,22 @@ public:
 		return anagrams;
 	}
 };
+
+class Solution {
+public:
+	vector<vector<string>> groupAnagrams(vector<string>& strs) {
+		vector<vector<string>> res;
+		map<string, vector<string>> res_map;
+		for (int i = 0; i<int(strs.size()); ++i)
+		{
+			string str = strs[i];
+			sort(str.begin(), str.end());
+			res_map[str].push_back(strs[i]);
+		}
+		for (auto it = res_map.begin(); it != res_map.end(); ++it)
+		{
+			res.push_back((*it).second);
+		}
+		return res;
+	}
+};
