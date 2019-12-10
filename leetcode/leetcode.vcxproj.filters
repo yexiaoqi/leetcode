@@ -314,5 +314,11 @@
     <ClCompile Include="200. Number of Islands.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="322. Coin Change.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="nowcodergirl_Knapsack problemcpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

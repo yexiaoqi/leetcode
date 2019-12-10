@@ -203,6 +203,7 @@
     <ClCompile Include="3. Longest Substring Without Repeating Characters.cpp" />
     <ClCompile Include="31.Next Permutation.cpp" />
     <ClCompile Include="32. Longest Valid Parentheses.cpp" />
+    <ClCompile Include="322. Coin Change.cpp" />
     <ClCompile Include="33. Search in Rotated Sorted Array.cpp" />
     <ClCompile Include="34. Find First and Last Position of Element in Sorted Array.cpp" />
     <ClCompile Include="35. Search Insert Position.cpp" />
@@ -250,6 +251,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="nowcodergirl_Knapsack problemcpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
