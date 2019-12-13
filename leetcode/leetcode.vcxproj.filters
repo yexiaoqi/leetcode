@@ -335,5 +335,11 @@
     <ClCompile Include="473. Matchsticks to Square.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="jianzhioffer_05_ReplaceSpaces.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_04_FindInPartiallySortedMatrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
