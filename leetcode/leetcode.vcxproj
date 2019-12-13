@@ -164,6 +164,7 @@
     <ClCompile Include="12. Integer to Roman.cpp" />
     <ClCompile Include="120. Triangle.cpp" />
     <ClCompile Include="125. Valid Palindrome.cpp" />
+    <ClCompile Include="127. Word Ladder.cpp" />
     <ClCompile Include="13. Roman to Integer.cpp" />
     <ClCompile Include="134. Gas Station.cpp" />
     <ClCompile Include="136. Single Number.cpp" />
@@ -218,6 +219,7 @@
     <ClCompile Include="452. Minimum Number of Arrows to Burst Balloons.cpp" />
     <ClCompile Include="455. Assign Cookies.cpp" />
     <ClCompile Include="46. Permutations.cpp" />
+    <ClCompile Include="473. Matchsticks to Square.cpp" />
     <ClCompile Include="48. Rotate Image.cpp" />
     <ClCompile Include="49. Group Anagrams.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
@@ -228,6 +230,7 @@
     <ClCompile Include="621. Task Scheduler.cpp" />
     <ClCompile Include="66. Plus One.cpp" />
     <ClCompile Include="67. Add Binary.cpp" />
+    <ClCompile Include="7. Reverse Integer.cpp" />
     <ClCompile Include="70. Climbing Stairs.cpp" />
     <ClCompile Include="71. Simplify Path.cpp" />
     <ClCompile Include="73. Set Matrix Zeroes.cpp" />
@@ -239,12 +242,14 @@
     <ClCompile Include="83. Remove Duplicates from Sorted List.cpp" />
     <ClCompile Include="86. Partition List.cpp" />
     <ClCompile Include="89. Gray Code.cpp" />
+    <ClCompile Include="9. AC_Palindrome Number.cpp" />
     <ClCompile Include="90. Subsets II.cpp" />
     <ClCompile Include="92. Reverse Linked List II.cpp" />
     <ClCompile Include="94. Binary Tree Inorder Traversal.cpp" />
     <ClCompile Include="102. Binary Tree Level Order Traversal.cpp" />
     <ClCompile Include="96. Unique Binary Search Trees.cpp" />
     <ClCompile Include="leetcode.cpp" />
+    <ClCompile Include="nowcodergirl_eatpeach.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -35,6 +35,7 @@ public:
 		if (value == root->val)
 		{
 			res.push_back(path);
+			//return;//这边不能加return，否则第二次的path会被第一次影响而不是从0开始
 		}
 		search(root->left, value, path, res);
 		search(root->right, value, path, res);

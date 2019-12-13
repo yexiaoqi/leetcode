@@ -320,5 +320,20 @@
     <ClCompile Include="nowcodergirl_Knapsack problemcpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="nowcodergirl_eatpeach.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="7. Reverse Integer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="9. AC_Palindrome Number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="127. Word Ladder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="473. Matchsticks to Square.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
