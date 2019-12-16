@@ -224,6 +224,7 @@
     <ClCompile Include="49. Group Anagrams.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
     <ClCompile Include="55. Jump Game.cpp" />
+    <ClCompile Include="572. Subtree of Another Tree.cpp" />
     <ClCompile Include="58. Length of Last Word.cpp" />
     <ClCompile Include="60. Permutation Sequence.cpp" />
     <ClCompile Include="61. Rotate List.cpp" />
@@ -250,6 +251,13 @@
     <ClCompile Include="96. Unique Binary Search Trees.cpp" />
     <ClCompile Include="jianzhioffer_04_FindInPartiallySortedMatrix.cpp" />
     <ClCompile Include="jianzhioffer_05_ReplaceSpaces.cpp" />
+    <ClCompile Include="jianzhioffer_15_NumberOf1InBinary.cpp" />
+    <ClCompile Include="jianzhioffer_16_Power.cpp" />
+    <ClCompile Include="jianzhioffer_21_ReorderArray.cpp" />
+    <ClCompile Include="jianzhioffer_22_KthNodeFromEnd.cpp" />
+    <ClCompile Include="jianzhioffer_24_ReverseList.cpp" />
+    <ClCompile Include="jianzhioffer_25_MergeSortedLists.cpp" />
+    <ClCompile Include="jianzhioffer_26_SubstructureInTree.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="nowcodergirl_eatpeach.cpp" />
     <ClCompile Include="stdafx.cpp">
