@@ -258,6 +258,13 @@
     <ClCompile Include="jianzhioffer_24_ReverseList.cpp" />
     <ClCompile Include="jianzhioffer_25_MergeSortedLists.cpp" />
     <ClCompile Include="jianzhioffer_26_SubstructureInTree.cpp" />
+    <ClCompile Include="jianzhioffer_27_MirrorOfBinaryTree.cpp" />
+    <ClCompile Include="jianzhioffer_29_PrintMatrixcpp.cpp" />
+    <ClCompile Include="jianzhioffer_30_MinInStack.cpp" />
+    <ClCompile Include="jianzhioffer_31_StackPushPopOrder.cpp" />
+    <ClCompile Include="jianzhioffer_32_01_PrintTreeFromTopToBottom.cpp" />
+    <ClCompile Include="jianzhioffer_33_SquenceOfBST.cpp" />
+    <ClCompile Include="jianzhioffer_34_PathInTree.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="nowcodergirl_eatpeach.cpp" />
     <ClCompile Include="stdafx.cpp">
