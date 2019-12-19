@@ -219,6 +219,7 @@
     <ClCompile Include="452. Minimum Number of Arrows to Burst Balloons.cpp" />
     <ClCompile Include="455. Assign Cookies.cpp" />
     <ClCompile Include="46. Permutations.cpp" />
+    <ClCompile Include="47. Permutations II.cpp" />
     <ClCompile Include="473. Matchsticks to Square.cpp" />
     <ClCompile Include="48. Rotate Image.cpp" />
     <ClCompile Include="49. Group Anagrams.cpp" />
@@ -249,6 +250,7 @@
     <ClCompile Include="94. Binary Tree Inorder Traversal.cpp" />
     <ClCompile Include="102. Binary Tree Level Order Traversal.cpp" />
     <ClCompile Include="96. Unique Binary Search Trees.cpp" />
+    <ClCompile Include="jianzhioffer_38_StringPermutation.cpp" />
     <ClCompile Include="jianzhioffer_04_FindInPartiallySortedMatrix.cpp" />
     <ClCompile Include="jianzhioffer_05_ReplaceSpaces.cpp" />
     <ClCompile Include="jianzhioffer_15_NumberOf1InBinary.cpp" />
@@ -265,6 +267,8 @@
     <ClCompile Include="jianzhioffer_32_01_PrintTreeFromTopToBottom.cpp" />
     <ClCompile Include="jianzhioffer_33_SquenceOfBST.cpp" />
     <ClCompile Include="jianzhioffer_34_PathInTree.cpp" />
+    <ClCompile Include="jianzhioffer_35_CopyComplexList.cpp" />
+    <ClCompile Include="jianzhioffer_36_ConvertBinarySearchTree.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="nowcodergirl_eatpeach.cpp" />
     <ClCompile Include="stdafx.cpp">
