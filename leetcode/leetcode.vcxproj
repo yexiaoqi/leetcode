@@ -175,6 +175,7 @@
     <ClCompile Include="142. Linked List Cycle II.cpp" />
     <ClCompile Include="143. Reorder List.cpp" />
     <ClCompile Include="144. Binary Tree Preorder Traversal.cpp" />
+    <ClCompile Include="145. Binary Tree Postorder Traversal.cpp" />
     <ClCompile Include="15.3Sum.cpp" />
     <ClCompile Include="150. Evaluate Reverse Polish Notation.cpp" />
     <ClCompile Include="155. Min Stack.cpp" />

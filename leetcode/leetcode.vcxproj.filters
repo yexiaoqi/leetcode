@@ -398,5 +398,8 @@
     <ClCompile Include="jianzhioffer_38_StringPermutation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="145. Binary Tree Postorder Traversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
