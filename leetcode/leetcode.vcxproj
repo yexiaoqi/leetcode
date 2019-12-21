@@ -251,6 +251,7 @@
     <ClCompile Include="94. Binary Tree Inorder Traversal.cpp" />
     <ClCompile Include="102. Binary Tree Level Order Traversal.cpp" />
     <ClCompile Include="96. Unique Binary Search Trees.cpp" />
+    <ClCompile Include="jianzhioffer_14_CuttingRope.cpp" />
     <ClCompile Include="jianzhioffer_38_StringPermutation.cpp" />
     <ClCompile Include="jianzhioffer_04_FindInPartiallySortedMatrix.cpp" />
     <ClCompile Include="jianzhioffer_05_ReplaceSpaces.cpp" />
@@ -270,8 +271,10 @@
     <ClCompile Include="jianzhioffer_34_PathInTree.cpp" />
     <ClCompile Include="jianzhioffer_35_CopyComplexList.cpp" />
     <ClCompile Include="jianzhioffer_36_ConvertBinarySearchTree.cpp" />
+    <ClCompile Include="jianzhioffer_Entry node of the ring in the linked list.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="nowcodergirl_eatpeach.cpp" />
+    <ClCompile Include="paixu_bubblesort.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

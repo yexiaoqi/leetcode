@@ -398,7 +398,13 @@
     <ClCompile Include="jianzhioffer_38_StringPermutation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="145. Binary Tree Postorder Traversal.cpp">
+    <ClCompile Include="paixu_bubblesort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_Entry node of the ring in the linked list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_14_CuttingRope.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
