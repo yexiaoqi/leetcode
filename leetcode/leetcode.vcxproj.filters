@@ -341,5 +341,20 @@
     <ClCompile Include="jianzhioffer_04_FindInPartiallySortedMatrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="jianzhioffer_06_PrintListInReversedOrder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="11_MinNumberInRotatedArray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_10_Fibonacci.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_jumpsteps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_changejumpsteps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
