@@ -1,17 +1,17 @@
 //方法1，O（n）时间复杂度，o（1）空间复杂度
 class Solution {
 public:
-    int partition(vector<int> num,int begin,int end)
+    int partition(vector<int> &num,int begin,int end)
     {
         int key=num[begin];
         while(begin<end)
         {
-            while(begin<end&&num[end]>=num[key])
+            while(begin<end&&num[end]>=key)
             {
                 --end;
             }
             num[begin]=num[end];
-            while(begin<end&&num[begin]<=num[key])
+            while(begin<end&&num[begin]<=key)
             {
                 ++begin;
             }
