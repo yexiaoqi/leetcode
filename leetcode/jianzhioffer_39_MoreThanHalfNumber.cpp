@@ -1,3 +1,4 @@
+//方法1，O（n）时间复杂度，o（1）空间复杂度
 class Solution {
 public:
     int partition(vector<int> num,int begin,int end)
@@ -52,6 +53,46 @@ public:
             }
         }
         if(2*times<=numbers.size())
+        {
+            return 0;
+        }
+        return res;
+    }
+};
+//方法二，O（n）时间复杂度，o（1）空间复杂度
+class Solution {
+public:
+    int MoreThanHalfNum_Solution(vector<int> numbers) {
+        if(numbers.size()==0)
+        {
+            return 0;
+        }
+        int times=0;
+        int res=0;
+        for(int i=0;i<numbers.size();++i)
+        {
+            if(times==0)
+            {
+                res=numbers[i];
+                ++times;
+            }
+            else if(res==numbers[i])
+            {
+                ++times;
+            }
+            else{
+                --times;
+            }
+        }
+        int cnt=0;
+        for(int i=0;i<numbers.size();++i)
+        {
+            if(res==numbers[i])
+            {
+                ++cnt;
+            }
+        }
+        if(cnt*2<=numbers.size())
         {
             return 0;
         }
