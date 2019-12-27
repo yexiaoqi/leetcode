@@ -1,3 +1,23 @@
+//自己的解法
+class Solution {
+public:
+    int MoreThanHalfNum_Solution(vector<int> numbers) {
+        map<int,int> mapping;
+        int size=numbers.size();
+        set<int> numset(numbers.begin(),numbers.end());
+        for(int i=0;i<size;++i)
+        {
+            ++mapping[numbers[i]];          
+            if(mapping[numbers[i]]>(size/2))
+               {
+                   return numbers[i];
+               }
+        }
+        return 0;
+    }
+};
+
+
 //方法1，O（n）时间复杂度，o（1）空间复杂度
 class Solution {
 public:
