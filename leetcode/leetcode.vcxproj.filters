@@ -416,5 +416,8 @@
     <ClCompile Include="jianzhioffer_39_MoreThanHalfNumber.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="jianzhioffer_51_InversePairs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
