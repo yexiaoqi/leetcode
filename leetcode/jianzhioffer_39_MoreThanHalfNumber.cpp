@@ -1,4 +1,4 @@
-//自己的解法
+//自己的解�?
 class Solution {
 public:
     int MoreThanHalfNum_Solution(vector<int> numbers) {
@@ -18,7 +18,7 @@ public:
 };
 
 
-//方法1，O（n）时间复杂度，o（1）空间复杂度
+//方法1，O（n）时间复杂度，o�?）空间复杂度
 class Solution {
 public:
     int partition(vector<int> &num,int begin,int end)
@@ -79,7 +79,7 @@ public:
         return res;
     }
 };
-//方法二，O（n）时间复杂度，o（1）空间复杂度
+//方法二，O（n）时间复杂度，o�?）空间复杂度
 class Solution {
 public:
     int MoreThanHalfNum_Solution(vector<int> numbers) {
