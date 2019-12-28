@@ -317,9 +317,6 @@
     <ClCompile Include="322. Coin Change.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="nowcodergirl_Knapsack problemcpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="nowcodergirl_eatpeach.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -417,6 +414,48 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="jianzhioffer_51_InversePairs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="nowcodergirl_Knapsack problem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="paixu_mergesort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="260.Single Number II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_50_01_FirstNotRepeatingChar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_49_UglyNumber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jingzhioffer_43_NumberOf1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="11_MinNumberInRotatedArray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_06_PrintListInReversedOrder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_10_Fibonacci.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_40_KLeastNumbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_42_GreatestSumOfSubarrays.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_changejumpsteps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_jumpsteps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jiznhioffer_45_SortArrayForMinNumber.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

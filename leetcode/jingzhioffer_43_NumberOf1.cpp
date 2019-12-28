@@ -40,7 +40,7 @@ public:
     }
 };
 
-//只是把上面的char改为string，结果对，但内存超了，这是为啥
+//把上面的char改为string
 class Solution {
 public:
     int NumberOf1Between1AndN_Solution(int n)
@@ -71,6 +71,10 @@ public:
             str.erase(0,1);
             numfirst=stoi(str)+1;
         }
+		else
+		{
+			str.erase(0, 1);
+		}//不要漏了first还可能为0，否则就出不去了
         int numother=0;
         numother=first*(len-1)*pow(10,len-2);
         int numrecur=0;

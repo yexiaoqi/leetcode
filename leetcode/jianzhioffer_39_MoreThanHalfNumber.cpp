@@ -1,4 +1,4 @@
-//鑷繁鐨勮В娉?
+//自己写的，O（n）时间复杂度，o（n）空间复杂度
 class Solution {
 public:
     int MoreThanHalfNum_Solution(vector<int> numbers) {
@@ -18,7 +18,10 @@ public:
 };
 
 
-//鏂规硶1锛孫锛坣锛夋椂闂村鏉傚害锛宱锛?锛夌┖闂村鏉傚害
+//方法1，O（n）时间复杂度，o（1）空间复杂度，
+//因为只选一半，所以时间复杂度是O(n）+O(n/2）+O(n/4）+...,是O(n）复杂度
+//快排，就是O(n）+2O(n/2）+4O(n/4）+...,是O(nlogn）复杂度
+
 class Solution {
 public:
     int partition(vector<int> &num,int begin,int end)
@@ -79,7 +82,7 @@ public:
         return res;
     }
 };
-//鏂规硶浜岋紝O锛坣锛夋椂闂村鏉傚害锛宱锛?锛夌┖闂村鏉傚害
+//方法二，O（n）时间复杂度，o（1）空间复杂度
 class Solution {
 public:
     int MoreThanHalfNum_Solution(vector<int> numbers) {

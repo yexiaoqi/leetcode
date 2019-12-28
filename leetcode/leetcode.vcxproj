@@ -161,6 +161,7 @@
     <ClCompile Include="114. Flatten Binary Tree to Linked List.cpp" />
     <ClCompile Include="116. Populating Next Right Pointers in Each Node.cpp" />
     <ClCompile Include="117. Populating Next Right Pointers in Each Node I.cpp" />
+    <ClCompile Include="11_MinNumberInRotatedArray.cpp" />
     <ClCompile Include="12. Integer to Roman.cpp" />
     <ClCompile Include="120. Triangle.cpp" />
     <ClCompile Include="125. Valid Palindrome.cpp" />
@@ -200,6 +201,7 @@
     <ClCompile Include="236. Lowest Common Ancestor of a Binary Tree.cpp" />
     <ClCompile Include="24. Swap Nodes in Pairs.cpp" />
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
+    <ClCompile Include="260.Single Number II.cpp" />
     <ClCompile Include="28. Implement strStr().cpp" />
     <ClCompile Include="290. Word Pattern.cpp" />
     <ClCompile Include="3. Longest Substring Without Repeating Characters.cpp" />
@@ -251,6 +253,8 @@
     <ClCompile Include="94. Binary Tree Inorder Traversal.cpp" />
     <ClCompile Include="102. Binary Tree Level Order Traversal.cpp" />
     <ClCompile Include="96. Unique Binary Search Trees.cpp" />
+    <ClCompile Include="jianzhioffer_06_PrintListInReversedOrder.cpp" />
+    <ClCompile Include="jianzhioffer_10_Fibonacci.cpp" />
     <ClCompile Include="jianzhioffer_14_CuttingRope.cpp" />
     <ClCompile Include="jianzhioffer_38_StringPermutation.cpp" />
     <ClCompile Include="jianzhioffer_04_FindInPartiallySortedMatrix.cpp" />
@@ -272,11 +276,20 @@
     <ClCompile Include="jianzhioffer_35_CopyComplexList.cpp" />
     <ClCompile Include="jianzhioffer_36_ConvertBinarySearchTree.cpp" />
     <ClCompile Include="jianzhioffer_39_MoreThanHalfNumber.cpp" />
+    <ClCompile Include="jianzhioffer_40_KLeastNumbers.cpp" />
+    <ClCompile Include="jianzhioffer_42_GreatestSumOfSubarrays.cpp" />
+    <ClCompile Include="jianzhioffer_49_UglyNumber.cpp" />
+    <ClCompile Include="jianzhioffer_50_01_FirstNotRepeatingChar.cpp" />
     <ClCompile Include="jianzhioffer_51_InversePairs.cpp" />
+    <ClCompile Include="jianzhioffer_changejumpsteps.cpp" />
     <ClCompile Include="jianzhioffer_Entry node of the ring in the linked list.cpp" />
+    <ClCompile Include="jianzhioffer_jumpsteps.cpp" />
+    <ClCompile Include="jingzhioffer_43_NumberOf1.cpp" />
+    <ClCompile Include="jiznhioffer_45_SortArrayForMinNumber.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="nowcodergirl_eatpeach.cpp" />
     <ClCompile Include="paixu_bubblesort.cpp" />
+    <ClCompile Include="paixu_mergesort.cpp" />
     <ClCompile Include="paixu_quicksort.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -284,7 +297,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="nowcodergirl_Knapsack problemcpp" />
+    <ClCompile Include="nowcodergirl_Knapsack problem.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
