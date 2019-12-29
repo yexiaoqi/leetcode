@@ -467,5 +467,14 @@
     <ClCompile Include="jianzhioffer_55_01_TreeDepth.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="jianzhioffer_55_02_BalancedBinaryTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jiangzhioffer_56_01_NumbersAppearOnce.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_57_01_TwoNumbersWithSum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
