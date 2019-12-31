@@ -476,5 +476,35 @@
     <ClCompile Include="jianzhioffer_57_01_TwoNumbersWithSum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="jianzhioffer_57_02_ContinuousSquenceWithSum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_58_01_ReverseWordsInSentence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_58_02_LeftRotateString.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_61_ContinousCards.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_62_LastNumberInCircle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_64_Accumulate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_65_AddTwoNumbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_67_StringToInt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_03_01_DuplicationInArray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_66_ConstuctArray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
