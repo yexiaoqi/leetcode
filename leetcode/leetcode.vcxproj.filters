@@ -431,9 +431,6 @@
     <ClCompile Include="jianzhioffer_49_UglyNumber.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="jingzhioffer_43_NumberOf1.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="11_MinNumberInRotatedArray.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -453,9 +450,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="jianzhioffer_jumpsteps.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="jiznhioffer_45_SortArrayForMinNumber.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="jianzhioffer_52_FirstCommonNodesInLists.cpp">
@@ -534,6 +528,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="jianzhioffer_54_KthNodeInBST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_45_SortArrayForMinNumber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_43_NumberOf1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_41_StreamMedian.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_59_01_MaxInSlidingWindow.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

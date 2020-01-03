@@ -253,6 +253,7 @@
     <ClCompile Include="94. Binary Tree Inorder Traversal.cpp" />
     <ClCompile Include="102. Binary Tree Level Order Traversal.cpp" />
     <ClCompile Include="96. Unique Binary Search Trees.cpp" />
+    <ClCompile Include="jianzhioffer_41_StreamMedian.cpp" />
     <ClCompile Include="jianzhioffer_54_KthNodeInBST.cpp" />
     <ClCompile Include="jianzhioffer_56_01_NumbersAppearOnce.cpp" />
     <ClCompile Include="jianzhioffer_03_01_DuplicationInArray.cpp" />
@@ -299,6 +300,7 @@
     <ClCompile Include="jianzhioffer_57_02_ContinuousSquenceWithSum.cpp" />
     <ClCompile Include="jianzhioffer_58_01_ReverseWordsInSentence.cpp" />
     <ClCompile Include="jianzhioffer_58_02_LeftRotateString.cpp" />
+    <ClCompile Include="jianzhioffer_59_01_MaxInSlidingWindow.cpp" />
     <ClCompile Include="jianzhioffer_61_ContinousCards.cpp" />
     <ClCompile Include="jianzhioffer_62_LastNumberInCircle.cpp" />
     <ClCompile Include="jianzhioffer_64_Accumulate.cpp" />
@@ -310,8 +312,8 @@
     <ClCompile Include="jianzhioffer_50_02_FirstCharacterInStream.cpp" />
     <ClCompile Include="jianzhioffer_jumpsteps.cpp" />
     <ClCompile Include="jianzhioffer_32_03_PrintTreesInZigzag.cpp" />
-    <ClCompile Include="jingzhioffer_43_NumberOf1.cpp" />
-    <ClCompile Include="jiznhioffer_45_SortArrayForMinNumber.cpp" />
+    <ClCompile Include="jianzhioffer_43_NumberOf1.cpp" />
+    <ClCompile Include="jianzhioffer_45_SortArrayForMinNumber.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="nowcodergirl_eatpeach.cpp" />
     <ClCompile Include="paixu_bubblesort.cpp" />
