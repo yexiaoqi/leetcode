@@ -470,9 +470,6 @@
     <ClCompile Include="jianzhioffer_55_02_BalancedBinaryTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="jiangzhioffer_56_01_NumbersAppearOnce.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="jianzhioffer_57_01_TwoNumbersWithSum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -504,6 +501,39 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="jianzhioffer_66_ConstuctArray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_19_RegularExpressionsMatching.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_20_NumericStrings.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_18_02_DeleteDuplicatedNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_08_NextNodeInBinaryTrees.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_50_02_FirstCharacterInStream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_28_SymmetricalBinaryTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_32_02_PrintTreesInLines.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_37_SerializeBinaryTrees.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_32_03_PrintTreesInZigzag.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_56_01_NumbersAppearOnce.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_54_KthNodeInBST.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
