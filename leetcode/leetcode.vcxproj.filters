@@ -401,9 +401,6 @@
     <ClCompile Include="jianzhioffer_14_CuttingRope.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="jianzhioffer_Entry node of the ring in the linked list.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="paixu_bubblesort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -444,12 +441,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="jianzhioffer_42_GreatestSumOfSubarrays.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="jianzhioffer_changejumpsteps.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="jianzhioffer_jumpsteps.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="jianzhioffer_52_FirstCommonNodesInLists.cpp">
@@ -546,6 +537,36 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="jianzhioffer_13_RobotMove.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0.record.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_07_ConstructBinaryTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_09_QueueWithTwoStacks.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_11_MinNumberInRotatedArray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_10_2jumpsteps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_10_3changejumpsteps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_17_Print1ToMaxOfNDigits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_44_DigitsInSequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_23_EntryNodeInListLoop.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_10_4matrixcovering.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

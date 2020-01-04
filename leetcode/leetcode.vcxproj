@@ -149,6 +149,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="0.record.cpp" />
     <ClCompile Include="1. Two Sum.cpp" />
     <ClCompile Include="100. Same Tree.cpp" />
     <ClCompile Include="101. Symmetric Tree.cpp" />
@@ -253,9 +254,14 @@
     <ClCompile Include="94. Binary Tree Inorder Traversal.cpp" />
     <ClCompile Include="102. Binary Tree Level Order Traversal.cpp" />
     <ClCompile Include="96. Unique Binary Search Trees.cpp" />
+    <ClCompile Include="jianzhioffer_07_ConstructBinaryTree.cpp" />
+    <ClCompile Include="jianzhioffer_09_QueueWithTwoStacks.cpp" />
+    <ClCompile Include="jianzhioffer_11_MinNumberInRotatedArray.cpp" />
     <ClCompile Include="jianzhioffer_12_StringPathInMatrix.cpp" />
     <ClCompile Include="jianzhioffer_13_RobotMove.cpp" />
+    <ClCompile Include="jianzhioffer_17_Print1ToMaxOfNDigits.cpp" />
     <ClCompile Include="jianzhioffer_41_StreamMedian.cpp" />
+    <ClCompile Include="jianzhioffer_44_DigitsInSequence.cpp" />
     <ClCompile Include="jianzhioffer_54_KthNodeInBST.cpp" />
     <ClCompile Include="jianzhioffer_56_01_NumbersAppearOnce.cpp" />
     <ClCompile Include="jianzhioffer_03_01_DuplicationInArray.cpp" />
@@ -309,13 +315,14 @@
     <ClCompile Include="jianzhioffer_65_AddTwoNumbers.cpp" />
     <ClCompile Include="jianzhioffer_66_ConstuctArray.cpp" />
     <ClCompile Include="jianzhioffer_67_StringToInt.cpp" />
-    <ClCompile Include="jianzhioffer_changejumpsteps.cpp" />
-    <ClCompile Include="jianzhioffer_Entry node of the ring in the linked list.cpp" />
+    <ClCompile Include="jianzhioffer_10_3changejumpsteps.cpp" />
+    <ClCompile Include="jianzhioffer_23_EntryNodeInListLoop.cpp" />
     <ClCompile Include="jianzhioffer_50_02_FirstCharacterInStream.cpp" />
-    <ClCompile Include="jianzhioffer_jumpsteps.cpp" />
+    <ClCompile Include="jianzhioffer_10_2jumpsteps.cpp" />
     <ClCompile Include="jianzhioffer_32_03_PrintTreesInZigzag.cpp" />
     <ClCompile Include="jianzhioffer_43_NumberOf1.cpp" />
     <ClCompile Include="jianzhioffer_45_SortArrayForMinNumber.cpp" />
+    <ClCompile Include="jianzhioffer_10_4matrixcovering.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="nowcodergirl_eatpeach.cpp" />
     <ClCompile Include="paixu_bubblesort.cpp" />
