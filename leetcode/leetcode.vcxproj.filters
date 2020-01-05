@@ -434,9 +434,6 @@
     <ClCompile Include="jianzhioffer_06_PrintListInReversedOrder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="jianzhioffer_10_Fibonacci.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="jianzhioffer_40_KLeastNumbers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -551,12 +548,6 @@
     <ClCompile Include="jianzhioffer_11_MinNumberInRotatedArray.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="jianzhioffer_10_2jumpsteps.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="jianzhioffer_10_3changejumpsteps.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="jianzhioffer_17_Print1ToMaxOfNDigits.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -566,7 +557,28 @@
     <ClCompile Include="jianzhioffer_23_EntryNodeInListLoop.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="jianzhioffer_10_4matrixcovering.cpp">
+    <ClCompile Include="jianzhioffer_03_02_DuplicationInArrayNoEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_10_01Fibonacci.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_10_02jumpsteps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_10_03changejumpsteps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_10_04matrixcovering.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_18_01_DeleteNodeInList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_46_TranslateNumbersToStrings.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_47_MaxValueOfGifts.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
