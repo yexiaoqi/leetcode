@@ -428,9 +428,6 @@
     <ClCompile Include="jianzhioffer_49_UglyNumber.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="11_MinNumberInRotatedArray.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="jianzhioffer_06_PrintListInReversedOrder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -590,9 +587,6 @@
     <ClCompile Include="jianzhioffer_53_02_MissingNumber.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="jianzhioffer_53_03_IntegerIdenticalToIndex.cpp">
-      <Filter>头文件</Filter>
-    </ClCompile>
     <ClCompile Include="jianzhioffer_56_02_NumberAppearingOnce.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -600,6 +594,21 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="jianzhioffer_63_MaximalProfit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianchioffer_68_CommonParentInTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_53_03_IntegerIdenticalToIndex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5.Longest Palindromic Substring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="11.Container With Most Water.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="17.Letter Combinations of a Phone Number.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

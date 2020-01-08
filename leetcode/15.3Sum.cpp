@@ -9,7 +9,6 @@
 //	[-1, 0, 1],
 //	[-1, -1, 2]
 //]
-
 class Solution
 {
 public:
@@ -58,6 +57,95 @@ public:
 			{
 				++i;
 			}//注意去重
+		}
+		return res;
+	}
+};
+
+//复习
+//自己写的以下这种解法（先 fix 一个数，然后另外两个数使用 Two Sum 那种 HashMap 的解法）超时
+class Solution {
+public:
+	vector<vector<int>> threeSum(vector<int>& nums) {
+		map<char, int> m;
+		if (nums.size() <3)
+		{
+			return vector<vector<int>>();
+		}
+		//vector<vector<int>> res;
+		set<vector<int>> res_set;
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			m[nums[i]] = i;
+		}
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			for (int j = i + 1; j<nums.size(); ++j)
+			{
+				int gap = -nums[i] - nums[j];
+				if (m.find(gap) != m.end() && m[gap]>j)
+				{
+					vector<int> one;
+					one.push_back(nums[i]);
+					one.push_back(nums[j]);
+					one.push_back(gap);
+					sort(one.begin(), one.end());
+					res_set.insert(one);
+					// res.push_back(one);
+				}
+			}
+		}
+		return vector<vector<int>>(res_set.begin(), res_set.end());
+	}
+};
+
+
+class Solution {
+public:
+	vector<vector<int>> threeSum(vector<int>& nums) {
+		vector<vector<int>> res;
+		sort(nums.begin(), nums.end());//先排序才能有下面的判断
+		if (nums.size()<3 || nums.back()<0 || nums.front()>0)//先判断是否全是正数或负数
+		{
+			return vector<vector<int>>();
+		}
+		for (int i = 0; i<nums.size() - 2; ++i)
+		{
+			if (nums[i]>0)
+			{
+				break;
+			}
+			if (i>0 && nums[i] == nums[i - 1])
+			{
+				continue;//去除重复的遍历
+			}
+			int begin = i + 1;
+			int end = nums.size() - 1;
+			while (begin<end)
+			{
+				if (nums[begin] + nums[end]<-nums[i])
+				{
+					++begin;
+				}
+				else if (nums[begin] + nums[end]>-nums[i])
+				{
+					--end;
+				}
+				else
+				{
+					res.push_back({ nums[i],nums[begin],nums[end] });
+					while (begin<end&&nums[begin] == nums[begin + 1])
+					{
+						++begin;//去除重复的遍历
+					}
+					while (begin<end&&nums[end] == nums[end - 1])
+					{
+						--end;//去除重复的遍历
+					}
+					++begin;
+					--end;//找到一组后要移动begin和end
+				}
+			}
 		}
 		return res;
 	}

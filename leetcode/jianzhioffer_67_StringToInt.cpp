@@ -1,3 +1,4 @@
+//同leetcode8
 enum Status { kValid = 0, kInvaid };//全局变量区分是不合法输入导致的0还是数字0
 //注意空字符串、无效输入、正负号、溢出的处理
 int g_status = kValid;
@@ -28,7 +29,7 @@ public:
 				g_status = kInvaid;
 				return 0;
 			}
-			res = res * 10 + str[i] - '0';
+			res = str[i] - '0' + res * 10;//注意不要漏掉减0,不能是 res * 10 + str[i] - '0'，这样会先计算 res * 10 + str[i]，已经溢出了再减0没用
 		}
 		if (sign == 0)
 		{

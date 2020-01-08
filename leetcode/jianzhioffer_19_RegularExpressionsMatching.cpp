@@ -1,3 +1,4 @@
+//ͬleetcode10
 class Solution {
 public:
 	bool match(char* str, char* pattern)

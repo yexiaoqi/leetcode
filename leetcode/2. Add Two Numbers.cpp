@@ -82,3 +82,77 @@ public:
 		return dummy->next;
 	}
 };
+
+//复习1
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+		ListNode* dummy = new ListNode(-1);
+		ListNode* res = dummy;
+		int flag = 0;
+		while (l1 || l2)
+		{
+			int val1 = l1 ? l1->val : 0;
+			int val2 = l2 ? l2->val : 0;//这样就可以不像下面这样写三次
+			int sum = val1 + val2 + flag;
+			flag = sum / 10;
+			res->next = new ListNode(sum % 10);//进一步简化下面两句，然后返回dummy->next
+											   //res->val=sum%10;
+											   //res->next=new ListNode(-1);//简化下面两句变成一句
+											   // ListNode* tmp=new ListNode(-1);
+											   // res->next=tmp;
+			res = res->next;
+			//注意要先判断有没有再next
+			if (l1)
+			{
+				l1 = l1->next;
+			}
+			if (l2)
+			{
+				l2 = l2->next;
+			}
+			// l1=l1->next;
+			// l2=l2->next;//注意l1,l2向后移动
+		}
+		if (flag)//注意如果最后还有进位
+		{
+			res->next = new ListNode(1);
+		}
+		// while(l1&&l2)
+		// {
+		//     int sum=l1->val+l2->val+flag;
+		//     flag=sum/10;
+		//     res->val=sum%10;
+		//     ListNode* tmp=new ListNode(-1);
+		//     res->next=tmp;
+		//     res=res->next;
+		// }
+		// while(l1)
+		// {
+		//     int sum=l1->val+flag;
+		//     flag=sum/10;
+		//     res->val=sum%10;
+		//     ListNode* tmp=new ListNode(-1);
+		//     res->next=tmp;
+		//     res=res->next;
+		// }
+		// while(l2)
+		// {
+		//     int sum=l2->val+flag;
+		//     flag=sum/10;
+		//     res->val=sum%10;
+		//     ListNode* tmp=new ListNode(-1);
+		//     res->next=tmp;
+		//     res=res->next;
+		// }
+		return dummy->next;
+	}
+};

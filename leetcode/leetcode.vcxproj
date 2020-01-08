@@ -157,12 +157,12 @@
     <ClCompile Include="105. Construct Binary Tree from Preorder and Inorder Traversal.cpp" />
     <ClCompile Include="106. Construct Binary Tree from Inorder and Postorder Traversal.cpp" />
     <ClCompile Include="107. Binary Tree Level Order Traversal II.cpp" />
+    <ClCompile Include="11.Container With Most Water.cpp" />
     <ClCompile Include="110. Balanced Binary Tree.cpp" />
     <ClCompile Include="113. Path Sum II.cpp" />
     <ClCompile Include="114. Flatten Binary Tree to Linked List.cpp" />
     <ClCompile Include="116. Populating Next Right Pointers in Each Node.cpp" />
     <ClCompile Include="117. Populating Next Right Pointers in Each Node I.cpp" />
-    <ClCompile Include="11_MinNumberInRotatedArray.cpp" />
     <ClCompile Include="12. Integer to Roman.cpp" />
     <ClCompile Include="120. Triangle.cpp" />
     <ClCompile Include="125. Valid Palindrome.cpp" />
@@ -183,6 +183,7 @@
     <ClCompile Include="155. Min Stack.cpp" />
     <ClCompile Include="16. 3Sum Closest.cpp" />
     <ClCompile Include="160. Intersection of Two Linked Lists.cpp" />
+    <ClCompile Include="17.Letter Combinations of a Phone Number.cpp" />
     <ClCompile Include="18. 4Sum.cpp" />
     <ClCompile Include="187. Repeated DNA Sequences.cpp" />
     <ClCompile Include="19. Remove Nth Node From End of List.cpp" />
@@ -227,6 +228,7 @@
     <ClCompile Include="473. Matchsticks to Square.cpp" />
     <ClCompile Include="48. Rotate Image.cpp" />
     <ClCompile Include="49. Group Anagrams.cpp" />
+    <ClCompile Include="5.Longest Palindromic Substring.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
     <ClCompile Include="55. Jump Game.cpp" />
     <ClCompile Include="572. Subtree of Another Tree.cpp" />
@@ -254,6 +256,7 @@
     <ClCompile Include="94. Binary Tree Inorder Traversal.cpp" />
     <ClCompile Include="102. Binary Tree Level Order Traversal.cpp" />
     <ClCompile Include="96. Unique Binary Search Trees.cpp" />
+    <ClCompile Include="jianchioffer_68_CommonParentInTree.cpp" />
     <ClCompile Include="jianzhioffer_03_02_DuplicationInArrayNoEdit.cpp" />
     <ClCompile Include="jianzhioffer_07_ConstructBinaryTree.cpp" />
     <ClCompile Include="jianzhioffer_09_QueueWithTwoStacks.cpp" />

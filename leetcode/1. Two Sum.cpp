@@ -32,3 +32,32 @@ public:
 		return result;
 	}
 };
+
+
+//复习1，自己做出
+class Solution {
+public:
+	vector<int> twoSum(vector<int>& nums, int target) {
+		vector<int> res;
+		if (nums.size()<2)
+		{
+			return res;
+		}
+		unordered_map<int, int> mapping;
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			mapping[nums[i]] = i;
+		}
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			int gap = target - nums[i];
+			if (mapping.find(gap) != mapping.end() && mapping[gap] != i)//题目有点描述不清，是不能利用这个数组中同样下标的元素，但如果本身数组中有相同的元素可以用，所以不能用gap!=nums[i]
+			{
+				res.push_back(mapping[gap]);
+				res.push_back(i);//注意返回的是下标不是数；以及不要重复返回比如0,1和1,0
+				return res;
+			}
+		}
+		return res;
+	}
+};
