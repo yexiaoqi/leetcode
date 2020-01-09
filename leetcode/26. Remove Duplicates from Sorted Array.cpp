@@ -71,3 +71,76 @@ public:
 
 	}
 };
+
+
+//复习
+//自己的方法
+class Solution {
+public:
+	int removeDuplicates(vector<int>& nums) {
+		if (nums.size() == 0)
+		{
+			return 0;
+		}
+		int j = 0;
+		int begin = 0;
+		while (j<nums.size())
+		{
+			int i = j + 1;
+			while (i<nums.size() && nums[i] == nums[j])//注意要先判断i<nums.size()
+			{
+				++i;
+			}
+			nums[begin] = nums[j];
+			j = i;
+			++begin;
+		}
+		return begin;
+	}
+};
+
+
+class Solution {
+public:
+	int removeDuplicates(vector<int>& nums) {
+		if (nums.size() == 0)
+		{
+			return 0;
+		}
+		int begin = 0;
+		for (int i = 1; i<nums.size(); ++i)
+		{
+			if (nums[begin] != nums[i])
+			{
+				nums[++begin] = nums[i];
+			}
+		}
+		return begin + 1;
+	}
+};
+
+
+class Solution {
+public:
+	int removeDuplicates(vector<int>& nums) {
+		if (nums.size() == 0)
+		{
+			return 0;
+		}
+		int slow = 0, fast = 0, n = nums.size();
+		while (fast<n)
+		{
+			if (nums[slow] == nums[fast])
+			{
+				++fast;
+			}
+			else
+			{
+				++slow;
+				nums[slow] = nums[fast];
+				++fast;
+			}
+		}
+		return slow + 1;
+	}
+};
