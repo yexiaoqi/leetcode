@@ -98,3 +98,50 @@ public:
 		}
 	}
 };
+
+
+//¸´Ï°
+class Solution {
+public:
+	vector<vector<int>> permute(vector<int>& nums) {
+		vector<vector<int>> res;
+		int size = nums.size();
+		if (size == 0)
+		{
+			return vector<vector<int>>();
+		}
+		vector<int> one;
+		vector<int> marker(size, 0);
+		perm(nums, one, res, size, marker, 0);
+		return res;
+	}
+	void perm(vector<int>& nums, vector<int> &one, vector<vector<int>> &res, int size, vector<int>& marker, int level)
+	{
+		if (one.size() == size)
+		{
+			res.push_back(one);
+			return;
+		}
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			if (marker[i] == 0)
+			{
+				one.push_back(nums[i]);
+				marker[i] = 1;
+				perm(nums, one, res, size, marker, level + 1);
+				one.pop_back();
+				marker[i] = 0;
+			}
+		}
+
+
+		// for(int i=0;i<nums.size();++i)
+		// {
+		//     if(marker[i]==0)
+		//     {
+		//         one.push_back(nums[i]);
+		//     }
+		//     perm(nums,one,res,size,marker);
+		// }
+	}
+};

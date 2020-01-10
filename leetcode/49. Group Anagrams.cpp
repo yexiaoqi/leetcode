@@ -50,3 +50,53 @@ public:
 		return res;
 	}
 };
+
+
+//复习，自己做出
+class Solution {
+public:
+	void rotate(vector<vector<int>>& matrix) {
+		if (matrix.size() == 0)
+		{
+			return;
+		}
+		int begin = 0, end = matrix.size() - 1;
+		while (begin<end)
+		{
+			swap(matrix[begin++], matrix[end--]);
+		}
+		for (int i = 0; i<matrix.size(); ++i)
+		{
+			for (int j = i + 1; j<matrix[0].size(); ++j)
+			{
+				swap(matrix[i][j], matrix[j][i]);
+			}
+		}
+		return;
+	}
+};
+
+//
+class Solution {
+public:
+	void rotate(vector<vector<int>>& matrix) {
+		if (matrix.size() == 0)
+		{
+			return;
+		}
+		int begin = 0, end = matrix.size() - 1;
+		reverse(matrix.begin(), matrix.end());//用这行替代下面几句
+		// while(begin<end)
+		// {
+		//     swap(matrix[begin++],matrix[end--]);
+		// }
+		for (int i = 0; i<matrix.size(); ++i)
+		{
+			for (int j = i + 1; j<matrix[0].size(); ++j)
+			{
+				swap(matrix[i][j], matrix[j][i]);
+			}
+		}
+		return;
+	}
+};

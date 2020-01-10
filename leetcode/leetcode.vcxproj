@@ -205,6 +205,7 @@
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
     <ClCompile Include="260.Single Number II.cpp" />
     <ClCompile Include="28. Implement strStr().cpp" />
+    <ClCompile Include="29. Divide Two Integers.cpp" />
     <ClCompile Include="290. Word Pattern.cpp" />
     <ClCompile Include="3. Longest Substring Without Repeating Characters.cpp" />
     <ClCompile Include="31.Next Permutation.cpp" />

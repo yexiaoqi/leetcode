@@ -49,3 +49,31 @@ public:
 		return res;
 	}
 };
+
+//复习
+class Solution {
+public:
+	string countAndSay(int n) {
+		if (n <= 0)
+		{
+			return "";
+		}
+		string res = "1";//注意是"1"不是'1'
+		while (--n)
+		{
+			string cur = "";//注意赋值后后面才能调用
+			for (int i = 0; i<res.size(); ++i)
+			{
+				int cnt = 1;
+				while (i + 1<res.size() && res[i] == res[i + 1])
+				{
+					++cnt;
+					++i;
+				}
+				cur = cur + to_string(cnt) + res[i];
+			}
+			res = cur;
+		}
+		return res;
+	}
+};

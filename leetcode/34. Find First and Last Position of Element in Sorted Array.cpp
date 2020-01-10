@@ -125,3 +125,140 @@ public:
 		return right;
 	}
 };
+
+
+//复习
+//自己写的方法，这样和经常的写法一致，推荐
+class Solution {
+public:
+	vector<int> searchRange(vector<int>& nums, int target) {
+		vector<int> res(2, -1);
+		if (nums.size() == 0)
+		{
+			return res;
+		}
+		res[0] = findleft(nums, target);
+		if (res[0] != -1)
+		{
+			res[1] = findright(nums, target);
+		}
+		return res;
+	}
+	int findleft(vector<int>& nums, int target)
+	{
+		int begin = 0, end = nums.size() - 1;
+		while (begin <= end)
+		{
+			int mid = (begin + end) / 2;
+			if (nums[mid] == target)
+			{
+				if (mid == 0 || nums[mid - 1] != target)
+				{
+					return mid;
+				}
+				else
+				{
+					end = mid - 1;
+				}
+			}
+			else if (nums[mid]>target)
+			{
+				end = mid - 1;
+			}
+			else
+			{
+				begin = mid + 1;
+			}
+		}
+		return -1;
+	}
+	int findright(vector<int>& nums, int target)
+	{
+		int begin = 0, end = nums.size() - 1;
+		while (begin <= end)
+		{
+			int mid = (begin + end) / 2;
+			if (nums[mid] == target)
+			{
+				if (mid == nums.size() - 1 || nums[mid + 1] != target)
+				{
+					return mid;
+				}
+				else
+				{
+					begin = mid + 1;
+				}
+			}
+			else if (nums[mid]>target)
+			{
+				end = mid - 1;
+			}
+			else
+			{
+				begin = mid + 1;
+			}
+		}
+		return -1;
+	}
+};
+
+//增强复用
+class Solution {
+public:
+	vector<int> searchRange(vector<int>& nums, int target) {
+		vector<int> res(2, -1);
+		if (nums.size() == 0)
+		{
+			return res;
+		}
+		int left = 0, right = 1;
+		res[0] = find(nums, target, 0);
+		if (res[0] != -1)
+		{
+			res[1] = find(nums, target, 1);
+		}
+		return res;
+	}
+	int find(vector<int>& nums, int target, int index)
+	{
+		int begin = 0, end = nums.size() - 1;
+		while (begin <= end)
+		{
+			int mid = (begin + end) / 2;
+			if (nums[mid] == target)
+			{
+				if (index == 0)
+				{
+					if (mid == 0 || nums[mid - 1] != target)
+					{
+						return mid;
+					}
+					else
+					{
+						end = mid - 1;
+					}
+				}
+				else
+				{
+					if (mid == nums.size() - 1 || nums[mid + 1] != target)
+					{
+						return mid;
+					}
+					else
+					{
+						begin = mid + 1;
+					}
+				}
+			}
+			else if (nums[mid]>target)
+			{
+				end = mid - 1;
+			}
+			else
+			{
+				begin = mid + 1;
+			}
+		}
+		return -1;
+	}
+};
