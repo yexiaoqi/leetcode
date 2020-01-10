@@ -53,3 +53,25 @@ public:
 		return digits;
 	}
 };
+
+//复习
+class Solution {
+public:
+	vector<int> plusOne(vector<int>& digits) {
+		int i = digits.size();
+		int carry = 1;
+		while (i&&carry)
+		{
+			int num = (digits[i - 1] + carry) % 10;
+			carry = (digits[i - 1] + carry) / 10;
+			digits[i - 1] = num;
+			i--;
+		}
+		if (carry == 1)
+		{
+			//digits.insert(0,1);
+			digits.insert(digits.begin(), 1);//注意插入是用指针而不是数字
+		}
+		return digits;
+	}
+};

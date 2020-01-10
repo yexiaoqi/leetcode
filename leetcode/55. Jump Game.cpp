@@ -62,3 +62,34 @@ public:
 		return false;
 	}
 };
+
+//复习
+class Solution {
+public:
+	bool canJump(vector<int>& nums) {
+		if (nums.size()<2)
+		{
+			return true;
+		}
+		vector<int> res(nums.size() - 1, 0);
+		int max = 0;
+		for (int i = 0; i<nums.size() - 1; ++i)
+		{
+			res[i] = i + nums[i];
+		}
+		int i = 0;
+		while (i<(nums.size() - 1) && i <= max)//i目前能走到的最远是max，所以有i<=res
+		{
+			if (res[i]>max)
+			{
+				max = res[i];
+			}
+			++i;
+		}
+		if (max >= nums.size() - 1)
+		{
+			return true;
+		}
+		return false;
+	}
+};

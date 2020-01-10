@@ -614,5 +614,11 @@
     <ClCompile Include="29. Divide Two Integers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="50. Pow(x, n).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="54. Spiral Matrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -51,52 +51,27 @@ public:
 	}
 };
 
-
-//复习，自己做出
+//复习
 class Solution {
 public:
-	void rotate(vector<vector<int>>& matrix) {
-		if (matrix.size() == 0)
+	vector<vector<string>> groupAnagrams(vector<string>& strs) {
+		unordered_map<string, vector<string>> m;//string作key，value是异位词，这样就可以索引了
+		if (strs.size() == 0)
 		{
-			return;
+			return vector<vector<string>>();
 		}
-		int begin = 0, end = matrix.size() - 1;
-		while (begin<end)
+		vector<vector<string>> res;
+		for (int i = 0; i<strs.size(); ++i)
 		{
-			swap(matrix[begin++], matrix[end--]);
+			string s = strs[i];
+			sort(s.begin(), s.end());
+			//string s=sort(strs[i].begin(),strs[i].end());//sort没有返回值，不可以这样用
+			m[s].push_back(strs[i]);
 		}
-		for (int i = 0; i<matrix.size(); ++i)
+		for (auto i = m.begin(); i != m.end(); ++i)
 		{
-			for (int j = i + 1; j<matrix[0].size(); ++j)
-			{
-				swap(matrix[i][j], matrix[j][i]);
-			}
+			res.push_back((*i).second);
 		}
-		return;
-	}
-};
-
-//
-class Solution {
-public:
-	void rotate(vector<vector<int>>& matrix) {
-		if (matrix.size() == 0)
-		{
-			return;
-		}
-		int begin = 0, end = matrix.size() - 1;
-		reverse(matrix.begin(), matrix.end());//用这行替代下面几句
-		// while(begin<end)
-		// {
-		//     swap(matrix[begin++],matrix[end--]);
-		// }
-		for (int i = 0; i<matrix.size(); ++i)
-		{
-			for (int j = i + 1; j<matrix[0].size(); ++j)
-			{
-				swap(matrix[i][j], matrix[j][i]);
-			}
-		}
-		return;
+		return res;
 	}
 };
