@@ -635,5 +635,20 @@
     <ClCompile Include="jianzhioffer_68_CommonParentInTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="88. Merge Sorted Array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="79. Word Search.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="91. Decode Ways .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="98. Validate Binary Search Tree   .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="104. Maximum Depth of Binary Tree .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

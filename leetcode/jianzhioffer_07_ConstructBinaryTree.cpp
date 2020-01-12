@@ -1,4 +1,4 @@
-//tͬleetcode105
+//同leetcode105
 /**
 * Definition for binary tree
 * struct TreeNode {

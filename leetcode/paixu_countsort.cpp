@@ -13,6 +13,16 @@ void count_sort(vector<int> &arr, int maxval)
 	{
 		count[arr[i]]++;
 	}
+	/*这样写不稳定
+	int cur = 0;
+	for (int i = 0; i < maxval; ++i)
+	{
+	for (int j = 0; j < count[i]; ++j)
+	{
+	arr[cur] = i;
+	++cur;
+	}
+	}*/
 	for (int i = 1; i <= maxval; ++i)
 	{
 		count[i] += count[i - 1];
