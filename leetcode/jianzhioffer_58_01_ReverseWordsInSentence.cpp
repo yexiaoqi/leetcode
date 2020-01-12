@@ -5,7 +5,8 @@ public:
     {
        while(begin<end)
        {
-           swap(str[begin++],str[end--]);
+           
+		   (str[begin++],str[end--]);
        }
     }
     string ReverseSentence(string str) {

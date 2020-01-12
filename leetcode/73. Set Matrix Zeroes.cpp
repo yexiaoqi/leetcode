@@ -44,3 +44,106 @@ public:
 
 	}
 };
+
+//复习
+//自己的方法，用了o(m+n)的额外空间，不是最优
+class Solution {
+public:
+	void setZeroes(vector<vector<int>>& matrix) {
+		unordered_map<int, int> rows;
+		unordered_map<int, int> cols;
+		for (int i = 0; i<matrix.size(); ++i)
+		{
+			for (int j = 0; j<matrix[0].size(); ++j)
+			{
+				if (matrix[i][j] == 0)
+				{
+					rows[i] = 1;
+					cols[j] = 1;
+				}
+			}
+		}
+		for (int i = 0; i<matrix.size(); ++i)
+		{
+			if (rows[i] == 1)
+			{
+				for (int j = 0; j<matrix[0].size(); ++j)
+				{
+					matrix[i][j] = 0;
+				}
+			}
+		}
+		for (int j = 0; j<matrix[0].size(); ++j)
+		{
+			if (cols[j] == 1)
+			{
+				for (int i = 0; i<matrix.size(); ++i)
+				{
+					matrix[i][j] = 0;
+				}
+			}
+		}
+	}
+};
+
+//o(1)空间复杂度
+class Solution {
+public:
+	void setZeroes(vector<vector<int>>& matrix) {
+		//用第一行第一列来记录，最后再更新第一行第一列
+		if (matrix.size() == 0 || matrix[0].size() == 0)
+		{
+			return;
+		}
+		bool row0flag = false, col0flag = false;
+		for (int i = 0; i<matrix.size(); ++i)
+		{
+			if (matrix[i][0] == 0)
+			{
+				col0flag = true;
+			}
+		}
+		for (int i = 0; i<matrix[0].size(); ++i)
+		{
+			if (matrix[0][i] == 0)
+			{
+				row0flag = true;
+			}
+		}
+		for (int i = 1; i<matrix.size(); ++i)
+		{
+			for (int j = 1; j<matrix[0].size(); ++j)
+			{
+				if (matrix[i][j] == 0)
+				{
+					matrix[i][0] = 0;
+					matrix[0][j] = 0;
+				}
+			}
+		}
+		for (int i = 1; i<matrix.size(); ++i)
+		{
+			for (int j = 1; j<matrix[0].size(); ++j)
+			{
+				if (matrix[i][0] == 0 || matrix[0][j] == 0)
+				{
+					matrix[i][j] = 0;
+				}
+			}
+		}
+		if (row0flag)
+		{
+			for (int i = 0; i<matrix[0].size(); ++i)
+			{
+				matrix[0][i] = 0;
+			}
+		}
+		if (col0flag)
+		{
+			for (int i = 0; i<matrix.size(); ++i)
+			{
+				matrix[i][0] = 0;
+			}
+		}
+	}
+};

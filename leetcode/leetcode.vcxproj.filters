@@ -596,9 +596,6 @@
     <ClCompile Include="jianzhioffer_63_MaximalProfit.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="jianchioffer_68_CommonParentInTree.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="jianzhioffer_53_03_IntegerIdenticalToIndex.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -618,6 +615,24 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="54. Spiral Matrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="56. Merge Intervals.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="62 .Unique Paths.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="69. Sqrt(x) .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="paixu_countsort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="75. Sort Colors.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jianzhioffer_68_CommonParentInTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
