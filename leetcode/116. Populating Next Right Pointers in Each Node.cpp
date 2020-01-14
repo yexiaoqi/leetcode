@@ -63,3 +63,140 @@ public:
 		return;
 	}
 };
+
+
+//复习
+//自己的方法，没有很好地用到完美二叉树的定义
+/*
+// Definition for a Node.
+class Node {
+public:
+int val;
+Node* left;
+Node* right;
+Node* next;
+
+Node() : val(0), left(NULL), right(NULL), next(NULL) {}
+
+Node(int _val) : val(_val), left(NULL), right(NULL), next(NULL) {}
+
+Node(int _val, Node* _left, Node* _right, Node* _next)
+: val(_val), left(_left), right(_right), next(_next) {}
+};
+*/
+class Solution {
+public:
+	Node* connect(Node* root) {
+		vector<vector<Node*>> res;
+		levelorder(root, 0, res);
+		for (int i = 0; i<res.size(); ++i)
+		{
+			for (int j = 0; j<res[i].size() - 1; ++j)
+			{
+				res[i][j]->next = res[i][j + 1];
+			}
+			res[i][res[i].size() - 1]->next = NULL;
+		}
+		return root;
+	}
+	void levelorder(Node* root, int level, vector<vector<Node*>> &res)
+	{
+		if (!root)
+		{
+			return;
+		}
+		if (res.size() == level)
+		{
+			res.push_back(vector<Node*>());
+		}
+		res[level].push_back(root);
+		levelorder(root->left, level + 1, res);
+		levelorder(root->right, level + 1, res);
+	}
+};
+
+
+//递归解法
+/*
+// Definition for a Node.
+class Node {
+public:
+int val;
+Node* left;
+Node* right;
+Node* next;
+
+Node() : val(0), left(NULL), right(NULL), next(NULL) {}
+
+Node(int _val) : val(_val), left(NULL), right(NULL), next(NULL) {}
+
+Node(int _val, Node* _left, Node* _right, Node* _next)
+: val(_val), left(_left), right(_right), next(_next) {}
+};
+*/
+class Solution {
+public:
+	Node* connect(Node* root) {
+		if (!root)
+		{
+			return root;
+		}
+		if (root->left)
+		{
+			root->left->next = root->right;
+			root->right->next = root->next ? root->next->left : NULL;
+		}
+		connect(root->left);
+		connect(root->right);
+		return root;
+	}
+};
+
+//迭代解法
+/*
+// Definition for a Node.
+class Node {
+public:
+int val;
+Node* left;
+Node* right;
+Node* next;
+
+Node() : val(0), left(NULL), right(NULL), next(NULL) {}
+
+Node(int _val) : val(_val), left(NULL), right(NULL), next(NULL) {}
+
+Node(int _val, Node* _left, Node* _right, Node* _next)
+: val(_val), left(_left), right(_right), next(_next) {}
+};
+*/
+class Solution {
+public:
+	Node* connect(Node* root) {
+		if (!root)
+		{
+			return root;
+		}
+		queue<Node*> q;
+		q.push(root);
+		while (!q.empty())
+		{
+			int size = q.size();
+			for (int i = 0; i<size; ++i)
+			{
+				Node* t = q.front();
+				q.pop();
+				if (i<size - 1)//是上一轮的q.size()-1，所以要放在for循环外面得到size
+				{
+					t->next = q.front();
+				}
+				if (t->left)
+				{
+					q.push(t->left);
+					q.push(t->right);
+				}
+			}
+		}
+		return root;
+	}
+};

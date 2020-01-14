@@ -650,5 +650,23 @@
     <ClCompile Include="104. Maximum Depth of Binary Tree .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="108. Convert Sorted Array to Binary Search Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="118. Pascal%27s Triangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="121. Best Time to Buy and Sell Stock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="122. Best Time to Buy and Sell Stock II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="130. Surrounded Regions .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="131. Palindrome Partitioning.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
