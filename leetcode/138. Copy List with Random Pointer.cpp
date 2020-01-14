@@ -1,3 +1,4 @@
+//同剑指offer 35
 //A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
 //
 //Return a deep copy of the list.
@@ -140,8 +141,8 @@ public:
 		{
 			return NULL;
 		}
-		map<Node*, int> listmap;
-		vector<Node*> newlist;
+		unordered_map<Node*, int> listmap;//用unordered_map
+		vector<Node*> newlist;//利用vector先存储单独的Node*，然后再遍历一次串起来
 		Node* cur = head;
 		int i = 0;
 		while (cur)
@@ -171,5 +172,52 @@ public:
 		}
 		return newlist[0];
 
+	}
+};
+
+//复习
+/*
+// Definition for a Node.
+class Node {
+public:
+int val;
+Node* next;
+Node* random;
+
+Node(int _val) {
+val = _val;
+next = NULL;
+random = NULL;
+}
+};
+*/
+class Solution {
+public:
+	Node* copyRandomList(Node* head) {
+		unordered_map<Node*, int> m;
+		Node* cur = head;
+		vector<Node*> list;
+		int i = 0;
+		while (cur)
+		{
+			m[cur] = i;
+			++i;
+			list.push_back(new Node(cur->val));
+			cur = cur->next;
+		}
+		list.push_back(NULL);
+		cur = head;
+		i = 0;
+		while (cur)
+		{
+			list[i]->next = list[i + 1];
+			if (cur->random)
+			{
+				list[i]->random = list[m[cur->random]];
+			}
+			cur = cur->next;
+			++i;
+		}
+		return list[0];
 	}
 };
