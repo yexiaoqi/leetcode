@@ -5,7 +5,8 @@ int mypartition(vector<int>&arr, int low, int high)
 	int pivot = arr[low];//选第一个元素作为枢纽元
 	while (low < high)
 	{
-		while (low < high && arr[high] >= pivot)high--;
+		while (low < high && arr[high] >= pivot)high--;//注意不要漏了low < high，否则比如1,2，high就超界了
+		//一定得是arr[high] >= pivot，不能漏掉=，否则比如3,2,3
 		arr[low] = arr[high];//从后面开始找到第一个小于pivot的元素，放到low位置
 		while (low < high && arr[low] <= pivot)low++;
 		arr[high] = arr[low];//从前面开始找到第一个大于pivot的元素，放到high位置

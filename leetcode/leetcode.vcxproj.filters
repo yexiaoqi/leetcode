@@ -674,5 +674,23 @@
     <ClCompile Include="146. LRU Cache.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="148. Sort List .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="152. Maximum Product Subarray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="162. Find Peak Element   .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="169. Majority Element .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="171. Excel Sheet Column Number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="172. Factorial Trailing Zeroes  .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

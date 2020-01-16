@@ -89,3 +89,50 @@ public:
 		return res.top();
 	}
 };
+
+
+//复习，自己做出
+class Solution {
+public:
+	int evalRPN(vector<string>& tokens) {
+		stack<int> s;
+		if (tokens.size() == 0)
+		{
+			return 0;
+		}
+		for (int i = 0; i<tokens.size(); ++i)
+		{
+			if (tokens[i] != "+"&&tokens[i] != "-"&&tokens[i] != "*"&&tokens[i] != "/")//这种判断更清晰
+			//if(tokens[i]>="0"&&tokens[i]<="9"||tokens[i].size()>1)//tokens[i].size()>1针对负数和超过一位的正数
+			{
+				s.push(stoi(tokens[i]));//注意转化为int
+			}
+			else
+			{
+				int num1 = s.top();
+				s.pop();
+				int num2 = s.top();
+				s.pop();
+				int sum = 0;
+				if (tokens[i] == "+")
+				{
+					sum = num1 + num2;
+				}
+				else if (tokens[i] == "-")
+				{
+					sum = num2 - num1;
+				}
+				else if (tokens[i] == "*")
+				{
+					sum = num2*num1;
+				}
+				else
+				{
+					sum = num2 / num1;
+				}
+				s.push(sum);
+			}
+		}
+		return s.top();
+	}
+};
