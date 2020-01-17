@@ -24,3 +24,30 @@ public:
 		return res;
 	}
 };
+
+
+//¸´Ï°
+class Solution {
+public:
+	int rob(vector<int>& nums) {
+		if (nums.empty())
+		{
+			return 0;
+		}
+		vector<int> dp(nums.size(), 0);
+		dp[0] = nums[0];
+		for (int i = 1; i<nums.size(); ++i)
+		{
+			if (i<2)
+			{
+				dp[i] = max(dp[0], nums[1]);
+			}
+			else//Òª¼Óelse
+			{
+				dp[i] = max(dp[i - 1], dp[i - 2] + nums[i]);
+			}
+
+		}
+		return dp.back();
+	}
+};

@@ -1,3 +1,4 @@
+//与leetcode189相似
 class Solution {
 public:
     void reverse(string &str,int begin,int end)//注意引用

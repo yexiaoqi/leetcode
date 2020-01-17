@@ -692,5 +692,26 @@
     <ClCompile Include="172. Factorial Trailing Zeroes  .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="166. Fraction to Recurring Decimal  .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="189. Rotate Array .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="190. Reverse Bits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="191. Number of 1 Bits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="179. Largest Number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="202. Happy Number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="204. Count Primes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
