@@ -216,8 +216,10 @@
     <ClCompile Include="204. Count Primes.cpp" />
     <ClCompile Include="206. Reverse Linked List.cpp" />
     <ClCompile Include="207. Course Schedule.cpp" />
+    <ClCompile Include="208. Implement Trie (Prefix Tree).cpp" />
     <ClCompile Include="21. Merge Two Sorted Lists.cpp" />
     <ClCompile Include="215. Kth Largest Element in an Array.cpp" />
+    <ClCompile Include="217.Contains Duplicate .cpp" />
     <ClCompile Include="22. Generate Parentheses.cpp" />
     <ClCompile Include="225. Implement Stack using Queues.cpp" />
     <ClCompile Include="23. Merge k Sorted Lists.cpp" />
@@ -374,8 +376,10 @@
     <ClCompile Include="nowcodergirl_eatpeach.cpp" />
     <ClCompile Include="paixu_bubblesort.cpp" />
     <ClCompile Include="paixu_countsort.cpp" />
+    <ClCompile Include="paixu_insertsort.cpp" />
     <ClCompile Include="paixu_mergesort.cpp" />
     <ClCompile Include="paixu_quicksort.cpp" />
+    <ClCompile Include="paixu_shellsort.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

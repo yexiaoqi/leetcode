@@ -713,5 +713,17 @@
     <ClCompile Include="204. Count Primes.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="paixu_insertsort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="paixu_shellsort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="208. Implement Trie (Prefix Tree).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="217.Contains Duplicate .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
