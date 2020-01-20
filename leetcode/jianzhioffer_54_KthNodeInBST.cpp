@@ -1,4 +1,5 @@
-//自己做出
+//自己做出,这个求的是第k小的节点，书上有误
+//同leetcode230，注意有进阶题
 /*
 struct TreeNode {
 int val;

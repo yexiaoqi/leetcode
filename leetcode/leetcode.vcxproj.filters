@@ -725,5 +725,20 @@
     <ClCompile Include="217.Contains Duplicate .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="210.Course Schedule II .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="224. Basic Calculator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="227.Basic Calculator II .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="230. Kth Smallest Element in a BST   .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="234.Palindrome Linked List .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

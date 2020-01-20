@@ -3,7 +3,7 @@ class Solution {
 public:
 	bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
 		vector<vector<int>> graph(numCourses);
-		vector<int> visit(numCourses);
+		vector<int> visit(numCourses);//×¢Òâ³õÊ¼»¯
 		for (auto a : prerequisites)
 		{
 			graph[a[1]].push_back(a[0]);
