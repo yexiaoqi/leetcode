@@ -71,3 +71,6 @@ public:
 		return dummy->next;
 	}
 };
+
+//复习2
+//自己做出，一遍ac（迭代版本）

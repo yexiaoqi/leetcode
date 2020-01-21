@@ -221,3 +221,59 @@ public:
 		return list[0];
 	}
 };
+
+
+//¸´Ï°2
+/*
+// Definition for a Node.
+class Node {
+public:
+int val;
+Node* next;
+Node* random;
+
+Node(int _val) {
+val = _val;
+next = NULL;
+random = NULL;
+}
+};
+*/
+class Solution {
+public:
+	Node* copyRandomList(Node* head) {
+		if (!head)
+		{
+			return NULL;
+		}
+		Node* cur = head;
+		vector<Node*> res;
+		int i = 0;
+		unordered_map<Node*, int> m;
+		// ListNode* dummy=new Node(-1);
+		// ListNode* res=dummy;
+		while (cur)
+		{
+			Node* t = new Node(cur->val);
+			res.push_back(t);
+			m[cur] = i;
+			cur = cur->next;
+			++i;
+			//res->next=t;
+		}
+		res.push_back(NULL);
+		cur = head;
+		i = 0;
+		while (cur)
+		{
+			if (cur->random)
+			{
+				res[i]->random = res[m[cur->random]];
+			}
+			res[i]->next = res[i + 1];
+			++i;
+			cur = cur->next;
+		}
+		return res[0];
+	}
+};

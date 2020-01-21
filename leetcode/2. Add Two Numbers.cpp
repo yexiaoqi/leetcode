@@ -110,7 +110,7 @@ public:
 											   // ListNode* tmp=new ListNode(-1);
 											   // res->next=tmp;
 			res = res->next;
-			//注意要先判断有没有再next
+			//注意要先判断有没有再next！！！！！！！！！！！
 			if (l1)
 			{
 				l1 = l1->next;
@@ -120,7 +120,7 @@ public:
 				l2 = l2->next;
 			}
 			// l1=l1->next;
-			// l2=l2->next;//注意l1,l2向后移动
+			// l2=l2->next;//注意l1,l2向后移动！！！！！！！！！！！
 		}
 		if (flag)//注意如果最后还有进位
 		{
@@ -153,6 +153,49 @@ public:
 		//     res->next=tmp;
 		//     res=res->next;
 		// }
+		return dummy->next;
+	}
+};
+
+//复习2
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+		ListNode* dummy = new ListNode(-1);
+		ListNode* cur = dummy;
+		int carry = 0;
+		while (l1 || l2)
+		{
+			int val1 = l1 ? l1->val : 0;
+			int val2 = l2 ? l2->val : 0;
+			int sum = val1 + val2 + carry;
+			ListNode* t = new ListNode(sum % 10);
+			carry = sum / 10;
+			cur->next = t;
+			cur = cur->next;
+			//注意要先判断有没有再next！！！！！！！！！！！
+			if (l1)//注意l1,l2向后移动！！！！！！！！！！！
+			{
+				l1 = l1->next;
+			}
+			if (l2)
+			{
+				l2 = l2->next;
+			}
+		}
+		if (carry)
+		{
+			ListNode* t = new ListNode(carry);
+			cur->next = t;
+		}
 		return dummy->next;
 	}
 };

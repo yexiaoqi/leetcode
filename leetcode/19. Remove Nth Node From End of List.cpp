@@ -71,3 +71,41 @@ public:
 		return head;
 	}
 };
+
+//复习2
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	ListNode* removeNthFromEnd(ListNode* head, int n) {
+		if (n <= 0)
+		{
+			return head;
+		}
+		ListNode* dummy = new ListNode(-1);
+		dummy->next = head;
+		ListNode* slow = dummy, *fast = dummy;//从dummy开始
+		while (n--)
+		{
+			fast = fast->next;
+			if (!fast)
+			{
+				return head;
+			}
+		}
+
+		while (fast&&fast->next)//fast&&fast->next不是fast
+		{
+			slow = slow->next;
+			fast = fast->next;
+		}
+		slow->next = slow->next->next;
+		return dummy->next;
+	}
+};

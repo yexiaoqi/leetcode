@@ -231,6 +231,7 @@
     <ClCompile Include="234.Palindrome Linked List .cpp" />
     <ClCompile Include="236. Lowest Common Ancestor of a Binary Tree.cpp" />
     <ClCompile Include="24. Swap Nodes in Pairs.cpp" />
+    <ClCompile Include="25.Reverse Nodes in k-Group .cpp" />
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
     <ClCompile Include="260.Single Number II.cpp" />
     <ClCompile Include="28. Implement strStr().cpp" />
@@ -249,6 +250,7 @@
     <ClCompile Include="40. Combination Sum II.cpp" />
     <ClCompile Include="402. Remove K Digits.cpp" />
     <ClCompile Include="409. Longest Palindrome.cpp" />
+    <ClCompile Include="445. Add Two Numbers II.cpp" />
     <ClCompile Include="449. Serialize and Deserialize BST.cpp" />
     <ClCompile Include="45. Jump Game II.cpp" />
     <ClCompile Include="452. Minimum Number of Arrows to Burst Balloons.cpp" />
@@ -286,6 +288,7 @@
     <ClCompile Include="82. Remove Duplicates from Sorted List II.cpp" />
     <ClCompile Include="83. Remove Duplicates from Sorted List.cpp" />
     <ClCompile Include="86. Partition List.cpp" />
+    <ClCompile Include="876.Middle of the Linked List.cpp" />
     <ClCompile Include="88. Merge Sorted Array.cpp" />
     <ClCompile Include="89. Gray Code.cpp" />
     <ClCompile Include="9. AC_Palindrome Number.cpp" />

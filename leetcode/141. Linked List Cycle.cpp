@@ -60,7 +60,34 @@ public:
 			{
 				fast = fast->next;
 			}
-			if (fast&&fast == slow)//注意欧安先判断是不是NULL，如果都是NULL相等就没有意义了
+			if (fast&&fast == slow)//注意先判断是不是NULL，如果都是NULL相等就没有意义了
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+};
+
+
+//复习2
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	bool hasCycle(ListNode *head) {
+		ListNode* slow = head, *fast = head;
+		while (fast&&fast->next)
+		{
+			slow = slow->next;
+			fast = fast->next->next;
+			if (slow == fast)
 			{
 				return true;
 			}

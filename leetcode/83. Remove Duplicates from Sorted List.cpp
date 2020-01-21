@@ -67,3 +67,33 @@ public:
 		return head;
 	}
 };
+
+
+//¸´Ï°
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	ListNode* deleteDuplicates(ListNode* head) {
+		ListNode *dummy = new ListNode(-1);
+		ListNode *pre = head;
+		dummy->next = head;
+		while (pre&&pre->next)//×¢ÒâÏÈÅÐ¿Õ
+		{
+			ListNode* cur = pre->next;
+			while (cur&&cur->val == pre->val)//×¢ÒâÏÈÅÐ¿Õ
+			{
+				cur = cur->next;
+			}
+			pre->next = cur;
+			pre = pre->next;
+		}
+		return dummy->next;
+	}
+};

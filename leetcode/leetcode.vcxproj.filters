@@ -740,5 +740,14 @@
     <ClCompile Include="234.Palindrome Linked List .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="445. Add Two Numbers II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="876.Middle of the Linked List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="25.Reverse Nodes in k-Group .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -123,3 +123,69 @@ public:
 		return NULL;
 	}
 };
+
+//¸´Ï°
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	ListNode *detectCycle(ListNode *head) {
+		ListNode* slow = head, *fast = head;
+		ListNode* meet = NULL;
+		while (fast&&fast->next)
+		{
+			slow = slow->next;
+			fast = fast->next->next;
+			if (slow == fast)
+			{
+				meet = slow;
+				break;//Ìø³ö
+			}
+		}
+		if (meet == NULL)
+		{
+			return NULL;
+		}
+		while (head)
+		{
+			if (head == meet)
+			{
+				return head;
+			}
+			head = head->next;
+			meet = meet->next;
+		}
+		return NULL;
+	}
+};
+
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	ListNode *detectCycle(ListNode *head) {
+		unordered_set<ListNode*> us;
+		while (head)
+		{
+			if (us.find(head) != us.end())
+			{
+				return head;
+			}
+			us.insert(head);
+			head = head->next;
+		}
+		return NULL;
+	}
+};
