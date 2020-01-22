@@ -230,10 +230,16 @@
     <ClCompile Include="232. Implement Queue using Stacks.cpp" />
     <ClCompile Include="234.Palindrome Linked List .cpp" />
     <ClCompile Include="236. Lowest Common Ancestor of a Binary Tree.cpp" />
+    <ClCompile Include="237. Delete Node in a Linked List .cpp" />
+    <ClCompile Include="238. Product of Array Except Self .cpp" />
     <ClCompile Include="24. Swap Nodes in Pairs.cpp" />
+    <ClCompile Include="240.Search a 2D Matrix II.cpp" />
+    <ClCompile Include="242.Valid Anagram .cpp" />
     <ClCompile Include="25.Reverse Nodes in k-Group .cpp" />
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
     <ClCompile Include="260.Single Number II.cpp" />
+    <ClCompile Include="268. Missing Number.cpp" />
+    <ClCompile Include="279. Perfect Squares.cpp" />
     <ClCompile Include="28. Implement strStr().cpp" />
     <ClCompile Include="29. Divide Two Integers.cpp" />
     <ClCompile Include="290. Word Pattern.cpp" />
