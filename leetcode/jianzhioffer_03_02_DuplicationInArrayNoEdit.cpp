@@ -1,3 +1,4 @@
+//ͬleetcode287
 class Solution {
 public:
 	int finddup(vector<int> num, int n)

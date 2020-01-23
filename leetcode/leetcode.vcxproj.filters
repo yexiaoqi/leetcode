@@ -749,5 +749,35 @@
     <ClCompile Include="25.Reverse Nodes in k-Group .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="237. Delete Node in a Linked List .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="238. Product of Array Except Self .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="240.Search a 2D Matrix II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="242.Valid Anagram .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="268. Missing Number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="279. Perfect Squares.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="283.Move Zeroes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="287.Find the Duplicate Number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="289.Game of Life.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="300.Longest Increasing Subsequence .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
