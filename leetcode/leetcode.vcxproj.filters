@@ -779,5 +779,14 @@
     <ClCompile Include="300.Longest Increasing Subsequence .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="324. Wiggle Sort II .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="326.Power of Three.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="328.Odd Even Linked List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
