@@ -788,5 +788,14 @@
     <ClCompile Include="328.Odd Even Linked List.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="334.Increasing Triplet Subsequence .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="344. Reverse String.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="347.Top K Frequent Elements  .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

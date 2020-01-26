@@ -255,7 +255,10 @@
     <ClCompile Include="326.Power of Three.cpp" />
     <ClCompile Include="328.Odd Even Linked List.cpp" />
     <ClCompile Include="33. Search in Rotated Sorted Array.cpp" />
+    <ClCompile Include="334.Increasing Triplet Subsequence .cpp" />
     <ClCompile Include="34. Find First and Last Position of Element in Sorted Array.cpp" />
+    <ClCompile Include="344. Reverse String.cpp" />
+    <ClCompile Include="347.Top K Frequent Elements  .cpp" />
     <ClCompile Include="35. Search Insert Position.cpp" />
     <ClCompile Include="36. Valid Sudoku.cpp" />
     <ClCompile Include="376. Wiggle Subsequence.cpp" />
