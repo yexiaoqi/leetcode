@@ -262,7 +262,9 @@
     <ClCompile Include="35. Search Insert Position.cpp" />
     <ClCompile Include="36. Valid Sudoku.cpp" />
     <ClCompile Include="376. Wiggle Subsequence.cpp" />
+    <ClCompile Include="378.Kth Smallest Element in a Sorted Matrix.cpp" />
     <ClCompile Include="38. Count and Say.cpp" />
+    <ClCompile Include="380.Insert Delete GetRandom O(1).cpp" />
     <ClCompile Include="40. Combination Sum II.cpp" />
     <ClCompile Include="402. Remove K Digits.cpp" />
     <ClCompile Include="409. Longest Palindrome.cpp" />

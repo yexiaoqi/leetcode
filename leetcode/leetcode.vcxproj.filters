@@ -797,5 +797,11 @@
     <ClCompile Include="347.Top K Frequent Elements  .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="378.Kth Smallest Element in a Sorted Matrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="380.Insert Delete GetRandom O(1).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
