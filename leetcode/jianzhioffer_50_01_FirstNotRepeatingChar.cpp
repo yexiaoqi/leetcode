@@ -1,3 +1,4 @@
+//同leetcdeo387
 class Solution {
 public:
     int FirstNotRepeatingChar(string str) {

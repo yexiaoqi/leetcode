@@ -803,5 +803,20 @@
     <ClCompile Include="380.Insert Delete GetRandom O(1).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="384.Shuffle an Array .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="387.First Unique Character in a String.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="395.Longest Substring with At Least K Repeating Characters .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="412.Fizz Buzz.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="454. 4Sum II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
