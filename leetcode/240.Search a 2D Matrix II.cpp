@@ -58,3 +58,64 @@ public:
 		return false;
 	}
 };
+
+//复习
+class Solution {
+public:
+	bool searchMatrix(vector<vector<int>>& array, int target) {
+		if (array.empty() || array[0].empty())
+		{
+			return false;
+		}
+		int row = array.size() - 1;
+		int col = 0;
+		while (row >= 0 && col<array[0].size())
+		{
+			int num = array[row][col];
+			if (num>target)
+			{
+				row--;
+			}
+			else if (num<target)
+			{
+				++col;
+			}
+			else
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+};
+
+//复习，自己用上lower_bound
+class Solution {
+public:
+	bool searchMatrix(vector<vector<int>>& array, int target) {
+		if (array.empty() || array[0].empty())
+		{
+			return false;
+		}
+		int row = array.size() - 1;
+		int col = 0;
+		while (row >= 0 && col<array[0].size())
+		{
+			int num = array[row][col];
+			if (num>target)
+			{
+				row--;
+			}
+			else if (num<target)
+			{
+				//++col;
+				col = lower_bound(array[row].begin(), array[row].end(), target) - array[row].begin();
+			}
+			else
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+};

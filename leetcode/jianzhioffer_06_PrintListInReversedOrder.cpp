@@ -27,3 +27,29 @@ public:
 
 	}
 };
+
+//复习，自己的方法（反转链表）
+class Solution {
+public:
+	vector<int> printListFromTailToHead(ListNode* head) {
+		ListNode* dummy = new ListNode(-1);
+		dummy->next = head;
+		ListNode* pre = dummy;
+		ListNode* cur = head;
+		while (cur&&cur->next)
+		{
+			ListNode* t = cur->next;
+			cur->next = t->next;
+			t->next = pre->next;
+			pre->next = t;
+		}
+		vector<int> res;
+		ListNode* forres = dummy->next;
+		while (forres)
+		{
+			res.push_back(forres->val);
+			forres = forres->next;
+		}
+		return res;
+	}
+};

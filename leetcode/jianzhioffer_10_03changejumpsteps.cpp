@@ -6,3 +6,11 @@ public:
 		return res;
 	}
 };
+
+//¸´Ï°£¬¼òµ¥
+class Solution {
+public:
+	int jumpFloorII(int n) {
+		return pow(2, n - 1);
+	}
+};

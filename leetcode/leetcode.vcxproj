@@ -151,6 +151,7 @@
   <ItemGroup>
     <ClCompile Include="0.record.cpp" />
     <ClCompile Include="1. Two Sum.cpp" />
+    <ClCompile Include="10. Regular Expression Matching.cpp" />
     <ClCompile Include="100. Same Tree.cpp" />
     <ClCompile Include="101. Symmetric Tree.cpp" />
     <ClCompile Include="103. Binary Tree Zigzag Level Order Traversal.cpp" />
@@ -232,6 +233,7 @@
     <ClCompile Include="236. Lowest Common Ancestor of a Binary Tree.cpp" />
     <ClCompile Include="237. Delete Node in a Linked List .cpp" />
     <ClCompile Include="238. Product of Array Except Self .cpp" />
+    <ClCompile Include="239. Sliding Window Maximum.cpp" />
     <ClCompile Include="24. Swap Nodes in Pairs.cpp" />
     <ClCompile Include="240.Search a 2D Matrix II.cpp" />
     <ClCompile Include="242.Valid Anagram .cpp" />
