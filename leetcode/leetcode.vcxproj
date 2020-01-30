@@ -149,6 +149,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="295.Find Median from Data Stream.cpp" />
     <ClCompile Include="0.record.cpp" />
     <ClCompile Include="1. Two Sum.cpp" />
     <ClCompile Include="10. Regular Expression Matching.cpp" />
@@ -408,10 +409,13 @@
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="nowcodergirl_eatpeach.cpp" />
     <ClCompile Include="paixu_bubblesort.cpp" />
+    <ClCompile Include="paixu_bucketsort.cpp" />
     <ClCompile Include="paixu_countsort.cpp" />
     <ClCompile Include="paixu_insertsort.cpp" />
     <ClCompile Include="paixu_mergesort.cpp" />
     <ClCompile Include="paixu_quicksort.cpp" />
+    <ClCompile Include="paixu_radixsort.cpp" />
+    <ClCompile Include="paixu_selectsort.cpp" />
     <ClCompile Include="paixu_shellsort.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

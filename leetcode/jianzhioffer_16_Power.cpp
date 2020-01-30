@@ -81,7 +81,7 @@ public:
 		}
 		long ln = n;
 		int flag = ln>0 ? 1 : 0;
-		ln = abs(ln);
+		ln = abs(ln);//由于INT_MIN直接abs是不对的，所以要变成long型的ln
 		double res = Pow(x, ln);
 		if (!flag)
 		{
@@ -104,6 +104,59 @@ public:
 		if (n & 0x1 == 1)//如果n是奇数
 		{
 			res *= x;
+		}
+		return res;
+	}
+};
+
+//复习
+bool g_Invalid = false;
+class Solution {
+public:
+	bool equal(double a, double b)
+	{
+		if (abs(a - b)<0.00000001)
+		{
+			return true;
+		}
+		return false;
+	}
+	double myPow(double base, int exponent) {
+		if (equal(base, 0.0) && exponent<0)
+		{
+			g_Invalid = true;
+			return 0.0;
+		}
+		if (exponent == 0)
+		{
+			return 1.0;
+		}
+		int sign = exponent>0 ? 1 : -1;
+		long ex = long(exponent);
+		ex = labs(ex);
+		double res = 1;
+		res = power(base, exponent, res);
+		if (sign == -1)
+		{
+			res = 1.0 / res;
+		}
+		return res;
+	}
+	double power(double base, int exponent, double &res)
+	{
+		if (exponent == 0)
+		{
+			return 1;
+		}
+		if (exponent == 1)
+		{
+			return base;
+		}
+		res = power(base, exponent / 2, res);
+		res *= res;
+		if (exponent & 0x1)
+		{
+			res *= base;
 		}
 		return res;
 	}

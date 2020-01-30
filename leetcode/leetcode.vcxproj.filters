@@ -824,5 +824,17 @@
     <ClCompile Include="239. Sliding Window Maximum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="paixu_selectsort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="paixu_bucketsort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="295.Find Median from Data Stream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="paixu_radixsort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

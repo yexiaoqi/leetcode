@@ -32,6 +32,13 @@ public:
 };
 
 //不新建queue：
+/**
+* 1.要想保证原有次序，则只能顺次移动或相邻交换。
+* 2.i从左向右遍历，找到第一个偶数。
+* 3.j从i+1开始向后找，直到找到第一个奇数。
+* 4.将[i,...,j-1]的元素整体后移一位，最后将找到的奇数放入i位置，然后i++。
+* 5.終止條件：j向後遍歷查找失敗。
+*/
 class Solution {
 public:
 	void reOrderArray(vector<int> &array) {
@@ -66,6 +73,34 @@ public:
 				//array[i+1]=tmp;
 			}
 			++i;
+		}
+	}
+};
+
+//如果不要求保证奇数和奇数，偶数和偶数之间的相对位置不变，可以像书上一样，用两个指针前后向中间遍历交换
+
+//复习
+class Solution {
+public:
+	void reOrderArray(vector<int> &nums) {
+		vector<int> tmp;
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			if (nums[i] & 0x1)
+			{
+				tmp.push_back(nums[i]);
+			}
+		}
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			if (!(nums[i] & 0x1))//！运算优先级高于&，一定要加()
+			{
+				tmp.push_back(nums[i]);
+			}
+		}
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			nums[i] = tmp[i];
 		}
 	}
 };

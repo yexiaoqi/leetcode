@@ -1,4 +1,4 @@
-//ͬleetcode292
+//ͬleetcode295
 class Solution {
 public:
 	void Insert(int num)

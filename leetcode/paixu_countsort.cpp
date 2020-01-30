@@ -13,11 +13,11 @@ void count_sort(vector<int> &arr, int maxval)
 	{
 		count[arr[i]]++;
 	}
-	/*这样写不稳定
+	/*
 	int cur = 0;
 	for (int i = 0; i < maxval; ++i)
 	{
-	for (int j = 0; j < count[i]; ++j)
+	for (int j = 0; j < count[i]; ++j)//比如10,20,30,。。。1000，只有100个数，但会执行1000次j < count[i]操作，复杂度高
 	{
 	arr[cur] = i;
 	++cur;
