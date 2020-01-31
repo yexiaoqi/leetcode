@@ -1,3 +1,4 @@
+//同leetcode54
 class Solution {
 public:
 	vector<int> printMatrix(vector<vector<int> > matrix) {
@@ -89,6 +90,64 @@ public:
 			for (int i = endy - 1; i >= start + 1; --i)
 			{
 				res.push_back(matrix[i][start]);
+			}
+		}
+	}
+};
+
+
+//复习，自己做出
+class Solution {
+public:
+	vector<int> printMatrix(vector<vector<int> > matrix) {
+		vector<int> res;
+		if (matrix.empty() || matrix[0].empty())
+		{
+			return res;
+		}
+		int start = 0;
+		int rowsize = matrix.size(), colsize = matrix[0].size();
+		while (start * 2<rowsize&&start * 2<colsize)
+		{
+			Order(matrix, start, res);
+			++start;
+		}
+		return res;
+	}
+	void Order(vector<vector<int> > &matrix, int start, vector<int> &res)
+	{
+		int row = start;
+		int col = start;
+		int rowend = matrix.size() - start, colend = matrix[0].size() - start;
+		for (col; col<colend; ++col)
+		{
+			res.push_back(matrix[row][col]);
+		}
+		++row;
+		--col;
+		if (rowend - 1 - start >= 1)
+		{
+			for (row; row<rowend; ++row)
+			{
+				res.push_back(matrix[row][col]);
+			}
+			--row;
+			--col;
+		}
+		if ((rowend - 1 - start >= 1) && (colend - 1 - start >= 1))
+		{
+			for (col; col >= start; --col)
+			{
+				res.push_back(matrix[row][col]);
+			}
+			++col;
+			--row;
+		}
+		if ((rowend - 1 - start >= 2) && (colend - 1 - start >= 1))
+		{
+			for (row; row>start; --row)
+			{
+				res.push_back(matrix[row][col]);
 			}
 		}
 	}

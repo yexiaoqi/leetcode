@@ -8,7 +8,8 @@ void count_sort(vector<int> &arr, int maxval)
 		return;
 	}
 	vector<int> count(maxval + 1, 0);//如果有负数应该用maxval-minval+1
-	vector<int> tmp(arr.begin(), arr.end());
+	vector<int> tmp = arr;
+	//vector<int> tmp(arr.begin(), arr.end());
 	for (int i = 0; i < len; ++i)
 	{
 		count[arr[i]]++;

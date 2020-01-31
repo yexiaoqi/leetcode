@@ -1,3 +1,63 @@
+int GetMax(vector<int> &arr)
+{
+	int maxnum = arr[0];
+	for (int i = 1; i < arr.size(); ++i)
+	{
+		if (maxnum < arr[i])
+		{
+			maxnum = arr[i];
+		}
+	}
+	return maxnum;
+}
+void countsort(vector<int> &arr, int n, int exp)
+{
+	vector<int> count(10, 0);
+	vector<int> tmp = arr;
+	for (int i = 0; i < n; i++)
+	{
+		count[(arr[i] / exp) % 10]++;
+	}
+	for (int i = 1; i < 10; i++)
+	{
+		count[i] += count[i - 1];
+	}
+	for (int i = n - 1; i >= 0; i--)
+	{
+		arr[count[(tmp[i] / exp) % 10] - 1] = tmp[i];
+		--count[(tmp[i] / exp) % 10];
+	}
+}
+void radixsort(vector<int> &arr, int n)
+{
+	int exp = 1;
+	int maxnum = GetMax(arr);
+	for (exp; maxnum / exp > 0; exp *= 10)
+	{
+		countsort(arr, n, exp);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 int getMax(vector<int> &a, int n)
 {
 	int i, max;

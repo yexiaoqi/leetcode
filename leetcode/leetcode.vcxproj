@@ -411,6 +411,7 @@
     <ClCompile Include="paixu_bubblesort.cpp" />
     <ClCompile Include="paixu_bucketsort.cpp" />
     <ClCompile Include="paixu_countsort.cpp" />
+    <ClCompile Include="paixu_heapsort.cpp" />
     <ClCompile Include="paixu_insertsort.cpp" />
     <ClCompile Include="paixu_mergesort.cpp" />
     <ClCompile Include="paixu_quicksort.cpp" />

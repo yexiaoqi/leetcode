@@ -29,3 +29,44 @@ public:
 		return false;
 	}
 };
+
+//复习，自己的方法
+class Solution {
+public:
+	bool IsPopOrder(vector<int> pushV, vector<int> popV) {
+		stack<int> s;
+		int i = 0;
+		int j = 0;
+		while (i<pushV.size())
+		{
+			/*if (!s.empty() && s.top() == popV[j])
+			{
+				s.pop();
+				++j;
+				continue;
+			}*/
+			if (pushV[i] != popV[j])
+			{
+				s.push(pushV[i]);
+				++i;
+				continue;
+			}
+			if (i >= pushV.size())
+			{
+				return false;
+			}
+			++i;
+			++j;
+		}
+		while (!s.empty())
+		{
+			if (s.top() != popV[j])
+			{
+				return false;
+			}
+			s.pop();
+			++j;
+		}
+		return true;
+	}
+};

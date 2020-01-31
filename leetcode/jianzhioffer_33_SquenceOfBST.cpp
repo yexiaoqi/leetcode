@@ -14,14 +14,14 @@ public:
 	{
 		int root = sequence[end - 1];
 		int i = 0;
-		for (; i<end; ++i)
+		for (; i<end-1; ++i)
 		{
 			if (sequence[i]>root)
 			{
 				break;
 			}
 		}
-		for (int j = i; j<end; ++j)
+		for (int j = i; j<end-1; ++j)
 		{
 			if (sequence[j]<root)
 			{
@@ -37,6 +37,50 @@ public:
 		if (i<end - 1)
 		{
 			right = Verify(sequence, i, end);
+		}
+		return left&&right;
+	}
+};
+
+
+//复习
+class Solution {
+public:
+	bool VerifySquenceOfBST(vector<int> sequence) {
+		if (sequence.empty())
+		{
+			return false;
+		}
+		int start = 0;
+		return Verify(sequence, start, sequence.size() - 1);
+	}
+	bool Verify(vector<int> nums, int start, int end)
+	{
+		int i = start;//start被后面的Verify(nums, i, end);修改了
+		int value = nums[end];
+		for (i; i<end; ++i)
+		{
+			if (nums[i]>value)
+			{
+				break;
+			}
+		}
+		for (int j = i; j<end; ++j)
+		{
+			if (nums[j]<value)
+			{
+				return false;
+			}
+		}
+		--end;
+		bool left = true, right = true;
+		if (i - start>1)//不是i
+		{
+			left = Verify(nums, start, i - 1);
+		}
+		if (i<end)
+		{
+			right = Verify(nums, i, end);
 		}
 		return left&&right;
 	}
