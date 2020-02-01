@@ -41,3 +41,41 @@ public:
 		}
 	}
 };
+
+
+//复习
+class Solution {
+public:
+	vector<string> Permutation(string str) {
+		if (str.size() == 0)
+		{
+			return vector<string>();
+		}//要先判空，否则空的时候输出[""]
+		string one;
+		set<string> res_set;
+		vector<int> marker(str.size(), 0);
+		Permu(str, one, res_set, marker, 0);
+		return vector<string>(res_set.begin(), res_set.end());
+	}
+	void Permu(string str, string &one, set<string> &res, vector<int> &marker, int pos)
+	{
+		if (pos == str.size())
+		{
+			res.insert(one);
+			return;
+		}
+		for (int i = 0; i<str.size(); ++i)
+		{
+			if (marker[i] == 1)
+			{
+				continue;
+			}
+			marker[i] = 1;
+			one += str[i];
+			Permu(str, one, res, marker, pos + 1);
+			one.pop_back();//没有-=
+			marker[i] = 0;
+		}
+	}
+
+};

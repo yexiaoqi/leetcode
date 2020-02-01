@@ -36,3 +36,44 @@ public:
 		ConvertNode(root->right, last);
 	}
 };
+
+
+//复习
+/*
+struct TreeNode {
+int val;
+struct TreeNode *left;
+struct TreeNode *right;
+TreeNode(int x) :
+val(x), left(NULL), right(NULL) {
+}
+};*/
+class Solution {
+public:
+	TreeNode* Convert(TreeNode* root)
+	{
+		TreeNode* last = NULL;
+		ConvertNode(root, last);
+		while (last&&last->left)
+		{
+			last = last->left;
+		}
+		return last;
+	}
+	void ConvertNode(TreeNode* root, TreeNode* &last)//不能是&root，否则root->left等等修改了root
+	{
+		if (!root)
+		{
+			return;
+		}
+		ConvertNode(root->left, last);
+		root->left = last;
+		if (last)
+		{
+			last->right = root;
+		}
+		last = root;
+		ConvertNode(root->right, last);
+	}
+
+};
