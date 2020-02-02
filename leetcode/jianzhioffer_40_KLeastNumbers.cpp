@@ -133,3 +133,62 @@ public:
         return res;
     }
 };
+
+
+
+//复习，自己做出
+bool g_Invalid = false;
+class Solution {
+public:
+	int Partition(vector<int> &arr, int begin, int end)
+	{
+		int key = arr[begin];
+		while (begin<end)
+		{
+			while (begin<end&&arr[end] >= key)
+			{
+				--end;
+			}
+			arr[begin] = arr[end];
+			while (begin<end&&arr[begin] <= key)
+			{
+				++begin;
+			}
+			arr[end] = arr[begin];
+		}
+		arr[begin] = key;
+		return begin;
+	}
+	vector<int> GetLeastNumbers_Solution(vector<int> input, int k) {
+		if (k <= 0 || input.size()<k)
+		{
+			g_Invalid = true;
+			return vector<int>();
+		}
+		int begin = 0, end = input.size() - 1;
+		vector<int> res;
+		int index = Partition(input, begin, end);//注意index要声明在循环外面以便于 for(int i=0;i<=index;++i)
+		while (begin<end)
+		{
+			if (index == k - 1)
+			{
+				break;
+			}
+			else if (index>k - 1)
+			{
+				end = index - 1;
+				index = Partition(input, begin, end);
+			}
+			else
+			{
+				begin = index + 1;
+				index = Partition(input, begin, end);
+			}
+		}
+		for (int i = 0; i <= index; ++i)
+		{
+			res.push_back(input[i]);
+		}
+		return res;
+	}
+};

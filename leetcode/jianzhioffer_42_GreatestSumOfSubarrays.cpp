@@ -20,3 +20,27 @@ public:
         return sum;
     }
 };
+
+
+//复习，一遍ac，简单
+class Solution {
+public:
+	int FindGreatestSumOfSubArray(vector<int> nums) {
+		vector<int> dp(nums.size(), 0);
+		if (nums.empty())
+		{
+			return -1;
+		}
+		dp[0] = nums[0];
+		int res = dp[0];
+		for (int i = 1; i<nums.size(); ++i)
+		{
+			dp[i] = max(nums[i], nums[i] + dp[i - 1]);
+			if (res<dp[i])
+			{
+				res = dp[i];
+			}
+		}
+		return res;
+	}
+};

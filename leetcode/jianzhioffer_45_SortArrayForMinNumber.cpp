@@ -30,3 +30,29 @@ public:
         return res;
     }
 };
+
+
+//复习，自己做出，一遍ac
+bool compare(string a, string b)
+{
+	string ab = a + b;
+	string ba = b + a;
+	return ab<ba;
+}
+class Solution {
+public:
+	string PrintMinNumber(vector<int> nums) {
+		vector<string> strs;
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			strs.push_back(to_string(nums[i]));
+		}
+		sort(strs.begin(), strs.end(), compare);
+		string res;
+		for (int i = 0; i<strs.size(); ++i)
+		{
+			res += strs[i];
+		}
+		return res;
+	}
+};

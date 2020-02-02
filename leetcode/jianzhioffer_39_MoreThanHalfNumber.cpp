@@ -123,3 +123,49 @@ public:
         return res;
     }
 };
+
+
+
+//复习，自己做出
+bool g_Invalid = false;
+class Solution {
+public:
+	int MoreThanHalfNum_Solution(vector<int> nums) {
+		if (nums.size() == 0)
+		{
+			return 0;
+		}
+		int res = nums[0];
+		int cnt = 1;
+		for (int i = 1; i<nums.size(); ++i)
+		{
+			if (nums[i] == res)
+			{
+				++cnt;
+			}
+			else
+			{
+				--cnt;
+				if (cnt == 0)
+				{
+					res = nums[i];
+					cnt = 1;
+				}
+			}
+		}
+		int cntres = 0;
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			if (nums[i] == res)
+			{
+				++cntres;
+			}
+		}
+		if (cntres>nums.size() / 2)
+		{
+			return res;
+		}
+		g_Invalid = true;
+		return 0;
+	}
+};
