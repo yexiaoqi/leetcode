@@ -45,3 +45,28 @@ public:
         return res;*///这样写不行，因为map会自动排序，所以mapping中的顺序不是字符串中的顺序
     }
 };
+
+
+//复习，一遍ac，简单
+class Solution {
+public:
+	int FirstNotRepeatingChar(string str) {
+		if (str.size() == 0)
+		{
+			return -1;
+		}
+		unordered_map<char, int> m;
+		for (int i = 0; i<str.size(); ++i)
+		{
+			++m[str[i]];
+		}
+		for (int i = 0; i<str.size(); ++i)
+		{
+			if (m[str[i]] == 1)
+			{
+				return i;
+			}
+		}
+		return -1;
+	}
+};

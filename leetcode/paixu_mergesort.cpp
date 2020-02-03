@@ -14,8 +14,72 @@ using namespace std;
 
 
 
+
+
+
+//用这种写法
+void mergearray(vector<int> &arr, int begin, int end, int mid, vector<int> &tmp)
+{
+	int i = begin, j = mid + 1;
+	int k = begin;
+	while (i <= mid&&j <= end)
+	{
+		if (arr[i] < arr[j])
+		{
+			tmp[k++] = arr[i++];
+		}
+		else
+		{
+			tmp[k++] = arr[j++];
+		}
+	}
+	while (i <= mid)
+	{
+		tmp[k++] = arr[i++];
+	}
+	while (j <= end)
+	{
+		tmp[k++] = arr[j++];
+	}
+	for (int m = begin; m <= end; ++m)
+	{
+		arr[m] = tmp[m];
+	}
+}
+void mergesort(vector<int> &arr, int begin, int end, vector<int> &tmp)
+{
+	if (begin < end)
+	{
+		int mid = (begin + end) / 2;
+		mergesort(arr, begin, mid, tmp);
+		mergesort(arr, mid + 1, end, tmp);
+		mergearray(arr, begin, end, mid, tmp);
+	}
+}
+void merge(vector<int> &arr)
+{
+	if (arr.size() == 0)
+	{
+		return;
+	}
+	int size = arr.size();
+	int begin = 0, end = size - 1;
+	vector<int> tmp = arr;
+	mergesort(arr, begin, end, tmp);
+
+}
+
+
+
+
+
+
+
+
+
+
 //vector<int>写法
-void mergearray(vector<int> &arr, int start, int end, int mid, vector<int> &tmp)
+void mergearray(vector<int> &arr, int start, int end, int mid, vector<int> &tmp)//注意&
 {
 	int i = start;
 	int j = mid + 1;
@@ -68,6 +132,24 @@ int main()
 	merge(arr, 9);
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

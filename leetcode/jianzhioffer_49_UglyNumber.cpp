@@ -26,3 +26,37 @@ public:
         return res[index-1];
     }
 };
+
+
+//复习
+class Solution {
+public:
+	int GetUglyNumber_Solution(int index) {
+		if (index <= 0)
+		{
+			return 0;
+		}
+		vector<int> nums;
+		nums.push_back(1);
+		int i2 = 0, i3 = 0, i5 = 0;
+		for (int i = 1; i<index; ++i)
+		{
+			int m2 = nums[i2] * 2, m3 = nums[i3] * 3, m5 = nums[i5] * 5;
+			int minnum = min(m2, min(m3, m5));
+			if (minnum == m2)
+			{
+				++i2;
+			}
+			if (minnum == m3)
+			{
+				++i3;
+			}
+			if (minnum == m5)
+			{
+				++i5;
+			}
+			nums.push_back(minnum);
+		}
+		return nums.back();
+	}
+};
