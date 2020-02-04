@@ -1,4 +1,4 @@
-//防止特殊数据有下沉过程的冒泡
+//防止特殊数据有上浮下沉过程的冒泡
 void bubblesort(vector<int> &arr)
 {
 	bool flag = true;
@@ -16,7 +16,7 @@ void bubblesort(vector<int> &arr)
 			}
 		}
 		--end;
-		//下沉过程
+		//上浮过程
 		//防止特殊数据，例： 2 3 4 5 1
 		for (int j = end - 1; j >= begin; --j)
 		{
@@ -36,11 +36,11 @@ void bubblesort(vector<int> &arr)
 void bubblesort(vector<int> &arr)
 {
 	bool flag = true;
-	int len = arr.size();
+	int end = arr.size();
 	while (flag)
 	{
 		flag = false;
-		for (int j = 1; j < len; ++j)
+		for (int j = 1; j < end; ++j)
 		{
 			if (arr[j] < arr[j - 1])
 			{
@@ -48,7 +48,7 @@ void bubblesort(vector<int> &arr)
 				flag = true;
 			}
 		}
-		--len;
+		--end;
 	}
 }
 
