@@ -55,3 +55,60 @@ public:
         return res;
     }
 };
+
+
+
+//复习
+class Solution {
+public:
+	int LastRemaining_Solution(int n, int m)
+	{
+		if (n == 0)
+		{
+			return -1;//没有小朋友的情况
+		}
+		list<int> nums;
+		for (int i = 0; i<n; ++i)
+		{
+			nums.push_back(i);
+		}
+		auto cur = nums.begin();
+		while (nums.size()>1)
+		{
+			for (int i = 0; i<m - 1; ++i)//注意是<m-1
+			{
+				++cur;
+				if (cur == nums.end())
+				{
+					cur = nums.begin();
+				}
+			}
+			auto next = ++cur;
+			if (next == nums.end())
+			{
+				next = nums.begin();
+			}
+			--cur;
+			nums.erase(cur);
+			cur = next;
+		}
+		return *cur;//注意返回*cur不是cur
+	}
+};
+
+class Solution {
+public:
+	int LastRemaining_Solution(int n, int m)
+	{
+		if (n == 0 || m == 0)
+		{
+			return -1;
+		}
+		int res = 0;
+		for (int i = 2; i <= n; ++i)
+		{
+			res = (res + m) % i;
+		}
+		return res;
+	}
+};

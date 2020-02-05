@@ -17,7 +17,7 @@ void bucketsort(vector<int> &arr, int bucketSize)//bucketSize是桶的大小
 			maxValue = arr[i];
 		}
 	}
-	int bucketCount = (maxValue - minValue) / bucketSize + 1;//bucketCount是桶的数量，注意要加1，比如arr={1,2}，bucketsize=1，则count要为2
+	int bucketCount = (maxValue - minValue) / bucketSize + 1;//bucketCount是桶的数量，注意要加1，比如arr={1,2}，bucketsize=1，则count要为2；再比如0,1,2,3,4,5,6，bucketsize=2； (maxValue - minValue) / bucketSize=3；要装7个数必须加1
 	vector<vector<int>> buckets(bucketCount, vector<int>());
 	// 利用映射函数将数据分配到各个桶中
 	for (int i = 0; i < arr.size(); i++)
@@ -28,7 +28,7 @@ void bucketsort(vector<int> &arr, int bucketSize)//bucketSize是桶的大小
 	int arrIndex = 0;
 	for (int i = 0; i<buckets.size(); ++i)
 	{
-		if (buckets[i].size() <= 0)//如果是空桶跳过
+		if (buckets[i].size() <= 0)//如果是空桶跳过！！！！
 		{
 			continue;
 		}

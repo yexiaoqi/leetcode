@@ -34,3 +34,36 @@ public:
         return res;
     }
 };
+
+
+//复习
+class Solution {
+public:
+	vector<vector<int> > FindContinuousSequence(int sum) {
+		int small = 1, big = 2;
+		vector<vector<int>> res;
+		while (small <= sum / 2)
+		{
+			int tmp = (small + big)*(big - small + 1) / 2;
+			if (tmp == sum)
+			{
+				vector<int> save;
+				for (int i = small; i <= big; ++i)
+				{
+					save.push_back(i);
+				}
+				res.push_back(save);
+				++big;
+			}
+			else if (tmp<sum)
+			{
+				++big;
+			}
+			else
+			{
+				++small;
+			}
+		}
+		return res;
+	}
+};
