@@ -839,5 +839,8 @@
     <ClCompile Include="paixu_heapsort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="4.Median of Two Sorted Arrays .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

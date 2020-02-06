@@ -25,7 +25,7 @@ public:
 			}
 			us.insert(n);
 		}
-		return false;//一定要加个返回，虽然不会运行到这里，但是在编译之前不会运行，所以要给个return的样子
+		return false;//一定要加个返回，虽然不会运行到这里，但是在编译之前不会运行，所以要给个return的样子（因为这里只有if没有ifelse结构）
 	}
 };
 

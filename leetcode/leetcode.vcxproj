@@ -271,6 +271,7 @@
     <ClCompile Include="384.Shuffle an Array .cpp" />
     <ClCompile Include="387.First Unique Character in a String.cpp" />
     <ClCompile Include="395.Longest Substring with At Least K Repeating Characters .cpp" />
+    <ClCompile Include="4.Median of Two Sorted Arrays .cpp" />
     <ClCompile Include="40. Combination Sum II.cpp" />
     <ClCompile Include="402. Remove K Digits.cpp" />
     <ClCompile Include="409. Longest Palindrome.cpp" />
