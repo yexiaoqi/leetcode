@@ -249,6 +249,7 @@
     <ClCompile Include="289.Game of Life.cpp" />
     <ClCompile Include="29. Divide Two Integers.cpp" />
     <ClCompile Include="290. Word Pattern.cpp" />
+    <ClCompile Include="297.Serialize and Deserialize Binary Tree.cpp" />
     <ClCompile Include="3. Longest Substring Without Repeating Characters.cpp" />
     <ClCompile Include="300.Longest Increasing Subsequence .cpp" />
     <ClCompile Include="31.Next Permutation.cpp" />

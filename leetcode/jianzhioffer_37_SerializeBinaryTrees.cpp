@@ -1,3 +1,4 @@
+//同leetcode297
 /*
 struct TreeNode {
 int val;
@@ -8,6 +9,7 @@ val(x), left(NULL), right(NULL) {
 }
 };
 */
+//这一版解法好像没有考虑节点值为负数的情况，看leetcode297
 class Solution {
 public:
 	char* Serialize(TreeNode *root) {
