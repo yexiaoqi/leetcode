@@ -33,3 +33,30 @@ public:
 	}
 
 };
+
+
+//复习，简单，一遍ac
+class Solution {
+public:
+	bool isSymmetrical(TreeNode* pRoot)
+	{
+		if (!pRoot)
+		{
+			return true;
+		}
+		return isSym(pRoot->left, pRoot->right);
+	}
+	bool isSym(TreeNode *left, TreeNode *right)
+	{
+		if (!left && !right)
+		{
+			return true;
+		}
+		if ((!left&&right) || (left && !right) || (left->val != right->val))
+		{
+			return false;
+		}
+		return isSym(left->left, right->right) && isSym(left->right, right->left);
+	}
+
+};

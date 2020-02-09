@@ -74,3 +74,36 @@ public:
 		return 1 + countnode(root->left) + countnode(root->right);
 	}
 };
+
+
+//复习，自己做出，一遍ac
+class Solution {
+public:
+	TreeNode* KthNode(TreeNode* root, int k)
+	{
+		if (k <= 0 || !root)
+		{
+			return NULL;
+		}
+		int cnt = 0;
+		TreeNode *res = NULL;
+		KthNode(root, k, cnt, res);
+		return res;
+	}
+	void KthNode(TreeNode* root, int k, int &cnt, TreeNode *&res)
+	{
+		if (!root)
+		{
+			return;
+		}
+		KthNode(root->left, k, cnt, res);
+		++cnt;
+		if (cnt == k)
+		{
+			res = root;
+			return;
+		}
+		KthNode(root->right, k, cnt, res);
+	}
+
+};

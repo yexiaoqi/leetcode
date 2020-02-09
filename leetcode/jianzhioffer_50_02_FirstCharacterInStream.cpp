@@ -31,3 +31,31 @@ private:
 	queue<char> data;
 	int cnt[128];
 };
+
+
+//复习，一遍ac，用这种写法好
+class Solution
+{
+public:
+	//Insert one char from stringstream
+	void Insert(char ch)
+	{
+		++m[ch];
+		str += ch;
+	}
+	//return the first appearence once char in current stringstream
+	char FirstAppearingOnce()
+	{
+		for (int i = 0; i<str.size(); ++i)
+		{
+			if (m[str[i]] == 1)
+			{
+				return str[i];
+			}
+		}
+		return '#';
+	}
+private:
+	unordered_map<int, int> m;
+	string str;
+};
