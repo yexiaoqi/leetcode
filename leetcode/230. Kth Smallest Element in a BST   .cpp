@@ -148,3 +148,85 @@ public:
 		return helper(node, k);
 	}
 };
+
+
+//¸´Ï°
+/**
+* Definition for a binary tree node.
+* struct TreeNode {
+*     int val;
+*     TreeNode *left;
+*     TreeNode *right;
+*     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+* };
+*/
+struct NewTreeNode
+{
+	int val;
+	int cnt;
+	NewTreeNode *left;
+	NewTreeNode *right;
+	NewTreeNode(int v, int c) :val(v), cnt(c), left(NULL), right(NULL) {}
+};
+class Solution {
+public:
+	NewTreeNode* BuildTree(TreeNode *root)
+	{
+		if (!root)
+		{
+			return NULL;
+		}
+		NewTreeNode *node = new NewTreeNode(root->val, 1);
+		node->left = BuildTree(root->left);
+		node->right = BuildTree(root->right);
+		if (node->left)
+		{
+			node->cnt += node->left->cnt;
+		}
+		if (node->right)
+		{
+			node->cnt += node->right->cnt;
+		}
+		return node;
+	}
+	int helper(NewTreeNode* node, int k)
+	{
+		if (node->left)
+		{
+			int cnt = node->left->cnt;
+			if (cnt == k - 1)
+			{
+				return node->val;
+			}
+			else if (cnt>k - 1)
+			{
+				return helper(node->left, k);
+			}
+			else
+			{
+				return helper(node->right, k - cnt - 1);
+			}
+		}
+		else
+		{
+			if (k == 1)
+			{
+				return node->val;
+			}
+			else
+			{
+				return helper(node->right, k - 1);
+			}
+
+		}
+	}
+	int kthSmallest(TreeNode* root, int k) {
+		if (k <= 0 || !root)
+		{
+			return -1;
+		}
+		NewTreeNode* node = BuildTree(root);
+		return helper(node, k);
+	}
+
+};
