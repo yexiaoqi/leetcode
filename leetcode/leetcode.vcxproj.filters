@@ -845,5 +845,11 @@
     <ClCompile Include="297.Serialize and Deserialize Binary Tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="437. Path Sum III .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="44.Wildcard Matching.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

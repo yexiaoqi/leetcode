@@ -1,3 +1,4 @@
+//，基本思想为每一趟从待排序的数据元素中选择最小（或最大）的一个元素作为首元素
 void selectsort(vector<int> &arr)
 {
 	for (int i = 0; i < arr.size(); ++i)

@@ -277,6 +277,8 @@
     <ClCompile Include="402. Remove K Digits.cpp" />
     <ClCompile Include="409. Longest Palindrome.cpp" />
     <ClCompile Include="412.Fizz Buzz.cpp" />
+    <ClCompile Include="437. Path Sum III .cpp" />
+    <ClCompile Include="44.Wildcard Matching.cpp" />
     <ClCompile Include="445. Add Two Numbers II.cpp" />
     <ClCompile Include="449. Serialize and Deserialize BST.cpp" />
     <ClCompile Include="45. Jump Game II.cpp" />

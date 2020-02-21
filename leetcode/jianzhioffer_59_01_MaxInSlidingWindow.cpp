@@ -67,3 +67,35 @@ public:
 		return res;
 	}
 };
+
+
+//复习，自己做出，要仔细
+class Solution {
+public:
+	vector<int> maxInWindows(const vector<int>& nums, unsigned int size)
+	{
+		if (size <= 0 || size>nums.size())
+		{
+			return vector<int>();
+		}
+		deque<int> dq;
+		vector<int> res;
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			while (!dq.empty() && nums[i]>nums[dq.back()])
+			{
+				dq.pop_back();
+			}
+			if (!dq.empty() && i - dq.front() >= size)
+			{
+				dq.pop_front();
+			}
+			dq.push_back(i);
+			if (i >= size - 1)//注意size - 1
+			{
+				res.push_back(nums[dq.front()]);
+			}
+		}
+		return res;
+	}
+};

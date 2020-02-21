@@ -1,4 +1,5 @@
 //https://www.cnblogs.com/TenosDoIt/p/3665038.html
+//快速排序简单的说就是选择一个基准，将比基准大的数放在一边，小的数放到另一边。对这个数的两边再递归上述方法。
 //标准一点的写法
 int mypartition(vector<int>&arr, int low, int high)
 {
@@ -24,6 +25,36 @@ void quicksort(vector<int>&arr, int low, int high)
 	}
 }
 
+
+//自己比较习惯begin end
+int partition(vector<int> &arr, int begin, int end)
+{
+	int key = arr[begin];
+	while (begin<end)
+	{
+		while (begin<end&&arr[end] >= key)
+		{
+			--end;
+		}
+		arr[begin] = arr[end];
+		while (begin<end&&arr[begin] <= key)
+		{
+			++begin;
+		}
+		arr[end] = arr[begin];
+	}
+	arr[begin] = key;
+	return begin;
+}
+void quicksort(vector<int> &arr, int begin, int end)
+{
+	if (begin<end)
+	{
+		int mid = partition(arr, begin, end);
+		quicksort(arr, begin, mid - 1);
+		quicksort(arr, mid + 1, end);
+	}
+}
 
 
 
