@@ -63,14 +63,12 @@ public:
 				}
 				int cnt = j - i;
 				int tmp = array[j];
-				//array[i]=array[j];
 				while (cnt)
 				{
 					array[i + cnt] = array[i + cnt - 1];
 					--cnt;
 				}
 				array[i] = tmp;
-				//array[i+1]=tmp;
 			}
 			++i;
 		}

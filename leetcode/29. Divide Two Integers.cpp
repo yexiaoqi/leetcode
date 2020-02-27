@@ -30,7 +30,7 @@ public:
 	}
 };
 
-//正确方法
+//正确方法，颇有海盗黄金那道题的感觉，本质就是一个数最少用多少数表示，都是应该用二进制去表示
 class Solution {
 public:
 	int divide(int dividend, int divisor) {
@@ -61,5 +61,33 @@ public:
 			res = -res;
 		}
 		return res;
+	}
+};
+
+
+//复习
+class Solution {
+public:
+	int divide(int dividend, int divisor) {
+		if (dividend == INT_MIN&&divisor == -1)
+		{
+			return INT_MAX;
+		}
+		long m = labs(dividend), n = labs(divisor);
+		int flag = (dividend>0) ^ (divisor>0) ? -1 : 1;
+		long res = 0;
+		while (m >= n)
+		{
+			long t = n, p = 1;
+			while (m >= (t << 1))
+			{
+				t <<= 1;
+				p <<= 1;
+			}
+			res += p;
+			m -= t;
+		}
+
+		return flag == 1 ? res : -res;
 	}
 };

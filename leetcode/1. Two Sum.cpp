@@ -61,3 +61,29 @@ public:
 		return res;
 	}
 };
+
+
+//复习2
+class Solution {
+public:
+	vector<int> twoSum(vector<int>& nums, int target) {
+		unordered_map<int, int> m;
+		vector<int> res(2, -1);
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			m[nums[i]] = i;//比如[3,3]，先建立m[3]=0,后面又更新为m[3]=1
+		}
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			int gap = target - nums[i];
+			if (m.count(gap) && i != m[gap])//不能用下面m[nums[i]]
+											//if(m.count(gap)&&m[nums[i]]!=m[gap])
+			{
+				res[0] = i;
+				res[1] = m[gap];
+				return res;
+			}
+		}
+		return res;
+	}
+};

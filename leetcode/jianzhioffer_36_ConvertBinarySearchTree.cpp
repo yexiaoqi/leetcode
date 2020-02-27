@@ -75,5 +75,4 @@ public:
 		last = root;
 		ConvertNode(root->right, last);
 	}
-
 };

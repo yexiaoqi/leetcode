@@ -851,5 +851,29 @@
     <ClCompile Include="44.Wildcard Matching.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="754.Reach a Number  .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="knapsack01.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="knapsack_complete.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="knapscak_multi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="googlemianshi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="167.Two Sum II - Input array is sorted.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="653.Two Sum IV - Input is a BST .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="43Multiply Strings.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

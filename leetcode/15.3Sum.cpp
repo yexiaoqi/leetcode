@@ -150,3 +150,66 @@ public:
 		return res;
 	}
 };
+
+
+
+//复习
+class Solution {
+public:
+	vector<vector<int>> threeSum(vector<int>& nums) {
+		if (nums.size()<3)
+		{
+			return vector<vector<int>>();
+		}
+		sort(nums.begin(), nums.end());
+		if (nums[0]>0 || nums[nums.size() - 1]<0)
+		{
+			return vector<vector<int>>();
+		}
+		vector<vector<int>> res;
+		//set<vector<int>> res_set;
+		for (int i = 0; i<nums.size() - 2; ++i)
+		{
+			if (nums[i]>0)
+			{
+				break;
+			}
+			if (i>0 && nums[i] == nums[i - 1])
+				//if(nums[i]==nums[i+1])//比如-1，-1,2，不能用nums[i]==nums[i+1]判断这样就没有解了
+			{
+				continue;//不能都交给set去重，否则复杂度太高
+			}
+			int target = -nums[i];
+			int begin = i + 1, end = nums.size() - 1;
+			while (begin<end)
+			{
+				int sum = nums[begin] + nums[end];
+				if (sum == target)
+				{
+					//res_set.insert({nums[i],nums[begin],nums[end]});
+					res.push_back({ nums[i],nums[begin],nums[end] });
+					while (begin<end&&nums[begin] == nums[begin + 1])//要保证begin<end
+					{
+						++begin;
+					}
+					while (begin<end&&nums[end] == nums[end - 1])
+					{
+						--end;
+					}
+					++begin;
+					--end;
+				}
+				else if (sum<target)
+				{
+					++begin;
+				}
+				else
+				{
+					--end;
+				}
+			}
+		}
+		return res;
+		//return vector<vector<int>>(res_set.begin(),res_set.end());
+	}
+};

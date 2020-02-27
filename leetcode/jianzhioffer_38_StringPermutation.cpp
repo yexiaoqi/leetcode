@@ -77,5 +77,4 @@ public:
 			marker[i] = 0;
 		}
 	}
-
 };

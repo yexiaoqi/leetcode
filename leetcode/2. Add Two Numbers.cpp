@@ -199,3 +199,45 @@ public:
 		return dummy->next;
 	}
 };
+
+
+//复习3
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+		ListNode *dummy = new ListNode(-1);
+		ListNode *cur = dummy;
+		int sum = 0, carry = 0;
+		while (l1 || l2)
+		{
+			int val1 = l1 ? l1->val : 0;
+			int val2 = l2 ? l2->val : 0;
+			sum = val1 + val2 + carry;
+			cur->next = new ListNode(sum % 10);//不能写成ListNode *cur=dummy->next;cur=new ListNode(sum%10),因为这样cur又变成一个新建的节点，和前面没啥关系了;
+			carry = sum / 10;
+			cur = cur->next;
+			if (l1)
+			{
+				l1 = l1->next;
+			}
+			if (l2)
+			{
+				l2 = l2->next;
+			}
+		}
+		if (carry)
+		{
+			cur->next = new ListNode(carry);
+			cur = cur->next;
+		}
+		return dummy->next;
+	}
+};

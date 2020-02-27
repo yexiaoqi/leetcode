@@ -79,3 +79,51 @@ public:
 		return res;
 	}
 };
+
+
+//复习
+//实际上不用先转成正数
+class Solution {
+public:
+	int reverse(int x) {
+		int flag = x >= 0 ? 1 : 0;
+		long newx = labs(x);//如果要转为正数必须用labs而不能用abs，否则溢出
+		long res = 0;
+		while (newx)
+		{
+			if (res>INT_MAX / 10 || ((res == INT_MAX / 10) && (newx % 10 + flag>8)))
+			{
+				return 0;
+			}
+			res = res * 10 + newx % 10;
+			newx /= 10;
+		}
+		if (!flag)
+		{
+			res = -res;
+		}
+		return res;
+	}
+};
+
+
+enum Status { Valid = 0, Invalid };
+int g_status = Valid;
+class Solution {
+public:
+	int reverse(int x) {
+		int flag = x >= 0 ? 1 : 0;
+		int res = 0;
+		while (x)
+		{
+			if (abs(res)>INT_MAX / 10 || ((res == INT_MAX / 10) && (x % 10 + flag>8)))//注意abs
+			{
+				g_status = Invalid;
+				return 0;
+			}
+			res = res * 10 + x % 10;
+			x /= 10;
+		}
+		return res;
+	}
+};
