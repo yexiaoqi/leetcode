@@ -101,6 +101,61 @@ public:
 };
 
 
+
+class Solution {
+public:
+	int search(vector<int>&nums, int target)
+	{
+		if (nums.size() == 0)
+		{
+			return -1;
+		}
+		int begin = 0, end = nums.size() - 1;
+		while (begin < end)
+		{
+			int mid = (begin + end) / 2;
+			if (nums[mid] < nums[end])
+			{
+				if (target == nums[mid])
+				{
+					return mid;
+				}
+				else if (target < nums[mid])
+				{
+					end = mid - 1;
+				}
+				else
+				{
+					if (target < nums[mid])
+					{
+						end = mid - 1;
+					}
+					else
+					{
+						begin = mid + 1;
+					}
+				}
+			}
+			else
+			{
+				if (target == nums[mid])
+				{
+					return mid;
+				}
+				else if (target > mid)
+				{
+					begin = mid + 1;
+				}
+				else
+				{
+					end = mid - 1;
+				}
+			}
+		}
+		return -1;
+	}
+	
+};
 //¸´Ï°
 //×Ô¼ºĞ´µÄ£¬Ò»±éac
 class Solution {
@@ -143,6 +198,64 @@ public:
 					return mid;
 				}
 				else if (target>nums[mid])
+				{
+					begin = mid + 1;
+				}
+				else
+				{
+					if (target<nums[begin])
+					{
+						begin = mid + 1;
+					}
+					else
+					{
+						end = mid - 1;
+					}
+				}
+			}
+		}
+		return -1;
+	}
+};
+
+
+//¸´Ï°
+class Solution {
+public:
+	int search(vector<int>& nums, int target) {
+		int begin = 0, end = nums.size() - 1;
+		while (begin <= end)
+		{
+			int mid = (begin + end) / 2;
+			if (nums[mid]<nums[end])
+			{
+				if (nums[mid] == target)
+				{
+					return mid;
+				}
+				else if (nums[mid]>target)
+				{
+					end = mid - 1;
+				}
+				else
+				{
+					if (target>nums[end])
+					{
+						end = mid - 1;
+					}
+					else
+					{
+						begin = mid + 1;
+					}
+				}
+			}
+			else
+			{
+				if (nums[mid] == target)
+				{
+					return mid;
+				}
+				else if (nums[mid]<target)
 				{
 					begin = mid + 1;
 				}

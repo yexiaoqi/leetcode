@@ -277,6 +277,7 @@
     <ClCompile Include="40. Combination Sum II.cpp" />
     <ClCompile Include="402. Remove K Digits.cpp" />
     <ClCompile Include="409. Longest Palindrome.cpp" />
+    <ClCompile Include="41.First Missing Positive .cpp" />
     <ClCompile Include="412.Fizz Buzz.cpp" />
     <ClCompile Include="43Multiply Strings.cpp" />
     <ClCompile Include="437. Path Sum III .cpp" />

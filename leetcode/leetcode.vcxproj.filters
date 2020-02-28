@@ -875,5 +875,8 @@
     <ClCompile Include="43Multiply Strings.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="41.First Missing Positive .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
