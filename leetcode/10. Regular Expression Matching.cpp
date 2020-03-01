@@ -106,3 +106,41 @@ public:
 		}
 	}
 };
+
+//复习3
+class Solution {
+public:
+	bool isMatch(string s, string p) {
+		if (p.empty())
+		{
+			return s.empty();
+		}
+		else if (p.size() == 1)
+		{
+			return s.size() == 1 && (p[0] == s[0] || p[0] == '.');
+		}
+		else if (p[1] != '*')
+		{
+			if (s.size() >= 1 && (p[0] == s[0] || p[0] == '.'))
+			{
+				return isMatch(s.substr(1), p.substr(1));
+			}
+			else
+			{
+				return false;
+			}
+		}
+		else
+		{
+			if (s.size() >= 1 && (p[0] == s[0] || p[0] == '.'))
+			{
+				return isMatch(s.substr(1), p) || isMatch(s, p.substr(2));
+				//p.substr(2)是去匹配0个，p是去匹配多个
+			}
+			else
+			{
+				return isMatch(s, p.substr(2));
+			}
+		}
+	}
+};

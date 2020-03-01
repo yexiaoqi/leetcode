@@ -11,6 +11,7 @@
 //	Input : haystack = "aaaaa", needle = "bba"
 //	Output : -1
 
+//O(mn)时间复杂度方法
 class Solution
 {
 public:
@@ -39,6 +40,41 @@ public:
 		return -1;
 	}
 };
+
+//O(m+n）时间复杂度方法，KMP算法
+//https://www.cnblogs.com/grandyang/p/6992403.html
+class Solution {
+public:
+	vector<int> getNext(string p) {
+		int n = p.size(), k = -1, j = 0;
+		vector<int> next(n, -1);
+		while (j < n - 1) {
+			if (k == -1 || p[j] == p[k]) {
+				++k; ++j;
+				next[j] = (p[j] != p[k]) ? k : next[k];
+			}
+			else {
+				k = next[k];
+			}
+		}
+		return next;
+	}
+	int strStr(string s, string p) {
+		int m = s.size(), n = p.size(), i = 0, j = 0;
+		vector<int> next = getNext(p);
+		while (i < m && j < n) {
+			if (j == -1 || s[i] == p[j]) {
+				++i; ++j;
+			}
+			else {
+				j = next[j];
+			}
+		}
+		return (j == n) ? i - j : -1;
+	}
+};
+
+
 
 //复习
 //自己写的方法
@@ -147,5 +183,38 @@ public:
 		//     }
 		// }
 		// return -1;
+	}
+};
+
+
+//复习
+class Solution {
+public:
+	int strStr(string haystack, string needle) {
+		int m = haystack.size(), n = needle.size();
+		if (!n)
+		{
+			return 0;
+		}
+		if (m<n)
+		{
+			return -1;
+		}
+		for (int i = 0; i <= m - n; ++i)
+		{
+			int j = 0;
+			for (j = 0; j<n; ++j)
+			{
+				if (haystack[i + j] != needle[j])
+				{
+					break;
+				}
+			}
+			if (j == n)
+			{
+				return i;
+			}
+		}
+		return -1;
 	}
 };

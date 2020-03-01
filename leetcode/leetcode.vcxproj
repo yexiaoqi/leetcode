@@ -279,6 +279,7 @@
     <ClCompile Include="409. Longest Palindrome.cpp" />
     <ClCompile Include="41.First Missing Positive .cpp" />
     <ClCompile Include="412.Fizz Buzz.cpp" />
+    <ClCompile Include="42.Trapping Rain Water .cpp" />
     <ClCompile Include="43Multiply Strings.cpp" />
     <ClCompile Include="437. Path Sum III .cpp" />
     <ClCompile Include="44.Wildcard Matching.cpp" />

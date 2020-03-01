@@ -145,3 +145,39 @@ public:
 		// }
 	}
 };
+
+//¸´Ï°
+class Solution {
+public:
+	vector<vector<int>> permute(vector<int>& nums) {
+		if (nums.size() == 0)
+		{
+			return vector<vector<int>>();
+		}
+		vector<int> path;
+		vector<vector<int>> res;
+		vector<int> marker(nums.size(), 0);
+		permute2(nums, path, res, marker);
+		return res;
+	}
+	void permute2(vector<int>& nums, vector<int> &path, vector<vector<int>> &res, vector<int> &marker)
+	{
+		if (path.size() == nums.size())
+		{
+			res.push_back(path);
+			return;
+		}
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			if (marker[i] == 0)
+			{
+				marker[i] = 1;
+				path.push_back(nums[i]);
+				permute2(nums, path, res, marker);
+				path.pop_back();
+				marker[i] = 0;
+			}
+		}
+	}
+
+};

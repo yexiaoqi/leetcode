@@ -93,3 +93,76 @@ public:
 		return false;
 	}
 };
+
+//复习2，自己写的有两重循环
+class Solution {
+public:
+	bool canJump(vector<int>& nums) {
+		int n = nums.size();
+		if (n == 0)
+		{
+			return true;
+		}
+		vector<int> maxlen;
+		for (int i = 0; i<n; ++i)
+		{
+			maxlen.push_back(nums[i] + i);
+		}
+		int len = maxlen[0];
+		//while(i<n)
+		for (int i = 0; i<n; ++i)
+		{
+			if (len >= n - 1)
+			{
+				return true;
+			}
+			for (int j = i + 1; j <= maxlen[i]; ++j)
+			{
+				if (len<maxlen[j])
+				{
+					len = maxlen[j];
+				}
+				if (len >= n - 1)
+				{
+					return true;
+				}
+			}
+			if (len == i)
+			{
+				return false;
+			}
+			//i=len;
+		}
+		return true;
+	}
+};
+
+//复习，一遍遍历
+class Solution {
+public:
+	bool canJump(vector<int>& nums) {
+		if (nums.size() == 0)
+		{
+			return true;
+		}
+		vector<int> index(nums.size(), 0);
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			index[i] = nums[i] + i;
+		}
+		int jump = 0, res = index[0];
+		while (jump<nums.size() && jump <= res)
+		{
+			if (index[jump]>res)
+			{
+				res = index[jump];
+			}
+			++jump;
+		}
+		if (res >= nums.size() - 1)
+		{
+			return true;
+		}
+		return false;
+	}
+};
