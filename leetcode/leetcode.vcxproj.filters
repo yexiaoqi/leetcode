@@ -881,5 +881,11 @@
     <ClCompile Include="42.Trapping Rain Water .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="124.Binary Tree Maximum Path Sum .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="212.Word Search II .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

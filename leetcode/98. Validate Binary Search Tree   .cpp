@@ -30,7 +30,7 @@ public:
 };
 
 
-//方法二
+//方法二，二叉搜索树容易想到用中序遍历
 class Solution {
 public:
 	bool isValidBST(TreeNode* root) {
@@ -60,4 +60,52 @@ public:
 		isvalid(root->right, res);
 	}
 
+};
+
+
+//复习
+class Solution {
+public:
+	bool isValidBST(TreeNode* root) {
+		return isValid(root, LONG_MIN, LONG_MAX);
+	}
+	bool isValid(TreeNode* root, long mn, long mx)
+	{
+		if (!root)
+		{
+			return true;
+		}
+		if (root->val <= mn || root->val >= mx)
+		{
+			return false;
+		}
+		return isValid(root->left, mn, root->val) && isValid(root->right, root->val, mx);
+	}
+};
+
+//复习
+class Solution {
+public:
+	bool isValidBST(TreeNode* root) {
+		vector<int> res;
+		MakeVec(root, res);
+		for (int i = 1; i<res.size(); ++i)
+		{
+			if (res[i] <= res[i - 1])//注意=也是不行的
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+	void MakeVec(TreeNode* root, vector<int> &res)
+	{
+		if (!root)
+		{
+			return;
+		}
+		MakeVec(root->left, res);
+		res.push_back(root->val);
+		MakeVec(root->right, res);
+	}
 };

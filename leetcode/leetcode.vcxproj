@@ -149,7 +149,9 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="124.Binary Tree Maximum Path Sum .cpp" />
     <ClCompile Include="167.Two Sum II - Input array is sorted.cpp" />
+    <ClCompile Include="212.Word Search II .cpp" />
     <ClCompile Include="295.Find Median from Data Stream.cpp" />
     <ClCompile Include="0.record.cpp" />
     <ClCompile Include="1. Two Sum.cpp" />

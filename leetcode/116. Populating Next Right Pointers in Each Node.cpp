@@ -200,3 +200,29 @@ public:
 		return root;
 	}
 };
+
+//复习
+class Solution {
+public:
+	Node* connect(Node* root) {
+		connect2(root);
+		return root;
+	}
+	void connect2(Node* root)
+	{
+		if (!root)
+		{
+			return;
+		}
+		if (root->left)//要先判断(root->left
+		{
+			root->left->next = root->right;
+			if (root->next)//这个得在if(root->left)内
+			{
+				root->right->next = root->next->left;
+			}
+		}
+		connect2(root->left);
+		connect2(root->right);
+	}
+};

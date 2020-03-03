@@ -178,3 +178,45 @@ public:
 		levels(root->right, res, level + 1);
 	}
 };
+
+
+//¼òµ¥
+/**
+* Definition for a binary tree node.
+* struct TreeNode {
+*     int val;
+*     TreeNode *left;
+*     TreeNode *right;
+*     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+* };
+*/
+class Solution {
+public:
+	vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+		vector<vector<int>> res;
+		int depth = 0;
+		zigzag(root, res, depth);
+		for (int i = 0; i<res.size(); ++i)
+		{
+			if (i & 0x1)
+			{
+				reverse(res[i].begin(), res[i].end());
+			}
+		}
+		return res;
+	}
+	void zigzag(TreeNode* root, vector<vector<int>> &res, int depth)
+	{
+		if (!root)
+		{
+			return;
+		}
+		if (res.size() == depth)
+		{
+			res.push_back(vector<int>());
+		}
+		res[depth].push_back(root->val);
+		zigzag(root->left, res, depth + 1);
+		zigzag(root->right, res, depth + 1);
+	}
+};
