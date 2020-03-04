@@ -5,9 +5,10 @@
 //还要加上当前结点值，这样就组成了一个条完整的路径。
 //而返回值是取 left 和 right 中的较大值加上当前结点值，因为返回值的定义是以当前结点为终点的 path 之和，
 //所以只能取 left 和 right 中较大的那个值，而不是两个都要
+class Solution {
 public:
 	int maxPathSum(TreeNode* root) {
-		int maxres = 0;
+		int maxres = INT_MIN;
 		if (!root)
 		{
 			return maxres;
@@ -19,11 +20,11 @@ public:
 	{
 		if (!root)
 		{
-			return;
+			return 0;
 		}
 		int left = max(maxPath(root->left, res), 0);
 		int right = max(maxPath(root->right, res), 0);
 		res = max(res, left + right + root->val);
 		return max(left, right) + root->val;
 	}
-};
+};;

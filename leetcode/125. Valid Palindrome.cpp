@@ -98,3 +98,67 @@ public:
 		return true;
 	}
 };
+
+
+//¸´Ï°
+class Solution {
+public:
+	bool isPalindrome(string s) {
+		string revs = s;
+		reverse(revs.begin(), revs.end());
+		int i = 0, j = 0;
+		while (i<s.size())
+		{
+			while (i<s.size() && !isalnum(s[i]))
+			{
+				++i;
+			}
+			while (j<revs.size() && !isalnum(revs[j]))
+			{
+				++j;
+			}
+			if (toupper(s[i]) != toupper(revs[j]))
+			{
+				return false;
+			}
+			else
+			{
+				++i; ++j;
+			}
+		}
+		return true;
+	}
+};
+
+//¸´Ï°
+class Solution {
+public:
+	bool isPalindrome(string s) {
+		if (s.empty())
+		{
+			return true;
+		}
+		int begin = 0, end = s.size() - 1;
+		while (begin<end)
+		{
+			while (begin<end && !isalnum(s[begin]))
+			{
+				++begin;
+			}
+			while (begin<end && !isalnum(s[end]))
+			{
+				--end;
+			}
+			if (toupper(s[begin]) != toupper(s[end]))
+			{
+				return false;
+			}
+			else
+			{
+				++begin;
+				--end;
+			}
+		}
+		return true;
+	}
+};

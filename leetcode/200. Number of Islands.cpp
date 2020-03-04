@@ -199,3 +199,101 @@ public:
 		}
 	}
 };
+
+//复习
+class Solution {
+public:
+	int numIslands(vector<vector<char>>& grid) {
+		if (grid.size() == 0 || grid[0].size() == 0)
+		{
+			return 0;
+		}
+		vector<vector<int>> marker(grid.size(), vector<int>(grid[0].size(), 0));
+		int res = 0;
+		for (int i = 0; i<grid.size(); ++i)
+		{
+			for (int j = 0; j<grid[0].size(); ++j)
+			{
+				if (grid[i][j] == '1'&&marker[i][j] == 0)
+				{
+					FindIslands(grid, marker, i, j);
+					++res;
+				}
+			}
+		}
+		return res;
+	}
+	void FindIslands(vector<vector<char>> &grid, vector<vector<int>> &marker, int x, int y)
+	{
+		marker[x][y] = 1;
+		int dx[4] = { 1,-1,0,0 };
+		int dy[4] = { 0,0,1,-1 };
+		for (int i = 0; i<4; ++i)
+		{
+			int newx = x + dx[i];
+			int newy = y + dy[i];
+			if (newx<0 || newy<0 || newx >= grid.size() || newy >= grid[0].size())
+			{
+				continue;
+			}
+			if (grid[newx][newy] == '1'&&marker[newx][newy] == 0)
+			{
+				FindIslands(grid, marker, newx, newy);
+			}
+		}
+		//marker[x][y]=0;//它不要遍历路径，不能再赋值为0，否则有几个1，res就是及了
+	}
+};
+
+//复习
+class Solution {
+public:
+	int numIslands(vector<vector<char>>& grid) {
+		if (grid.size() == 0 || grid[0].size() == 0)
+		{
+			return 0;
+		}
+		vector<vector<int>> marker(grid.size(), vector<int>(grid[0].size(), 0));
+		int res = 0;
+		for (int i = 0; i<grid.size(); ++i)
+		{
+			for (int j = 0; j<grid[0].size(); ++j)
+			{
+				if (grid[i][j] == '1'&&marker[i][j] == 0)
+				{
+					FindIslands(grid, marker, i, j);
+					++res;
+				}
+			}
+		}
+		return res;
+	}
+	void FindIslands(vector<vector<char>> &grid, vector<vector<int>> &marker, int x, int y)
+	{
+		queue<pair<int, int>> q;
+		q.push(make_pair(x, y));
+		marker[x][y] = 1;
+		while (!q.empty())
+		{
+			int x = q.front().first;
+			int y = q.front().second;
+			q.pop();
+			int dx[4] = { 1,-1,0,0 };
+			int dy[4] = { 0,0,1,-1 };
+			for (int i = 0; i<4; ++i)
+			{
+				int newx = x + dx[i];
+				int newy = y + dy[i];
+				if (newx<0 || newx >= grid.size() || newy<0 || newy >= grid[0].size())
+				{
+					continue;
+				}
+				if (grid[newx][newy] == '1'&&marker[newx][newy] == 0)
+				{
+					q.push(make_pair(newx, newy));
+					marker[newx][newy] = 1;
+				}
+			}
+		}
+	}
+};

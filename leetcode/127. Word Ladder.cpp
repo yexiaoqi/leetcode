@@ -1,4 +1,5 @@
 //这样写要运行884ms
+//图的方法
 class Solution {
 public:
 	bool connect(string &word1, string &word2)//注意这边传引用，不传引用很慢
@@ -67,6 +68,59 @@ public:
 };
 
 
+
+//BFS
+//需要一个队列queue，把起始单词排入队列中，开始队列的循环，取出队首词，然后对其每个位置上的字符，
+//用26个字母进行替换，如果此时和结尾单词相同了，就可以返回取出词在哈希表中的值加一。
+//如果替换词在字典中存在但在哈希表中不存在，则将替换词排入队列中，并在哈希表中的值映射为之前取出词加一。
+//如果循环完成则返回0
+class Solution {
+public:
+	int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
+		unordered_set<string> wordset(wordList.begin(), wordList.end());
+		if (beginWord == endWord)
+		{
+			return 1;
+		}//注意这种情况
+		queue<pair<string, int>> q;
+		unordered_set<string> marker;
+		q.push(make_pair(beginWord, 1));
+		marker.insert(beginWord);
+		while (!q.empty())
+		{
+			string word = q.front().first;
+			int step = q.front().second;
+			q.pop();
+			for (int i = 0; i<beginWord.size(); ++i)
+			{
+				string newword = word;
+				for (char a = 'a'; a <= 'z'; ++a)
+				{
+					newword[i] = a;
+					if (wordset.count(newword))
+					{
+						if (newword == endWord)
+						{
+							return step + 1;
+						}
+						if (!marker.count(newword))
+						{
+							q.push(make_pair(newword, step + 1));
+							marker.insert(newword);
+						}
+					}
+				}
+			}
+
+		}
+		return 0;
+	}
+};
+
+
+
+
+//下面这样写，由于leetcode测试用例不够能通过，但实际上如果endword和beginword相等，应该返回1，所以下面这样不对
 class Solution {
 public:
 	int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
