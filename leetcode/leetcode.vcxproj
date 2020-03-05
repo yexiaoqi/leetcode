@@ -152,6 +152,7 @@
     <ClCompile Include="124.Binary Tree Maximum Path Sum .cpp" />
     <ClCompile Include="167.Two Sum II - Input array is sorted.cpp" />
     <ClCompile Include="212.Word Search II .cpp" />
+    <ClCompile Include="285.Inorder Successor in BST.cpp" />
     <ClCompile Include="295.Find Median from Data Stream.cpp" />
     <ClCompile Include="0.record.cpp" />
     <ClCompile Include="1. Two Sum.cpp" />
@@ -262,10 +263,12 @@
     <ClCompile Include="326.Power of Three.cpp" />
     <ClCompile Include="328.Odd Even Linked List.cpp" />
     <ClCompile Include="33. Search in Rotated Sorted Array.cpp" />
+    <ClCompile Include="333.Largest BST Subtree.cpp" />
     <ClCompile Include="334.Increasing Triplet Subsequence .cpp" />
     <ClCompile Include="34. Find First and Last Position of Element in Sorted Array.cpp" />
     <ClCompile Include="344. Reverse String.cpp" />
     <ClCompile Include="347.Top K Frequent Elements  .cpp" />
+    <ClCompile Include="348.Design Tic-Tac-Toe.cpp" />
     <ClCompile Include="35. Search Insert Position.cpp" />
     <ClCompile Include="36. Valid Sudoku.cpp" />
     <ClCompile Include="376. Wiggle Subsequence.cpp" />

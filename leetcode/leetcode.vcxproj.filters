@@ -887,5 +887,14 @@
     <ClCompile Include="212.Word Search II .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="333.Largest BST Subtree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="285.Inorder Successor in BST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="348.Design Tic-Tac-Toe.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
