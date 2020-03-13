@@ -150,8 +150,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="124.Binary Tree Maximum Path Sum .cpp" />
+    <ClCompile Include="151.Reverse Words in a String.cpp" />
     <ClCompile Include="167.Two Sum II - Input array is sorted.cpp" />
     <ClCompile Include="212.Word Search II .cpp" />
+    <ClCompile Include="277. Find the Celebrity.cpp" />
     <ClCompile Include="285.Inorder Successor in BST.cpp" />
     <ClCompile Include="295.Find Median from Data Stream.cpp" />
     <ClCompile Include="0.record.cpp" />
@@ -296,6 +298,7 @@
     <ClCompile Include="455. Assign Cookies.cpp" />
     <ClCompile Include="46. Permutations.cpp" />
     <ClCompile Include="47. Permutations II.cpp" />
+    <ClCompile Include="470.Implement Rand10() Using Rand7()  .cpp" />
     <ClCompile Include="473. Matchsticks to Square.cpp" />
     <ClCompile Include="48. Rotate Image.cpp" />
     <ClCompile Include="49. Group Anagrams.cpp" />
@@ -303,6 +306,7 @@
     <ClCompile Include="50. Pow(x, n).cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
     <ClCompile Include="54. Spiral Matrix.cpp" />
+    <ClCompile Include="545.Boundary of Binary Tree.cpp" />
     <ClCompile Include="55. Jump Game.cpp" />
     <ClCompile Include="56. Merge Intervals.cpp" />
     <ClCompile Include="572. Subtree of Another Tree.cpp" />
@@ -444,6 +448,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="nowcodergirl_Knapsack problem.cpp" />
+    <ClCompile Include="zhinan3_8_Find the largest topology in the binary tree that meets the search binary tree conditions.cpp" />
+    <ClCompile Include="zhinan9_1_random1to7.cpp" />
+    <ClCompile Include="zhinan9_2_random1to6.cpp" />
+    <ClCompile Include="zhinan9_2_random1ton.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

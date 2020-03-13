@@ -896,5 +896,29 @@
     <ClCompile Include="348.Design Tic-Tac-Toe.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="277. Find the Celebrity.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="545.Boundary of Binary Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_8_Find the largest topology in the binary tree that meets the search binary tree conditions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="151.Reverse Words in a String.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan9_1_random1to7.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan9_2_random1to6.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan9_2_random1ton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="470.Implement Rand10() Using Rand7()  .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

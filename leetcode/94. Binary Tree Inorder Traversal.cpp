@@ -129,6 +129,9 @@ public:
 };
 
 //模板解法
+//需要用栈来做，思路是从根节点开始，先将根节点压入栈，然后再将其所有左子结点压入栈，
+//然后取出栈顶节点，保存节点值，再将当前指针移到其右子节点上，若存在右子节点，
+//则在下次循环时又可将其所有左子结点压入栈中。这样就保证了访问顺序为左 - 根 - 右
 class Solution {
 public:
 	vector<int> inorderTraversal(TreeNode* root) {
@@ -200,6 +203,52 @@ public:
 		}
 		stack<TreeNode*> s;
 		TreeNode* p = root;
+		while (!s.empty() || p)
+		{
+			if (p)
+			{
+				s.push(p);
+				p = p->left;
+			}
+			else
+			{
+				p = s.top();
+				s.pop();
+				res.push_back(p->val);
+				p = p->right;
+			}
+		}
+		return res;
+	}
+};
+
+//复习
+class Solution {
+public:
+	vector<int> inorderTraversal(TreeNode* root) {
+		vector<int> res;
+		inorder(root, res);
+		return res;
+	}
+	void inorder(TreeNode* root, vector<int> &res)
+	{
+		if (!root)
+		{
+			return;
+		}
+		inorder(root->left, res);
+		res.push_back(root->val);
+		inorder(root->right, res);
+	}
+};
+
+//复习
+class Solution {
+public:
+	vector<int> inorderTraversal(TreeNode* root) {
+		vector<int> res;
+		stack<TreeNode*> s;
+		TreeNode *p = root;
 		while (!s.empty() || p)
 		{
 			if (p)
