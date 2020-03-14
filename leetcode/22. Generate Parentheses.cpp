@@ -97,3 +97,31 @@ public:
 		}
 	}
 };
+
+//¸´Ï°
+class Solution {
+public:
+	vector<string> generateParenthesis(int n) {
+		vector<string> res;
+		string path;
+		int left = n, right = n;
+		Generate(res, path, n, left, right);
+		return res;
+	}
+	void Generate(vector<string> &res, string path, int n, int left, int right)
+	{
+		if (left == 0 && right == 0)
+		{
+			res.push_back(path);
+			return;
+		}
+		if (left>0)
+		{
+			Generate(res, path + '(', n, left - 1, right);
+		}
+		if (left<right)
+		{
+			Generate(res, path + ')', n, left, right - 1);
+		}
+	}
+};

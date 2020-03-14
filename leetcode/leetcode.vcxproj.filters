@@ -920,5 +920,8 @@
     <ClCompile Include="470.Implement Rand10() Using Rand7()  .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="628. Maximum Product of Three Numbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

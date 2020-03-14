@@ -144,3 +144,22 @@ public:
 		return slow + 1;
 	}
 };
+
+//¸´Ï°£¬Ò»±éac
+class Solution {
+public:
+	int removeDuplicates(vector<int>& nums) {
+		int i = 0, j = 0;
+		while (i<nums.size())
+		{
+			while (i + 1<nums.size() && nums[i + 1] == nums[i])
+			{
+				++i;
+			}
+			nums[j] = nums[i];
+			++j;
+			++i;
+		}
+		return j;
+	}
+};

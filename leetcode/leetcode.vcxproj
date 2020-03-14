@@ -314,6 +314,7 @@
     <ClCompile Include="60. Permutation Sequence.cpp" />
     <ClCompile Include="61. Rotate List.cpp" />
     <ClCompile Include="62 .Unique Paths.cpp" />
+    <ClCompile Include="628. Maximum Product of Three Numbers.cpp" />
     <ClCompile Include="621. Task Scheduler.cpp" />
     <ClCompile Include="653.Two Sum IV - Input is a BST .cpp" />
     <ClCompile Include="66. Plus One.cpp" />

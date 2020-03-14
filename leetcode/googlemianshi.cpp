@@ -1,4 +1,65 @@
 /*有一个二维迷宫，0表示可以走，1表示不能走，从左上角开始，到右下角，问有多少条最短路径*/
+//更加简化版
+class Solution
+{
+public:
+	int FindPath(vector<vector<int>> nums)
+	{
+		if (nums.size() == 0 || nums[0].size() == 0)
+		{
+			return 0;
+		}
+		int m = nums.size(), n = nums[0].size();
+		vector<vector<int>> marker(m, vector<int>(n, 0));
+		int cnt = 0;
+		vector<int> allpath;
+		DFS(nums, marker, 0, 0, cnt, allpath);
+		int minpath = INT_MAX;
+		int mincnt = 0;
+		for (int i = 0; i < allpath.size(); ++i)
+		{
+			if (minpath > allpath[i])
+			{
+				minpath = allpath[i];
+				mincnt = 1;
+			}
+			else if (minpath == allpath[i])
+			{
+				++mincnt;
+			}
+		}
+		return mincnt;
+	}
+	void DFS(vector<vector<int>> &nums, vector<vector<int>> &marker, int x, int y, int cnt,
+		vector<int> &allpath)
+	{
+		if (x == nums.size() - 1 && y == nums[0].size() - 1)
+		{
+			allpath.push_back(cnt);
+			return;
+		}
+		int dx[4] = { 1,-1,0,0 };
+		int dy[4] = { 0,0,1,-1 };
+		marker[x][y] = 1;
+		for (int i = 0; i < 4; ++i)
+		{
+			int newx = x + dx[i];
+			int newy = y + dy[i];
+			if (newx < 0 || newx >= nums.size() || newy < 0 || newy >= nums[0].size())
+			{
+				continue;
+			}
+			if (nums[newx][newy] == 0 && marker[newx][newy] == 0)
+			{
+				++cnt;
+				DFS(nums, marker, newx, newy, cnt, allpath);
+				--cnt;
+			}
+		}
+		marker[x][y] = 0;
+	}
+};
+//未简化版
 class Solution
 {
 public:
@@ -23,7 +84,7 @@ public:
 				minpathsize = allpath[i];
 			}
 		}
-		for (int i = 0; i<allpath.size(); ++i)
+		for (int i = 0; i<allpath.size(); ++i)//两个for可以合并，看上面一种代码
 		{
 			if (allpath[i] == minpathsize)
 			{
@@ -132,6 +193,82 @@ public:
 
 /*有一个二维迷宫，1表示可以走，0表示不能走，从左上角开始，到右下角，求最短路径是什么样的*/
 //1可以通过，0阻碍
+struct Point
+{
+	int x;
+	int y;
+	int step;
+	Point() {}
+	Point(int _x, int _y) :x(_x), y(_y), step(0) {}
+	Point(int _x, int _y, int _step) :x(_x), y(_y), step(_step) {}
+	bool operator==(Point &other)
+	{
+		return x == other.x&&y == other.y;
+	}
+};
+class Solution
+{
+public:
+	void Smallestpath(vector<vector<int>> nums)
+	{
+		if (nums.empty() || nums[0].empty())
+		{
+			return;
+		}
+		int m = nums.size(), n = nums[0].size();
+		vector<vector<int>> marker(m, vector<int>(n, 0));
+		vector<vector<Point>> mp(m, vector<Point>(n));
+		Point src(0, 0);
+		Point des(m - 1, n - 1);
+		BFS(nums, marker, mp, src, des);
+		cout << "具体路径如下：" << endl;
+		while (!(mp[des.x][des.y] == src))
+		{
+			cout << des.x << " " << des.y << endl;
+			des = mp[des.x][des.y];//从出口到入口打印，因为出口记录了上一个位置，所以必须按照这个顺序
+		}
+		cout << des.x << " " << des.y << endl;
+		cout << src.x << " " << src.y << endl;
+	}
+	void BFS(vector<vector<int>> &nums, vector<vector<int>> &marker, vector<vector<Point>> &mp,
+		Point src, Point des)
+	{
+		queue<Point> q;
+		q.push(src);
+		marker[0][0] = 1;
+		int dx[4] = { 1,-1,0,0 };
+		int dy[4] = { 0,0,1,-1 };
+		while (!q.empty())
+		{
+			Point p = q.front();
+			int x = p.x;
+			int y = p.y;
+			int step = p.step;
+			q.pop();
+			if (p == des)
+			{
+				return;
+			}
+			for (int i = 0; i < 4; ++i)
+			{
+				int newx = x + dx[i];
+				int newy = y + dy[i];
+				if (newx < 0 || newx >= nums.size() || newy < 0 || newy >= nums[0].size())
+				{
+					continue;
+				}
+				if (nums[newx][newy] == 0 && marker[newx][newy] == 0)
+				{
+					mp[newx][newy] = p;//存下它是从哪一个位置变过来的
+					marker[newx][newy] = 1;
+					q.push(Point(newx, newy, step + 1));
+				}
+			}
+		}
+	}
+
+};
+//和上面这种一样，只不过上面是自己重写一遍比较适合自己的
 struct point
 {
 	int x;
@@ -149,18 +286,22 @@ struct point
 class Solution3
 {
 public:
-	int minSteps_BFS(const vector<vector<int>>& nums, vector<vector<int>> &marker, vector<vector<point>>& mp, point src, point des, int step)
+	int minSteps_BFS(const vector<vector<int>>& nums, vector<vector<int>> &marker, vector<vector<point>>& mp, point src, point des)
 	{
 		int n = nums.size();
 		int m = nums[0].size();
 		marker[src.x][src.y] = 1;
 		queue<point> q;
 		q.push(src);
+		int dx[4] = { 1,-1,0,0 };
+		int dy[4] = { 0,0,1,-1 };
 		while (!q.empty())
 		{
 			point p = q.front();
-			int dx[4] = { 1,-1,0,0 };
-			int dy[4] = { 0,0,1,-1 };
+			if (p == des)
+			{
+				return;
+			}
 			for (int i = 0; i < 4; ++i)
 			{
 				int newx = p.x + dx[i];
@@ -194,8 +335,7 @@ public:
 		vector<vector<point>> mp(5, vector<point>(5));
 		point src(0, 0);
 		point des(3, 3);
-		int step = 0;
-		cout << minSteps_BFS(nums, marker, mp, src, des, step) << endl;
+		cout << minSteps_BFS(nums, marker, mp, src, des) << endl;
 		cout << "具体路径如下：" << endl;
 		//vector<point> res;
 		while (!(mp[des.x][des.y] == src))
@@ -204,5 +344,6 @@ public:
 			des = mp[des.x][des.y];
 		}//从出口到入口打印，因为出口记录了上一个位置，所以必须按照这个顺序
 		cout << des.x << " " << des.y << endl;
+		cout << src.x << " " << src.y << endl;
 	}
 };

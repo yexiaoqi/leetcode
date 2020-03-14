@@ -17,7 +17,7 @@ public:
 		find(root, k, res, cnt);
 		return res->val;
 	}
-	void find(TreeNode* &root, int k, TreeNode* &res, int &cnt)//注意&
+	void find(TreeNode* &root, int k, TreeNode* &res, int &cnt)//注意&！！！！！！
 	{
 		if (!root)
 		{
@@ -54,11 +54,11 @@ public:
 		}
 		else if (cnt<k - 1)
 		{
-			return kthSmallest(root->right, k - cnt - 1);
+			return kthSmallest(root->right, k - cnt - 1);//注意return
 		}
 		else
 		{
-			return kthSmallest(root->left, k);
+			return kthSmallest(root->left, k);//注意return
 		}
 		//return -10;
 	}
@@ -71,6 +71,31 @@ public:
 		return 1 + countnode(root->left) + countnode(root->right);
 	}
 };
+
+//方法三
+class Solution {
+public:
+	int kthSmallest(TreeNode* root, int k) {
+		vector<int> res;
+		order(root, res);
+		if (k>res.size())
+		{
+			return -1;
+		}
+		return res[k - 1];
+	}
+	void order(TreeNode* root, vector<int> &res)
+	{
+		if (!root)
+		{
+			return;
+		}
+		order(root->left, res);
+		res.push_back(root->val);
+		order(root->right, res);
+	}
+};
+
 
 //进阶：
 //如果二叉搜索树经常被修改（插入 / 删除操作）并且你需要频繁地查找第 k 小的值，你将如何优化 kthSmallest 函数？
@@ -229,4 +254,125 @@ public:
 		return helper(node, k);
 	}
 
+};
+
+
+//复习
+class Solution {
+public:
+	int kthSmallest(TreeNode* root, int k) {
+		vector<int> res;
+		order(root, res);
+		if (k>res.size())
+		{
+			return -1;
+		}
+		return res[k - 1];
+	}
+	void order(TreeNode* root, vector<int> &res)
+	{
+		if (!root)
+		{
+			return;
+		}
+		order(root->left, res);
+		res.push_back(root->val);
+		order(root->right, res);
+	}
+};
+//复习
+class Solution {
+public:
+	int kthSmallest(TreeNode* root, int k) {
+		int res = cntofleaf(root->left);
+		if (res == k - 1)
+		{
+			return root->val;
+		}
+		else if (res<k - 1)
+		{
+			return kthSmallest(root->right, k - res - 1);
+		}
+		else
+		{
+			return kthSmallest(root->left, k);
+		}
+	}
+	int cntofleaf(TreeNode* root)
+	{
+		if (!root)
+		{
+			return 0;
+		}
+		return cntofleaf(root->left) + cntofleaf(root->right) + 1;
+	}
+};
+//复习
+struct NewTreeNode
+{
+	int val;
+	int cnt;
+	NewTreeNode *left;
+	NewTreeNode *right;
+	NewTreeNode(int x, int c) :val(x), cnt(c), left(NULL), right(NULL) {}
+};
+class Solution {
+public:
+	NewTreeNode* BuildTree(TreeNode* root)
+	{
+		if (!root)
+		{
+			return NULL;
+		}
+		NewTreeNode* newroot = new NewTreeNode(root->val, 1);
+		newroot->left = BuildTree(root->left);
+		newroot->right = BuildTree(root->right);
+		if (newroot->left)
+		{
+			newroot->cnt += newroot->left->cnt;
+		}
+		if (newroot->right)
+		{
+			newroot->cnt += newroot->right->cnt;
+		}
+		return newroot;
+	}
+	int kthSmallest(TreeNode* root, int k) {
+		if (k <= 0 || !root)
+		{
+			return -1;
+		}
+		NewTreeNode* newroot = BuildTree(root);
+		return cntofleaf(newroot, k);
+	}
+	int cntofleaf(NewTreeNode* root, int k)
+	{
+		if (root->left)
+		{
+			int cnt = root->left->cnt;
+			if (cnt == k - 1)
+			{
+				return root->val;
+			}
+			else if (cnt<k - 1)
+			{
+				return cntofleaf(root->right, k - cnt - 1);
+			}
+			else
+			{
+				return cntofleaf(root->left, k);
+			}
+		}
+		else
+		{
+			if (k == 1)
+			{
+				return root->val;
+			}
+			else
+			{
+				return cntofleaf(root->right, k - 1);
+			}
+		}
+	}
 };
