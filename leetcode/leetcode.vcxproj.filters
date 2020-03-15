@@ -923,5 +923,17 @@
     <ClCompile Include="628. Maximum Product of Three Numbers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="99.Recover Binary Search Tree .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="958. Check Completeness of a Binary Tree .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="543.Diameter of Binary Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_22_Generate post-order array from pre-order and middle-order array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

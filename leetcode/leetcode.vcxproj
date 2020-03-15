@@ -306,6 +306,7 @@
     <ClCompile Include="50. Pow(x, n).cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
     <ClCompile Include="54. Spiral Matrix.cpp" />
+    <ClCompile Include="543.Diameter of Binary Tree.cpp" />
     <ClCompile Include="545.Boundary of Binary Tree.cpp" />
     <ClCompile Include="55. Jump Game.cpp" />
     <ClCompile Include="56. Merge Intervals.cpp" />
@@ -343,8 +344,10 @@
     <ClCompile Include="92. Reverse Linked List II.cpp" />
     <ClCompile Include="94. Binary Tree Inorder Traversal.cpp" />
     <ClCompile Include="102. Binary Tree Level Order Traversal.cpp" />
+    <ClCompile Include="958. Check Completeness of a Binary Tree .cpp" />
     <ClCompile Include="96. Unique Binary Search Trees.cpp" />
     <ClCompile Include="98. Validate Binary Search Tree   .cpp" />
+    <ClCompile Include="99.Recover Binary Search Tree .cpp" />
     <ClCompile Include="googlemianshi.cpp" />
     <ClCompile Include="knapsack_complete.cpp" />
     <ClCompile Include="jianzhioffer_68_CommonParentInTree.cpp" />
@@ -449,6 +452,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="nowcodergirl_Knapsack problem.cpp" />
+    <ClCompile Include="zhinan3_22_Generate post-order array from pre-order and middle-order array.cpp" />
     <ClCompile Include="zhinan3_8_Find the largest topology in the binary tree that meets the search binary tree conditions.cpp" />
     <ClCompile Include="zhinan9_1_random1to7.cpp" />
     <ClCompile Include="zhinan9_2_random1to6.cpp" />

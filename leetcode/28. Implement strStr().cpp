@@ -218,3 +218,35 @@ public:
 		return -1;
 	}
 };
+
+
+//复习
+class Solution {
+public:
+	int strStr(string haystack, string needle) {
+		if (needle.empty())
+		{
+			return 0;
+		}
+		int m = haystack.size(), n = needle.size();
+		for (int i = 0; i<m - n + 1; ++i)//必须m-n+1，不能只是m，否则会超出内存
+		{
+			if (issame(haystack.substr(i, n), needle))
+			{
+				return i;
+			}
+		}
+		return -1;
+	}
+	bool issame(string haystack, string needle)
+	{
+		for (int i = 0; i<needle.size(); ++i)
+		{
+			if (haystack[i] != needle[i])
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+};
