@@ -1,3 +1,4 @@
+//https://www.acwing.com/problem/content/2/ 刷题
 //f[i][v]=max{f[i-1][v],f[i-1][v-c[i]]+w[i]}
 //result[i][j] = max(result[i - 1][j], result[i - 1][j - weight_array[i]] + value_array[i]);
 ///一维数组求解
@@ -41,11 +42,15 @@ int knapsack(int products_count, int capacity, vector<int>& volume,
 	{
 		for (int j = capacity; j >= volume[i]; --j)
 		{
-			res[j] = max(res[j], res[j - volume[i]] + worth[i]);
+			res[j] = max(res[j], res[j - volume[i]] + worth[i]);//因为要用到它前面的值计算，所以必须逆序
 		}
 	}
 	return  res[capacity];
 }
+
+
+
+
 
 int knapsack(int products_count, int capacity, vector<int>& weight_array, vector<int>& value_array, vector<vector<int>>& result)
 {
@@ -146,5 +151,85 @@ int main()
 		}
 	}
 	cout << res[products_count][capacity];
+	return 0;
+}
+
+
+
+
+//复习
+#include<iostream>
+#include<vector>
+using namespace std;
+class Solution
+{
+public:
+	int knapsack(int N, int V, vector<int> &v, vector<int> &w)
+	{
+		vector<vector<int>> res(N + 1, vector<int>(V + 1, 0));
+		for (int i = 1; i <= N; ++i)
+		{
+			for (int j = 1; j <= V; ++j)
+			{
+				if (v[i]>j)
+				{
+					res[i][j] = res[i - 1][j];
+				}
+				else
+				{
+					res[i][j] = max(res[i - 1][j], res[i - 1][j - v[i]] + w[i]);
+				}
+			}
+		}
+		return res[N][V];
+	}
+};
+int main()
+{
+	Solution s;
+	int N, V;
+	cin >> N >> V;
+	vector<int> v(N + 1, 0);
+	vector<int> w(N + 1, 0);
+	for (int i = 1; i <= N; ++i)
+	{
+		cin >> v[i] >> w[i];
+	}
+	cout << s.knapsack(N, V, v, w);
+	return 0;
+}
+
+//复习
+#include<iostream>
+#include<vector>
+using namespace std;
+class Solution
+{
+public:
+	int knapsack(int N, int V, vector<int> &v, vector<int> &w)
+	{
+		vector<int> res(V + 1, 0);
+		for (int i = 1; i <= N; ++i)
+		{
+			for (int j = V; j >= v[i]; --j)
+			{
+				res[j] = max(res[j], res[j - v[i]] + w[i]);
+			}
+		}
+		return res[V];
+	}
+};
+int main()
+{
+	Solution s;
+	int N, V;
+	cin >> N >> V;
+	vector<int> v(N + 1, 0);
+	vector<int> w(N + 1, 0);
+	for (int i = 1; i <= N; ++i)
+	{
+		cin >> v[i] >> w[i];
+	}
+	cout << s.knapsack(N, V, v, w);
 	return 0;
 }

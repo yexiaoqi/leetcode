@@ -151,3 +151,59 @@ public:
 		return true;
 	}
 };
+
+//¸´Ï°
+class Solution {
+public:
+	bool isValidSudoku(vector<vector<char>>& board) {
+		vector<vector<bool>> row(9, vector<bool>(9, false));
+		vector<vector<bool>> col(9, vector<bool>(9, false));
+		vector<vector<bool>> squ(9, vector<bool>(9, false));
+		for (int i = 0; i<9; ++i)
+		{
+			for (int j = 0; j<9; ++j)
+			{
+				if (board[i][j] != '.')
+				{
+					int num = board[i][j] - '1';
+					if (row[i][num] || col[j][num] || squ[i / 3 * 3 + j / 3][num])
+					{
+						return false;
+					}
+					row[i][num] = true;
+					col[j][num] = true;
+					squ[i / 3 * 3 + j / 3][num] = true;
+				}
+
+			}
+		}
+		return true;
+	}
+};
+
+//¸´Ï°
+class Solution {
+public:
+	bool isValidSudoku(vector<vector<char>>& board) {
+		unordered_set<string> us;
+		for (int i = 0; i<9; ++i)
+		{
+			for (int j = 0; j<9; ++j)
+			{
+				if (board[i][j] != '.')
+				{
+					string t = '(' + to_string(board[i][j]) + ')';
+					string row = to_string(i) + t, col = t + to_string(j), squ = to_string(i / 3) + t + to_string(j / 3);
+					if (us.count(row) || us.count(col) || us.count(squ))
+					{
+						return false;
+					}
+					us.insert(row);
+					us.insert(col);
+					us.insert(squ);
+				}
+			}
+		}
+		return true;
+	}
+};

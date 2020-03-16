@@ -149,9 +149,11 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1143.Longest Common Subsequence.cpp" />
     <ClCompile Include="124.Binary Tree Maximum Path Sum .cpp" />
     <ClCompile Include="151.Reverse Words in a String.cpp" />
     <ClCompile Include="167.Two Sum II - Input array is sorted.cpp" />
+    <ClCompile Include="174.Dungeon Game.cpp" />
     <ClCompile Include="212.Word Search II .cpp" />
     <ClCompile Include="277. Find the Celebrity.cpp" />
     <ClCompile Include="285.Inorder Successor in BST.cpp" />
@@ -301,9 +303,11 @@
     <ClCompile Include="470.Implement Rand10() Using Rand7()  .cpp" />
     <ClCompile Include="473. Matchsticks to Square.cpp" />
     <ClCompile Include="48. Rotate Image.cpp" />
+    <ClCompile Include="486_Predict the Winner.cpp" />
     <ClCompile Include="49. Group Anagrams.cpp" />
     <ClCompile Include="5.Longest Palindromic Substring.cpp" />
     <ClCompile Include="50. Pow(x, n).cpp" />
+    <ClCompile Include="518.Coin Change 2 .cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
     <ClCompile Include="54. Spiral Matrix.cpp" />
     <ClCompile Include="543.Diameter of Binary Tree.cpp" />
@@ -317,6 +321,7 @@
     <ClCompile Include="62 .Unique Paths.cpp" />
     <ClCompile Include="628. Maximum Product of Three Numbers.cpp" />
     <ClCompile Include="621. Task Scheduler.cpp" />
+    <ClCompile Include="64.Minimum Path Sum.cpp" />
     <ClCompile Include="653.Two Sum IV - Input is a BST .cpp" />
     <ClCompile Include="66. Plus One.cpp" />
     <ClCompile Include="67. Add Binary.cpp" />
@@ -453,10 +458,12 @@
     </ClCompile>
     <ClCompile Include="nowcodergirl_Knapsack problem.cpp" />
     <ClCompile Include="zhinan3_22_Generate post-order array from pre-order and middle-order array.cpp" />
+    <ClCompile Include="zhinan3_23_Count and generate all different binary trees.cpp" />
     <ClCompile Include="zhinan3_8_Find the largest topology in the binary tree that meets the search binary tree conditions.cpp" />
+    <ClCompile Include="zhinan4_14_Card Game Problem in a Line.cpp" />
     <ClCompile Include="zhinan9_1_random1to7.cpp" />
-    <ClCompile Include="zhinan9_2_random1to6.cpp" />
-    <ClCompile Include="zhinan9_2_random1ton.cpp" />
+    <ClCompile Include="zhinan9_1_random1to6.cpp" />
+    <ClCompile Include="zhinan9_1_random1ton.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

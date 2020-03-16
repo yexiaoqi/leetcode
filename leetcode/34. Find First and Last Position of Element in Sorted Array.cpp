@@ -262,3 +262,77 @@ public:
 		return -1;
 	}
 };
+
+//¸´Ï°£¬×ĞÏ¸
+class Solution {
+public:
+	vector<int> searchRange(vector<int>& nums, int target) {
+		if (nums.empty())
+		{
+			return{ -1,-1 };
+		}
+		vector<int> res{ -1,-1 };
+		int begin = 0, end = nums.size() - 1;
+		res[0] = searchfirst(nums, target, begin, end);
+		if (res[0] == -1)
+		{
+			return res;
+		}
+		res[1] = searchlast(nums, target, begin, end);
+		return res;
+	}
+	int searchfirst(vector<int> &nums, int target, int begin, int end)
+	{
+		while (begin <= end)
+		{
+			int mid = (begin + end) / 2;
+			if (target>nums[mid])
+			{
+				begin = mid + 1;
+			}
+			else if (target<nums[mid])
+			{
+				end = mid - 1;
+			}
+			else if (nums[mid] == target)
+			{
+				if (mid == 0 || nums[mid - 1] != target)
+				{
+					return mid;
+				}
+				else
+				{
+					end = mid - 1;
+				}
+			}
+		}
+		return -1;
+	}
+	int searchlast(vector<int> &nums, int target, int begin, int end)
+	{
+		while (begin <= end)
+		{
+			int mid = (begin + end) / 2;
+			if (target>nums[mid])
+			{
+				begin = mid + 1;
+			}
+			else if (target<nums[mid])
+			{
+				end = mid - 1;
+			}
+			else if (nums[mid] == target)
+			{
+				if (mid == end || nums[mid + 1] != target)
+				{
+					return mid;
+				}
+				else
+				{
+					begin = mid + 1;
+				}
+			}
+		}
+		return -1;
+	}
+};

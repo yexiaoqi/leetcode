@@ -21,6 +21,7 @@
 //	Input : 4
 //	Output : "1211"
 
+//就是对于前一个数，找出相同元素的个数，把个数和该元素存到新的 string 里
 class Solution
 {
 public:
@@ -71,6 +72,35 @@ public:
 					++i;
 				}
 				cur = cur + to_string(cnt) + res[i];
+			}
+			res = cur;
+		}
+		return res;
+	}
+};
+
+//复习
+class Solution {
+public:
+	string countAndSay(int n) {
+		if (n<1)
+		{
+			return "";
+		}
+		string res = "1";
+		for (int i = 2; i <= n; ++i)
+		{
+			string cur = "";
+			for (int j = 0; j<res.size(); ++j)
+			{
+				char value = res[j];
+				int cnt = 1;
+				while (j<res.size() && res[j + 1] == value)//注意j<res.size()而不是j<=n
+				{
+					++cnt;
+					++j;
+				}
+				cur += to_string(cnt) + value;
 			}
 			res = cur;
 		}

@@ -49,3 +49,39 @@ int knapsack(int products_count, int capacity, vector<int>& volume,
 	}
 	return res[capacity];
 }
+
+
+//¸´Ï°
+#include<iostream>
+#include<vector>
+using namespace std;
+class Solution
+{
+public:
+	int knapsack(int N, int V, vector<int> &v, vector<int> &w)
+	{
+		vector<int> res(V + 1, 0);
+		for (int i = 1; i <= N; ++i)
+		{
+			for (int j = v[i]; j <= V; ++j)
+			{
+				res[j] = max(res[j], res[j - v[i]] + w[i]);
+			}
+		}
+		return res[V];
+	}
+};
+int main()
+{
+	Solution s;
+	int N, V;
+	cin >> N >> V;
+	vector<int> v(N + 1, 0);
+	vector<int> w(N + 1, 0);
+	for (int i = 1; i <= N; ++i)
+	{
+		cin >> v[i] >> w[i];
+	}
+	cout << s.knapsack(N, V, v, w);
+	return 0;
+}

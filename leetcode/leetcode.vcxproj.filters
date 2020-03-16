@@ -911,12 +911,6 @@
     <ClCompile Include="zhinan9_1_random1to7.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="zhinan9_2_random1to6.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="zhinan9_2_random1ton.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="470.Implement Rand10() Using Rand7()  .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -933,6 +927,33 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="zhinan3_22_Generate post-order array from pre-order and middle-order array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_23_Count and generate all different binary trees.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan9_1_random1to6.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan9_1_random1ton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="64.Minimum Path Sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="518.Coin Change 2 .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1143.Longest Common Subsequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="174.Dungeon Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_14_Card Game Problem in a Line.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="486_Predict the Winner.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
