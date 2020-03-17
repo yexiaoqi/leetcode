@@ -956,5 +956,8 @@
     <ClCompile Include="486_Predict the Winner.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="128.Longest Consecutive Sequence .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
