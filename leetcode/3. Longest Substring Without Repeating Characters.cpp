@@ -4,6 +4,42 @@
 //当前字符可以加进来，如果在的话，就需要先在滑动窗口内去掉这个已经出现过的字符了，
 //去掉的方法并不需要将左边界 left 一位一位向右遍历查找，由于 HashMap 已经保存了该重复字符最后出现的位置，
 //所以直接移动 left 指针就可以了。维护一个结果 res，每次用出现过的窗口大小来更新结果 res，就可以得到最终结果啦。
+//增加测试用例
+class Solution {
+public:
+	int lengthOfLongestSubstring(string s) {
+		unordered_map<int, int> m;
+		int left = -1, res = 0;
+		for (int i = 0; i<s.size(); ++i)
+		{
+			if (m.count(s[i]) && m[s[i]]>left)
+			{
+				left = m[s[i]];
+			}
+			m[s[i]] = i;
+			if (res<i - left)
+			{
+				res = i - left;
+			}
+		}
+		return res;
+	}
+	void testall()
+	{
+		test("");
+		test("abcabcbb");
+		test("bbbbb");
+		test("pwwkew");
+	}
+	void test(string s)
+	{
+		cout << lengthOfLongestSubstring(s) << endl;
+	}
+};
+
+
+
+
 class Solution {
 public:
 	int lengthOfLongestSubstring(string s) {

@@ -1,3 +1,33 @@
+//加测试用例
+class Solution {
+public:
+	int LastRemaining_Solution(int n, int m)
+	{
+		if (n <= 0 || m <= 0)
+		{
+			return -1;
+		}
+		int res = 0;
+		for (int i = 2; i <= n; ++i)
+		{
+			res = (res + m) % i;
+		}
+		return res;
+	}
+	void testall()
+	{
+		test(0, 6);
+		test(6, 0);
+		test(10, 3);
+	}
+	void test(int n, int m)
+	{
+		cout << LastRemaining_Solution(n, m) << endl;
+	}
+};
+
+
+
 //方法一
 class Solution {
 public:
@@ -101,6 +131,62 @@ public:
 	int LastRemaining_Solution(int n, int m)
 	{
 		if (n == 0 || m == 0)
+		{
+			return -1;
+		}
+		int res = 0;
+		for (int i = 2; i <= n; ++i)
+		{
+			res = (res + m) % i;
+		}
+		return res;
+	}
+};
+
+//复习
+class Solution {
+public:
+	int LastRemaining_Solution(int n, int m)
+	{
+		if (n == 0)
+		{
+			return -1;
+		}
+		list<int> circle;
+		for (int i = 0; i<n; ++i)
+		{
+			circle.push_back(i);
+		}
+		auto cur = circle.begin();
+		while (circle.size()>1)
+		{
+			for (int i = 0; i<m - 1; ++i)
+			{
+				++cur;
+				if (cur == circle.end())
+				{
+					cur = circle.begin();
+				}
+			}
+			auto next = ++cur;
+			if (next == circle.end())
+			{
+				next = circle.begin();
+			}
+			--cur;
+			circle.erase(cur);
+			cur = next;
+		}
+		return *cur;
+	}
+};
+
+//复习
+class Solution {
+public:
+	int LastRemaining_Solution(int n, int m)
+	{
+		if (n == 0)
 		{
 			return -1;
 		}

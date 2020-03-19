@@ -4,6 +4,31 @@
 //
 //The digits are stored such that the most significant digit is at the head of the list.
 
+
+
+class Solution {
+public:
+	vector<int> plusOne(vector<int>& digits) {
+		int n = digits.size();
+		for (int i = n - 1; i >= 0; i--)//注意是n-1不是n
+		{
+			if (digits[i] == 9)
+			{
+				digits[i] = 0;
+			}
+			else
+			{
+				digits[i]++;
+				return digits;//只要加1，所以加了1以后要立刻结束return
+			}
+		}
+		digits.insert(digits.begin(), 1);//针对例如99这样的数，在最前面加入1
+		return digits;
+	}
+};
+
+
+
 class Solution
 {
 	//【题意】 给你一个用数组表示的数，求加一之后的结果，结果还是用数组表示。

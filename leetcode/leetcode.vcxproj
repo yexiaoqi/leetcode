@@ -149,6 +149,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="0_testcase.cpp" />
     <ClCompile Include="1143.Longest Common Subsequence.cpp" />
     <ClCompile Include="124.Binary Tree Maximum Path Sum .cpp" />
     <ClCompile Include="128.Longest Consecutive Sequence .cpp" />

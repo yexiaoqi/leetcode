@@ -14,7 +14,7 @@ public:
 		{
 			dp[i] = mx;
 			mx = max(mx, height[i]);
-		}
+		}//第一遍在 dp[i] 中存入i位置左边的最大值
 		mx = 0;
 		int res = 0;
 		for (int i = n - 1; i >= 0; --i)
@@ -24,7 +24,8 @@ public:
 			if (dp[i]>height[i])
 			{
 				res += dp[i] - height[i];
-			}
+			}//第二遍遍历数组，第二次遍历时找右边最大值，然后和左边最大值比较取其中的较小值，
+			//然后跟当前值 A[i] 相比，如果大于当前值，则将差值存入结果
 		}
 		return res;
 	}

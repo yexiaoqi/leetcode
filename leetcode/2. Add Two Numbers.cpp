@@ -8,6 +8,76 @@
 //	Output : 7 -> 0 -> 8
 //	Explanation : 342 + 465 = 807.
 
+
+//加测试用例
+struct ListNode
+{
+	int val;
+	ListNode * next;
+	ListNode(int x) :val(x), next(NULL) {}
+};
+class Solution {
+public:
+	ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+		ListNode *dummy = new ListNode(-1);
+		ListNode *cur = dummy;
+		int sum = 0, carry = 0;
+		while (l1 || l2)
+		{
+			int val1 = l1 ? l1->val : 0;
+			int val2 = l2 ? l2->val : 0;
+			sum = val1 + val2 + carry;
+			cur->next = new ListNode(sum % 10);//不能写成ListNode *cur=dummy->next;cur=new ListNode(sum%10),因为这样cur又变成一个新建的节点，和前面没啥关系了;
+			carry = sum / 10;
+			cur = cur->next;
+			if (l1)
+			{
+				l1 = l1->next;
+			}
+			if (l2)
+			{
+				l2 = l2->next;
+			}
+		}
+		if (carry)
+		{
+			cur->next = new ListNode(carry);
+			cur = cur->next;
+		}
+		return dummy->next;
+	}
+	void testall()
+	{
+		ListNode a1(2);
+		ListNode a2(4);
+		ListNode a3(3);
+		ListNode b1(5);
+		ListNode b2(6);
+		ListNode b3(4);
+		a1.next = &a2;
+		a2.next = &a3;
+		b1.next = &b2;
+		b2.next = &b3;
+		test(&a1, &b1);
+		test(NULL, NULL);
+	}
+	void test(ListNode* l1, ListNode* l2)
+	{
+		ListNode* head = addTwoNumbers(l1, l2);
+		while (head)
+		{
+			cout << head->val << " ";
+			head = head->next;
+		}
+	}
+};
+
+
+
+
+
+
+
 /**
 * Definition for singly-linked list.
 * struct ListNode {
