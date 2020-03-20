@@ -1,4 +1,5 @@
 //²»¹»¿ì
+https://leetcode-cn.com/problems/palindrome-partitioning/solution/hui-su-you-hua-jia-liao-dong-tai-gui-hua-by-liweiw/
 class Solution {
 public:
 	vector<vector<string>> partition(string s) {

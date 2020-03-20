@@ -39,8 +39,9 @@ public:
 			return s.empty() ? true : false;
 		}
 		set<string> wordset(wordDict.begin(), wordDict.end());
-		vector<int> memo(s.size(), -1);//记忆数组 memo[i] 定义为范围为 [i, n] 的子字符串是否可以拆分，初始化为 -1，表示没有计算过，如果可以拆分，则赋值为1，反之为0。
-									   //重复计算：比如s = "leetcode", wordDict = ["leet", "c"，“leetc”],查到leet和c后，查o没有，查od没有等等，而在找到leetc后，又来查o和od造成重复
+		vector<int> memo(s.size(), -1);
+//记忆数组 memo[i] 定义为范围为 [i, n] 的子字符串是否可以拆分，初始化为 -1，表示没有计算过，如果可以拆分，则赋值为1，反之为0。
+ //重复计算：比如s = "leetcode", wordDict = ["leet", "c"，“leetc”],查到leet和c后，查o没有，查od没有等等，而在找到leetc后，又来查o和od造成重复
 		return wobreak(s, wordset, 0, memo);
 	}
 	bool wobreak(string s, set<string>& worddict, int start, vector<int> &memo)
@@ -90,5 +91,44 @@ public:
 			}
 		}
 		return dp.back();
+	}
+};
+
+
+//复习
+class Solution {
+public:
+	bool wordBreak(string s, vector<string>& wordDict) {
+		if (wordDict.size() == 0)
+		{
+			return s.size() == 0;
+		}
+		unordered_set<string> wordset(wordDict.begin(), wordDict.end());
+		vector<int> memo(s.size(), -1);
+		return WordBr(s, wordset, 0, memo);
+	}
+	bool WordBr(string s, unordered_set<string> &wordset, int start, vector<int> &memo)
+	{
+		if (start == s.size())
+		{
+			return true;
+		}
+		if (memo[start] != -1)
+		{
+			return memo[start];
+		}
+		for (int i = start; i<s.size(); ++i)
+		{
+			if (wordset.count(s.substr(start, i - start + 1)))
+			{
+				if (WordBr(s, wordset, i + 1, memo))
+				{
+					memo[start] = true;
+					return true;
+				}
+			}
+		}
+		memo[start] = false;
+		return false;
 	}
 };

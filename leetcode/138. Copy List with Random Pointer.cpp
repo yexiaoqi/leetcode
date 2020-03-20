@@ -154,7 +154,7 @@ public:
 			++i;
 			cur = cur->next;
 		}
-		newlist.push_back(NULL);//这样不用对最后一个特殊处理了
+		newlist.push_back(NULL);//这样不用对最后一个特殊处理了，因为后面又newlist[i + 1];，不加这个会越界
 		cur = head;
 		i = 0;
 		while (cur)
