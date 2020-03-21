@@ -52,3 +52,37 @@ public:
 		return cnt;
 	}
 };
+
+//下面这样更清晰
+//遍历整个链表，统计出链表的长度，然后如果长度大于等于k，交换节点，当 k = 2 时，每段只需要交换一次，
+//当 k = 3 时，每段需要交换2此，所以i从1开始循环，注意交换一段后更新 pre 指针，然后 num 自减k，
+//直到 num<k 时循环结束
+class Solution {
+public:
+	ListNode* reverseKGroup(ListNode* head, int k) {
+		ListNode* dummy = new ListNode(-1);
+		ListNode* pre = dummy;
+		dummy->next = head;
+		ListNode* cur = head;
+		int num = 0;
+		while (cur)
+		{
+			++num;
+			cur = cur->next;
+		}
+		while (num >= k)
+		{
+			cur = pre->next;
+			for (int i = 1; i<k; ++i)
+			{
+				ListNode* t = cur->next;
+				cur->next = t->next;
+				t->next = pre->next;
+				pre->next = t;
+			}
+			pre = cur;
+			num -= k;
+		}
+		return dummy->next;
+	}
+};

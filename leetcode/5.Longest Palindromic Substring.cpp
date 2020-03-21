@@ -91,6 +91,7 @@ public:
 		string t = "$#";
 		for (int i = 0; i<s.size(); ++i)
 		{
+			// //t+='#'+s[i];//这样写是错的
 			t += s[i];
 			t += '#';
 		}
