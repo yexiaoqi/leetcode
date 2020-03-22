@@ -75,6 +75,9 @@ public:
 
 
 //o(1)空间复杂度解法
+//那就是说我们不能使用 stack 了，那么如何代替 stack 的作用呢，用 stack 的目的是为了利用其后进先出的特点
+//，好倒着取出前半段的元素。那么现在不用 stack 了，如何倒着取元素呢。我们可以在找到中点后，将
+//后半段的链表翻转一下，这样我们就可以按照回文的顺序比较了
 /**
 * Definition for singly-linked list.
 * struct ListNode {

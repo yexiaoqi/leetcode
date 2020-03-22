@@ -27,6 +27,7 @@ public:
 };
 
 //一次扫描
+//需要用两个指针，一个不停的向后扫，找到非零位置，然后和前面那个指针交换位置即可
 class Solution {
 public:
 	void moveZeroes(vector<int>& nums) {

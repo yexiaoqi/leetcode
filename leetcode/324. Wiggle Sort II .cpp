@@ -16,12 +16,50 @@ public:
 };
 
 
-//解法II O(n)时间复杂度 + O(1)空间复杂度解法：
-//1. 使用O(n)时间复杂度的quickSelect算法，从未经排序的数组nums中选出中位数mid
-//2. 参照解法I的思路，将nums数组的下标x通过函数idx()从[0, 1, 2, ..., n - 1, n] 映射到[1, 3, 5, ..., 0, 2, 4, ...]，得到新下标ix
-//3. 以中位数mid为界，将大于mid的元素排列在ix的较小部分，而将小于mid的元素排列在ix的较大部分。
-//遍历数组的时候如果当前的数大于中位数就将其从左往右放奇数位置, 如果小于中位数就将其从右往左放在偶数位置
+//解法II O(n)时间复杂度 + O(n)空间复杂度解法：
+//https://leetcode-cn.com/problems/wiggle-sort-ii/solution/yi-bu-yi-bu-jiang-shi-jian-fu-za-du-cong-onlognjia/
+class Solution {
+public:
+	void wiggleSort(vector<int>& nums) {
+		auto midptr = nums.begin() + nums.size() / 2;
+		nth_element(nums.begin(), midptr, nums.end());
+		int mid = *midptr;
+		// 3-way-partition
+		// 找到中位数后，我们需要利用3-way-partition算法将中位数放在数组中部，同时将小于中位数的数放在左侧，大于中位数的数放在右侧。3-way-partition 的典型例子是75题
+		int begin = 0, i = 0, end = nums.size() - 1;
+		while (i < end)
+		{
+			if (nums[i] > mid)
+			{
+				swap(nums[i], nums[end]);
+				--end;
+			}
+			else if (nums[i] < mid)
+			{
+				swap(nums[i], nums[begin]);
+				++begin;
+				++i;
+			}
+			else
+			{
+				++i;
+			}
+		}//必须要有 3-way-partition，否则比如[1,3,2,2,3,1]，nth+element以后2 1 1 2 3 3 ，最终会得到[1,3,1,3,2,2]
 
-//（n | 1）与n是偶数还是奇数有关。当n为偶数时，我们只需要nums[1 + 2 i％（n + 1）]
-//而不是nums[1 + 2 i％（n | 1）]; 当n为奇数时，我们需要nums[1 + 2 i％n]而不是nums[1 + 2 i％（n | 1）]。
-//要将两种情况组合在一起（n为偶数或奇数），我们可以简单地使用一个公式nums[1 + 2 * i％（n | 1）]。
+		if (nums.size() % 2)
+		{
+			++midptr;
+		} //因为tmp1(nums.begin(), midptr);是不包括midptr的，如果是奇数前半段应该多一个
+
+		vector<int> tmp1(nums.begin(), midptr);
+		vector<int> tmp2(midptr, nums.end());
+		for (int i = 0; i < tmp1.size(); ++i)
+		{
+			nums[2 * i] = tmp1[tmp1.size() - 1 - i];//如果是奇数前半段应该多一个
+		}
+		for (int i = 0; i < tmp2.size(); ++i)
+		{
+			nums[2 * i + 1] = tmp2[tmp2.size() - 1 - i];
+		}
+	}
+};
