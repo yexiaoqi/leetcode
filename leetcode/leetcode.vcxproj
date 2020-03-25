@@ -261,6 +261,7 @@
     <ClCompile Include="290. Word Pattern.cpp" />
     <ClCompile Include="297.Serialize and Deserialize Binary Tree.cpp" />
     <ClCompile Include="3. Longest Substring Without Repeating Characters.cpp" />
+    <ClCompile Include="30.Substring with Concatenation of All Words.cpp" />
     <ClCompile Include="300.Longest Increasing Subsequence .cpp" />
     <ClCompile Include="31.Next Permutation.cpp" />
     <ClCompile Include="32. Longest Valid Parentheses.cpp" />
@@ -277,12 +278,15 @@
     <ClCompile Include="348.Design Tic-Tac-Toe.cpp" />
     <ClCompile Include="35. Search Insert Position.cpp" />
     <ClCompile Include="36. Valid Sudoku.cpp" />
+    <ClCompile Include="360bishi_1.cpp" />
+    <ClCompile Include="360bishi_2.cpp" />
     <ClCompile Include="376. Wiggle Subsequence.cpp" />
     <ClCompile Include="378.Kth Smallest Element in a Sorted Matrix.cpp" />
     <ClCompile Include="38. Count and Say.cpp" />
     <ClCompile Include="380.Insert Delete GetRandom O(1).cpp" />
     <ClCompile Include="384.Shuffle an Array .cpp" />
     <ClCompile Include="387.First Unique Character in a String.cpp" />
+    <ClCompile Include="39.Combination Sum.cpp" />
     <ClCompile Include="395.Longest Substring with At Least K Repeating Characters .cpp" />
     <ClCompile Include="4.Median of Two Sorted Arrays .cpp" />
     <ClCompile Include="40. Combination Sum II.cpp" />
@@ -314,10 +318,12 @@
     <ClCompile Include="54. Spiral Matrix.cpp" />
     <ClCompile Include="543.Diameter of Binary Tree.cpp" />
     <ClCompile Include="545.Boundary of Binary Tree.cpp" />
+    <ClCompile Include="547.Friend Circles.cpp" />
     <ClCompile Include="55. Jump Game.cpp" />
     <ClCompile Include="56. Merge Intervals.cpp" />
     <ClCompile Include="572. Subtree of Another Tree.cpp" />
     <ClCompile Include="58. Length of Last Word.cpp" />
+    <ClCompile Include="6.ZigZag Conversion.cpp" />
     <ClCompile Include="60. Permutation Sequence.cpp" />
     <ClCompile Include="61. Rotate List.cpp" />
     <ClCompile Include="62 .Unique Paths.cpp" />
@@ -331,6 +337,7 @@
     <ClCompile Include="7. Reverse Integer.cpp" />
     <ClCompile Include="70. Climbing Stairs.cpp" />
     <ClCompile Include="71. Simplify Path.cpp" />
+    <ClCompile Include="72.Edit Distance.cpp" />
     <ClCompile Include="73. Set Matrix Zeroes.cpp" />
     <ClCompile Include="75. Sort Colors.cpp" />
     <ClCompile Include="754.Reach a Number  .cpp" />
@@ -441,6 +448,8 @@
     <ClCompile Include="knapsack01.cpp" />
     <ClCompile Include="knapscak_multi.cpp" />
     <ClCompile Include="leetcode.cpp" />
+    <ClCompile Include="microsoft2_1.cpp" />
+    <ClCompile Include="microsoft2_2.cpp" />
     <ClCompile Include="nowcodergirl_eatpeach.cpp" />
     <ClCompile Include="paixu_bubblesort.cpp" />
     <ClCompile Include="paixu_bucketsort.cpp" />
@@ -459,6 +468,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="nowcodergirl_Knapsack problem.cpp" />
+    <ClCompile Include="yuanjingzhineng_01.cpp" />
+    <ClCompile Include="yuanjingzhineng_02.cpp" />
     <ClCompile Include="zhinan3_22_Generate post-order array from pre-order and middle-order array.cpp" />
     <ClCompile Include="zhinan3_23_Count and generate all different binary trees.cpp" />
     <ClCompile Include="zhinan3_8_Find the largest topology in the binary tree that meets the search binary tree conditions.cpp" />

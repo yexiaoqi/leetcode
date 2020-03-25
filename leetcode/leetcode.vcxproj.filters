@@ -962,5 +962,38 @@
     <ClCompile Include="0_testcase.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="547.Friend Circles.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="yuanjingzhineng_01.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="yuanjingzhineng_02.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="72.Edit Distance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="30.Substring with Concatenation of All Words.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="6.ZigZag Conversion.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="39.Combination Sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="microsoft2_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="microsoft2_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="360bishi_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="360bishi_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
