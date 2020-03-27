@@ -995,5 +995,17 @@
     <ClCompile Include="360bishi_1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="meituanbishi_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="meituanbishi_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="microsoft1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kuaishoubishi1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

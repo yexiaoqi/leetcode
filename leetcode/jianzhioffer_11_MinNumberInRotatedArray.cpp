@@ -1,3 +1,60 @@
+//找最大数字，京东二面
+class Solution
+{
+public:
+	int MaxNumber(vector<int> nums)
+	{
+		if (nums.empty())
+		{
+			return 0;
+		}
+		int begin = 0, end = nums.size() - 1;
+		int res = INT_MIN;
+		while (begin <= end)
+		{
+			int mid = begin + (end - begin) / 2;
+			if (nums[mid] <= nums[end])
+			{
+				if (res<nums[end])
+				{
+					res = nums[end];
+				}
+				if (nums[mid] == nums[end])
+				{
+					for (int i = mid + 1; i <= end; ++i)
+						//					{
+						//						if (res<nums[i])
+						//						{
+						//							res = nums[i];
+						//						}
+						//					}
+					--end;//这一句代替上面的
+				}
+				end = mid - 1;
+			}
+			else
+			{
+				if (res<nums[mid])
+				{
+					res = nums[mid];
+				}
+				begin = mid + 1;
+			}
+		}
+		return res;
+	}
+};
+
+
+
+
+
+
+
+
+
+
+//牛客上可能用例不全，下面的如果碰上2,2,2,2,3这种有重复数字的不一定对
 class Solution {
 public:
 	int minNumberInRotateArray(vector<int> nums) {

@@ -447,7 +447,11 @@
     <ClCompile Include="jianzhioffer_10_04matrixcovering.cpp" />
     <ClCompile Include="knapsack01.cpp" />
     <ClCompile Include="knapscak_multi.cpp" />
+    <ClCompile Include="kuaishoubishi1.cpp" />
     <ClCompile Include="leetcode.cpp" />
+    <ClCompile Include="meituanbishi_1.cpp" />
+    <ClCompile Include="meituanbishi_2.cpp" />
+    <ClCompile Include="microsoft1.cpp" />
     <ClCompile Include="microsoft2_1.cpp" />
     <ClCompile Include="microsoft2_2.cpp" />
     <ClCompile Include="nowcodergirl_eatpeach.cpp" />
