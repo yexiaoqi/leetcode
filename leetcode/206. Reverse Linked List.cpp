@@ -73,4 +73,16 @@ public:
 };
 
 //复习2
-//自己做出，一遍ac（迭代版本）
+class Solution {
+public:
+	ListNode* reverseList(ListNode* head) {
+		if (!head || !head->next)
+		{
+			return head;
+		}
+		ListNode* newhead = reverseList(head->next);
+		head->next->next = head;
+		head->next = NULL;
+		return newhead;
+	}
+};

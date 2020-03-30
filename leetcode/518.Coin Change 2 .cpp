@@ -141,3 +141,50 @@ public:
 		return dp[amount];
 	}
 };
+
+
+
+//一维数组超简洁版
+class Solution {
+public:
+	int change(int amount, vector<int>& coins) {
+		int m = coins.size();
+		vector<int> dp(amount + 1, 0);
+		dp[0] = 1;
+		for (int i = 1; i <= m; ++i)
+		{
+			for (int j = coins[i - 1]; j <= amount; ++j)
+			{
+				dp[j] += dp[j - coins[i - 1]];
+			}
+		}
+		return dp[amount];
+	}
+};
+
+
+//复习
+class Solution {
+public:
+	int change(int amount, vector<int>& coins) {
+		// if(coins.size()==0||amount<0)
+		// {
+		//     return 0;
+		// }//如果amount是0，就算coins.size()==0，也应该返回1
+		int m = coins.size();
+		vector<vector<int>> dp(m + 1, vector<int>(amount + 1, 0));
+		dp[0][0] = 1;
+		for (int i = 1; i <= m; ++i)
+		{
+			for (int j = 0; j <= amount; ++j)
+			{
+				dp[i][j] = dp[i - 1][j];
+				if (j >= coins[i - 1])
+				{
+					dp[i][j] += dp[i][j - coins[i - 1]];
+				}
+			}
+		}
+		return dp[m][amount];
+	}
+};

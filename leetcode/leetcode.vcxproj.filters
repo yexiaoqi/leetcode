@@ -1007,5 +1007,17 @@
     <ClCompile Include="kuaishoubishi1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="zhaohangbishi_1.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="311.Sparse Matrix Multiplication.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="baidubishi_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
