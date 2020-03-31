@@ -1019,5 +1019,8 @@
     <ClCompile Include="baidubishi_1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="415.Add Strings .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

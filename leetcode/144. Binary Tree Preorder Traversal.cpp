@@ -155,3 +155,30 @@ public:
 		return res;
 	}
 };
+
+
+//¸´Ï°
+class Solution {
+public:
+	vector<int> preorderTraversal(TreeNode* root) {
+		stack<TreeNode*> s;
+		TreeNode* p = root;
+		vector<int> res;
+		while (!s.empty() || p)
+		{
+			if (p)
+			{
+				res.push_back(p->val);
+				s.push(p);
+				p = p->left;
+			}
+			else
+			{
+				p = s.top();
+				s.pop();
+				p = p->right;
+			}
+		}
+		return res;
+	}
+};
