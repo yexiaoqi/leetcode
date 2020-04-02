@@ -263,3 +263,38 @@ public:
 	}
 };
 
+
+
+//¸´Ï°
+class Solution {
+public:
+	int lengthOfLongestSubstring(string s) {
+		unordered_map<char, int> m;
+		int left = -1;
+		int res = 0;
+		vector<int> index;
+		for (int i = 0; i<s.size(); ++i)
+		{
+			if (m.count(s[i]) && m[s[i]]>left)
+			{
+				left = m[s[i]];
+			}
+			m[s[i]] = i;
+			if (res<i - left)
+			{
+				res = i - left;
+				index.clear();
+				index.push_back(left + 1);
+			}
+			else if (res == i - left)
+			{
+				index.push_back(left + 1);
+			}
+		}
+		for (int i = 0; i<index.size(); ++i)
+		{
+			cout << index[i] << endl;
+		}
+		return res;
+	}
+};

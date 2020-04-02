@@ -43,3 +43,48 @@ public:
 		return true;
 	}
 };
+
+
+//复习
+class Solution {
+public:
+	bool isCompleteTree(TreeNode* root) {
+		if (!root)
+		{
+			return true;
+		}
+		//queue<TreeNode*> q{root};
+		queue<TreeNode*> q{ { root } };//因为本质上queue里面有个list，所以这样初始化
+		bool flag = true;
+		while (!q.empty())
+		{
+			TreeNode* tmp = q.front();
+			q.pop();
+			if (tmp->left)
+			{
+				if (!flag)
+				{
+					return false;
+				}
+				q.push(tmp->left);
+			}
+			else
+			{
+				flag = false;
+			}
+			if (tmp->right)
+			{
+				if (!flag)
+				{
+					return false;
+				}
+				q.push(tmp->right);
+			}
+			else
+			{
+				flag = false;
+			}
+		}
+		return true;
+	}
+};

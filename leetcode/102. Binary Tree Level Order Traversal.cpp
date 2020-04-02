@@ -49,6 +49,8 @@ public:
 	}
 };
 
+
+
 class Solution
 {
 public:
@@ -86,7 +88,7 @@ public:
 
 
 
-
+//DFS方法
 class Solution {
 public:
 	vector<vector<int>> levelOrder(TreeNode* root) {
@@ -100,6 +102,51 @@ public:
 		res[level].push_back(node->val);
 		if (node->left) levelorder(node->left, level + 1, res);
 		if (node->right) levelorder(node->right, level + 1, res);
+	}
+};
+
+
+//BFS方法
+/**
+* Definition for a binary tree node.
+* struct TreeNode {
+*     int val;
+*     TreeNode *left;
+*     TreeNode *right;
+*     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+* };
+*/
+class Solution {
+public:
+	vector<vector<int>> levelOrder(TreeNode* root) {
+		queue<TreeNode*> q;
+		vector<vector<int>> res;
+		if (!root)
+		{
+			return res;
+		}
+		q.push(root);
+		while (!q.empty())
+		{
+			vector<int> path;
+			int n = q.size();
+			for (int i = 0; i<n; ++i)//q.size()会在下面的程序中被改变，所以要提前记录
+			{
+				TreeNode* tmp = q.front();
+				q.pop();
+				path.push_back(tmp->val);
+				if (tmp->left)
+				{
+					q.push(tmp->left);
+				}
+				if (tmp->right)
+				{
+					q.push(tmp->right);
+				}
+			}
+			res.push_back(path);
+		}
+		return res;
 	}
 };
 
