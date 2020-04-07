@@ -1,4 +1,8 @@
 //方法一，o(n^2)解法
+//维护一个一维 dp 数组，其中 dp[i] 表示以 nums[i] 为结尾的最长递增子串的长度，对于每一个 nums[i]，
+//从第一个数再搜索到i，如果发现某个数小于 nums[i]，更新 dp[i]，更新方法为 dp[i] = max(dp[i], dp[j] + 1)，
+//即比较当前 dp[i] 的值和那个小于 num[i] 的数的 dp 值加1的大小，就这样不断的更新 dp 数组，
+//到最后 dp 数组中最大的值就是我们要返回的 LIS 的长度
 class Solution {
 public:
 	int lengthOfLIS(vector<int>& nums) {

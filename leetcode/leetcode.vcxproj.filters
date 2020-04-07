@@ -1022,5 +1022,26 @@
     <ClCompile Include="415.Add Strings .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="xiecheng_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="alibishi_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xiechengbishi_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zijieniuke_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="python_computeiou.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="python_nms.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="aliniuke_FindMindiff.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

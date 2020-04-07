@@ -215,15 +215,17 @@ public:
 		while (!(i == 0 && j == 0))
 		{
 			//cout<<pos[i][j].first<<" "<<pos[i][j].second<<", "<<i<<" "<<j<<endl;
-			if ((i == pos[i][j].first + 1) && (j == pos[i][j].second + 1))
+			if(pos[i][j].first==i-1&&pos[i][j].second==j-1)
+			//if ((i == pos[i][j].first + 1) && (j == pos[i][j].second + 1))
 			{
-				resstr += text2[j - 1];
+				str.insert(0, 1, text2[j - 1]);//string &insert(int p0, int n, char c);//在p0处插入n个字符c
+				//resstr += text2[j - 1];
 			}
 			int tmp = pos[i][j].first;
 			j = pos[i][j].second;
 			i = tmp;
 		}
-		reverse(resstr.begin(), resstr.end());
+		//reverse(resstr.begin(), resstr.end());
 		cout << resstr;
 		return dp[n];
 	}

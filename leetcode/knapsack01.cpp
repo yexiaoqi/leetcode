@@ -1,6 +1,72 @@
 //https://www.acwing.com/problem/content/2/ 刷题
 //f[i][v]=max{f[i-1][v],f[i-1][v-c[i]]+w[i]}
 //result[i][j] = max(result[i - 1][j], result[i - 1][j - weight_array[i]] + value_array[i]);
+
+
+//主要代码
+class Solution
+{
+public:
+	int FindMaxWorth(vector<int>& v, vector<int>& w, int V)
+	{
+		vector<int> dp(V + 1, 0);
+		for (int i = 0; i<v.size(); ++i)
+		{
+			for (int j = V; j >= v[i]; --j)
+			{
+				dp[j] = max(dp[j], dp[j - v[i]] + w[i]);
+			}
+		}
+		return dp.back();
+	}
+};
+
+
+//主要代码的完整版
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+class Solution
+{
+public:
+	int FindMaxWorth(vector<int>& v, vector<int>& w, int V)
+	{
+		vector<int> dp(V + 1, 0);
+		for (int i = 0; i<v.size(); ++i)
+		{
+			for (int j = V; j >= v[i]; --j)
+			{
+				dp[j] = max(dp[j], dp[j - v[i]] + w[i]);
+			}
+		}
+		return dp.back();
+	}
+};
+int main()
+{
+	int N, V;
+	cin >> N >> V;
+	vector<int> v(N, 0);
+	vector<int> w(N, 0);
+	for (int i = 0; i<N; ++i)
+	{
+		cin >> v[i] >> w[i];
+	}
+	Solution s;
+	int res = s.FindMaxWorth(v, w, V);
+	cout << res;
+	return 0;
+}
+
+
+
+
+
+
+
+
+
 ///一维数组求解
 #include<iostream>
 #include<cstring>

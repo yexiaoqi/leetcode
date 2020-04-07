@@ -95,6 +95,9 @@ public:
 };
 
 //写成调用一个函数的形式
+//首先来查找起始位置的 target，就是在数组中查找第一个大于等于 target 的位置，当返回的位置越界，
+//或者该位置上的值不等于 target 时，表示数组中没有 target，直接返回{ -1, -1 } 即可。
+//若查找到了 target 值，则再查找第一个大于等于 target + 1 的位置，然后把返回的位置减1，就是 target 的最后一个位置
 class Solution {
 public:
 	int GetNumberOfK(vector<int> data, int k) {
@@ -334,5 +337,37 @@ public:
 			}
 		}
 		return -1;
+	}
+};
+
+
+
+class Solution {
+public:
+	vector<int> searchRange(vector<int>& nums, int target) {
+		int index1 = Findtarget(nums, target);
+		if (index1 == nums.size() || nums[index1] != target)
+		{
+			return vector<int>({ -1,-1 });
+		}
+		int index2 = Findtarget(nums, target + 1) - 1;
+		return vector<int>({ index1,index2 });
+	}
+	int Findtarget(vector<int>& nums, int target)
+	{
+		int left = 0, right = nums.size();
+		while (left<right)
+		{
+			int mid = (left + right) / 2;
+			if (nums[mid]<target)
+			{
+				left = mid + 1;
+			}
+			else
+			{
+				right = mid;
+			}
+		}
+		return right;
 	}
 };
