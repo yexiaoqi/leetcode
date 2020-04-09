@@ -151,11 +151,15 @@
   <ItemGroup>
     <ClCompile Include="0_testcase.cpp" />
     <ClCompile Include="1143.Longest Common Subsequence.cpp" />
+    <ClCompile Include="123.Best Time to Buy and Sell Stock III .cpp" />
     <ClCompile Include="124.Binary Tree Maximum Path Sum .cpp" />
     <ClCompile Include="128.Longest Consecutive Sequence .cpp" />
     <ClCompile Include="151.Reverse Words in a String.cpp" />
+    <ClCompile Include="153.Find Minimum in Rotated Sorted Array .cpp" />
+    <ClCompile Include="154.Find Minimum in Rotated Sorted Array II.cpp" />
     <ClCompile Include="167.Two Sum II - Input array is sorted.cpp" />
     <ClCompile Include="174.Dungeon Game.cpp" />
+    <ClCompile Include="188.Best Time to Buy and Sell Stock IV.cpp" />
     <ClCompile Include="212.Word Search II .cpp" />
     <ClCompile Include="277. Find the Celebrity.cpp" />
     <ClCompile Include="285.Inorder Successor in BST.cpp" />
@@ -454,6 +458,8 @@
     <ClCompile Include="knapscak_multi.cpp" />
     <ClCompile Include="kuaishoubishi1.cpp" />
     <ClCompile Include="leetcode.cpp" />
+    <ClCompile Include="meituanbishi 2_5.cpp" />
+    <ClCompile Include="meituanbishi2_1.cpp" />
     <ClCompile Include="meituanbishi_1.cpp" />
     <ClCompile Include="meituanbishi_2.cpp" />
     <ClCompile Include="microsoft1.cpp" />
@@ -479,6 +485,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="nowcodergirl_Knapsack problem.cpp" />
+    <ClCompile Include="wangyihulianwangbishi_2.cpp" />
     <ClCompile Include="xiechengbishi_2.cpp" />
     <ClCompile Include="xiecheng_1.cpp" />
     <ClCompile Include="yuanjingzhineng_01.cpp" />
@@ -492,6 +499,7 @@
     <ClCompile Include="zhinan9_1_random1to7.cpp" />
     <ClCompile Include="zhinan9_1_random1to6.cpp" />
     <ClCompile Include="zhinan9_1_random1ton.cpp" />
+    <ClCompile Include="zhinan9_2FindMaxgcd.cpp" />
     <ClCompile Include="zijieniuke_1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

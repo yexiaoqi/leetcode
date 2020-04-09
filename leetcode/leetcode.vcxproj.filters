@@ -1043,5 +1043,29 @@
     <ClCompile Include="aliniuke_FindMindiff.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="153.Find Minimum in Rotated Sorted Array .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="154.Find Minimum in Rotated Sorted Array II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="123.Best Time to Buy and Sell Stock III .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="188.Best Time to Buy and Sell Stock IV.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wangyihulianwangbishi_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan9_2FindMaxgcd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="meituanbishi2_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="meituanbishi 2_5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
