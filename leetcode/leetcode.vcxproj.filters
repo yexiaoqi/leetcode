@@ -1067,5 +1067,38 @@
     <ClCompile Include="meituanbishi 2_5.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="371.Sum of Two Integers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="meituanbishi2_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pinduoduobishi_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pinduoduobishi_3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan7_3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wangyihuyubishi_4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wangyihuyubishi_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wangyihuyubishi_3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

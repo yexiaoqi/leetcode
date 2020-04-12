@@ -285,6 +285,7 @@
     <ClCompile Include="36. Valid Sudoku.cpp" />
     <ClCompile Include="360bishi_1.cpp" />
     <ClCompile Include="360bishi_2.cpp" />
+    <ClCompile Include="371.Sum of Two Integers.cpp" />
     <ClCompile Include="376. Wiggle Subsequence.cpp" />
     <ClCompile Include="378.Kth Smallest Element in a Sorted Matrix.cpp" />
     <ClCompile Include="38. Count and Say.cpp" />
@@ -460,6 +461,7 @@
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="meituanbishi 2_5.cpp" />
     <ClCompile Include="meituanbishi2_1.cpp" />
+    <ClCompile Include="meituanbishi2_2.cpp" />
     <ClCompile Include="meituanbishi_1.cpp" />
     <ClCompile Include="meituanbishi_2.cpp" />
     <ClCompile Include="microsoft1.cpp" />
@@ -476,6 +478,8 @@
     <ClCompile Include="paixu_radixsort.cpp" />
     <ClCompile Include="paixu_selectsort.cpp" />
     <ClCompile Include="paixu_shellsort.cpp" />
+    <ClCompile Include="pinduoduobishi_1.cpp" />
+    <ClCompile Include="pinduoduobishi_3.cpp" />
     <ClCompile Include="python_computeiou.cpp" />
     <ClCompile Include="python_nms.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -486,16 +490,23 @@
     </ClCompile>
     <ClCompile Include="nowcodergirl_Knapsack problem.cpp" />
     <ClCompile Include="wangyihulianwangbishi_2.cpp" />
+    <ClCompile Include="wangyihuyubishi_1.cpp" />
+    <ClCompile Include="wangyihuyubishi_3.cpp" />
+    <ClCompile Include="wangyihuyubishi_4.cpp" />
     <ClCompile Include="xiechengbishi_2.cpp" />
     <ClCompile Include="xiecheng_1.cpp" />
     <ClCompile Include="yuanjingzhineng_01.cpp" />
     <ClCompile Include="yuanjingzhineng_02.cpp" />
     <ClCompile Include="zhaohangbishi_1.cpp" />
+    <ClCompile Include="zhinan3_2.cpp" />
     <ClCompile Include="zhinan3_22_Generate post-order array from pre-order and middle-order array.cpp" />
     <ClCompile Include="zhinan3_23_Count and generate all different binary trees.cpp" />
     <ClCompile Include="zhinan3_8_Find the largest topology in the binary tree that meets the search binary tree conditions.cpp" />
     <ClCompile Include="zhinan4_1.cpp" />
     <ClCompile Include="zhinan4_14_Card Game Problem in a Line.cpp" />
+    <ClCompile Include="zhinan5_2.cpp" />
+    <ClCompile Include="zhinan5_3.cpp" />
+    <ClCompile Include="zhinan7_3.cpp" />
     <ClCompile Include="zhinan9_1_random1to7.cpp" />
     <ClCompile Include="zhinan9_1_random1to6.cpp" />
     <ClCompile Include="zhinan9_1_random1ton.cpp" />
