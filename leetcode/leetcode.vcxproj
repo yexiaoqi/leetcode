@@ -330,6 +330,7 @@
     <ClCompile Include="56. Merge Intervals.cpp" />
     <ClCompile Include="572. Subtree of Another Tree.cpp" />
     <ClCompile Include="58. Length of Last Word.cpp" />
+    <ClCompile Include="5_19_Find_a_new_type_character_of_the_specified_type.cpp" />
     <ClCompile Include="6.ZigZag Conversion.cpp" />
     <ClCompile Include="60. Permutation Sequence.cpp" />
     <ClCompile Include="61. Rotate List.cpp" />
@@ -350,6 +351,8 @@
     <ClCompile Include="754.Reach a Number  .cpp" />
     <ClCompile Include="78. Subsets.cpp" />
     <ClCompile Include="79. Word Search.cpp" />
+    <ClCompile Include="796.Rotate String.cpp" />
+    <ClCompile Include="zhinan_7_1_change_two_num.cpp" />
     <ClCompile Include="8. String to Integer (atoi).cpp" />
     <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp" />
     <ClCompile Include="81. Search in Rotated Sorted Array II.cpp" />
@@ -367,12 +370,16 @@
     <ClCompile Include="102. Binary Tree Level Order Traversal.cpp" />
     <ClCompile Include="958. Check Completeness of a Binary Tree .cpp" />
     <ClCompile Include="96. Unique Binary Search Trees.cpp" />
+    <ClCompile Include="974.Subarray Sums Divisible by K  .cpp" />
     <ClCompile Include="98. Validate Binary Search Tree   .cpp" />
     <ClCompile Include="99.Recover Binary Search Tree .cpp" />
     <ClCompile Include="alibishi_1.cpp" />
     <ClCompile Include="aliniuke_FindMindiff.cpp" />
     <ClCompile Include="baidubishi_1.cpp" />
     <ClCompile Include="googlemianshi.cpp" />
+    <ClCompile Include="huaweibishi_1.cpp" />
+    <ClCompile Include="huaweibishi_2.cpp" />
+    <ClCompile Include="huaweibishi_3.cpp" />
     <ClCompile Include="knapsack_complete.cpp" />
     <ClCompile Include="jianzhioffer_68_CommonParentInTree.cpp" />
     <ClCompile Include="jianzhioffer_03_02_DuplicationInArrayNoEdit.cpp" />
@@ -462,6 +469,8 @@
     <ClCompile Include="meituanbishi 2_5.cpp" />
     <ClCompile Include="meituanbishi2_1.cpp" />
     <ClCompile Include="meituanbishi2_2.cpp" />
+    <ClCompile Include="meituanbishi2_3.cpp" />
+    <ClCompile Include="meituanbishi2_4.cpp" />
     <ClCompile Include="meituanbishi_1.cpp" />
     <ClCompile Include="meituanbishi_2.cpp" />
     <ClCompile Include="microsoft1.cpp" />
@@ -479,6 +488,7 @@
     <ClCompile Include="paixu_selectsort.cpp" />
     <ClCompile Include="paixu_shellsort.cpp" />
     <ClCompile Include="pinduoduobishi_1.cpp" />
+    <ClCompile Include="pinduoduobishi_2.cpp" />
     <ClCompile Include="pinduoduobishi_3.cpp" />
     <ClCompile Include="python_computeiou.cpp" />
     <ClCompile Include="python_nms.cpp" />
@@ -494,7 +504,7 @@
     <ClCompile Include="wangyihuyubishi_3.cpp" />
     <ClCompile Include="wangyihuyubishi_4.cpp" />
     <ClCompile Include="xiechengbishi_2.cpp" />
-    <ClCompile Include="xiecheng_1.cpp" />
+    <ClCompile Include="xiechengbishi_1.cpp" />
     <ClCompile Include="yuanjingzhineng_01.cpp" />
     <ClCompile Include="yuanjingzhineng_02.cpp" />
     <ClCompile Include="zhaohangbishi_1.cpp" />
@@ -506,11 +516,15 @@
     <ClCompile Include="zhinan4_14_Card Game Problem in a Line.cpp" />
     <ClCompile Include="zhinan5_2.cpp" />
     <ClCompile Include="zhinan5_3.cpp" />
+    <ClCompile Include="zhinan5_4.cpp" />
+    <ClCompile Include="zhinan5_9_Find_a_string_in_an_ordered_but_empty_array.cpp" />
     <ClCompile Include="zhinan7_3.cpp" />
     <ClCompile Include="zhinan9_1_random1to7.cpp" />
     <ClCompile Include="zhinan9_1_random1to6.cpp" />
     <ClCompile Include="zhinan9_1_random1ton.cpp" />
     <ClCompile Include="zhinan9_2FindMaxgcd.cpp" />
+    <ClCompile Include="zhinan5_1_Valid Anagram.cpp" />
+    <ClCompile Include="zhinan5_12_The_minimum_distance_between_two_strings_in_the_array.cpp" />
     <ClCompile Include="zijieniuke_1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

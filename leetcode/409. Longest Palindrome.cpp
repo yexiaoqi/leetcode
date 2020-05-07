@@ -23,3 +23,34 @@ public:
 		return max_length + flag;
 	}
 };
+
+//¸´Ï°
+class Solution {
+public:
+	int longestPalindrome(string s) {
+		unordered_map<char, int> m;
+		for (int i = 0; i<s.size(); ++i)
+		{
+			++m[s[i]];
+		}
+		bool flag = false;
+		int cnt = 0;
+		for (auto a = m.begin(); a != m.end(); ++a)
+		{
+			if ((*a).second & 0x1)
+			{
+				flag = true;
+				cnt += (*a).second - 1;
+			}
+			else
+			{
+				cnt += (*a).second;
+			}
+		}
+		if (flag)
+		{
+			cnt += 1;
+		}
+		return cnt;
+	}
+};

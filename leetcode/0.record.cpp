@@ -133,6 +133,7 @@
 //！！！！vector，stack，queue首先要判断是否有值才可以调用值 while(i<nums.size()&&nums[i]==nums[j])；if (st.empty() || st.top() != '(')：445,2
 //链表本身移动
 //关于数的题考虑溢出，不要忘记最后加符号
+//注意vector要初始化大小！！！！，否则直接等于会错只能push_back!!!
 
 //回溯题
 //每个值不同需要for循环46，17，78

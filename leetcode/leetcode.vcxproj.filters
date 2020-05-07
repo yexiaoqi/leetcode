@@ -1022,9 +1022,6 @@
     <ClCompile Include="415.Add Strings .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="xiecheng_1.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="alibishi_1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -1098,6 +1095,51 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="wangyihuyubishi_3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="huaweibishi_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="huaweibishi_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="meituanbishi2_4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="meituanbishi2_3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="huaweibishi_3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="796.Rotate String.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xiechengbishi_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pinduoduobishi_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="974.Subarray Sums Divisible by K  .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_1_Valid Anagram.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_9_Find_a_string_in_an_ordered_but_empty_array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5_19_Find_a_new_type_character_of_the_specified_type.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_12_The_minimum_distance_between_two_strings_in_the_array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan_7_1_change_two_num.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

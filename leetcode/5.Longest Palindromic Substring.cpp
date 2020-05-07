@@ -118,3 +118,86 @@ public:
 		return s.substr((resid - resmx) / 2, resmx - 1);
 	}
 };
+
+
+//复习，自己写的解法
+class Solution {
+public:
+	string longestPalindrome(string s) {
+		int maxcnt = 0;
+		string maxstr = "";
+		for (int i = 0; i<s.size(); ++i)
+		{
+			int cnt = 1;
+			int begin = i - 1, end = i + 1;
+			while (begin >= 0 && end<s.size() && s[begin] == s[end])
+			{
+				cnt += 2;
+				--begin;
+				++end;
+			}
+
+			int cnt2 = 0;
+			int begin2 = i, end2 = i + 1;
+			if (end2<s.size() && s[begin2] == s[end2])
+			{
+				cnt2 = 2;
+				--begin2;
+				++end2;
+				while (begin2 >= 0 && end2<s.size() && s[begin2] == s[end2])
+				{
+					cnt2 += 2;
+					--begin2;
+					++end2;
+				}
+			}
+			if (maxcnt<cnt)
+			{
+				maxcnt = cnt;
+				maxstr = s.substr(begin + 1, maxcnt);
+			}
+			if (maxcnt<cnt2)
+			{
+				maxcnt = cnt2;
+				maxstr = s.substr(begin2 + 1, maxcnt);
+			}
+		}
+		return maxstr;
+	}
+};
+
+
+//复习
+class Solution {
+public:
+	string longestPalindrome(string s) {
+		string t = "$";
+		for (int i = 0; i<s.size(); ++i)
+		{
+			t += '#';
+			t += s[i];
+		}
+		t += '#';
+		int id = 0, mx = 0, resid = 0, resmx = 0;
+		vector<int> p(t.size(), 0);
+		for (int i = 0; i<t.size(); ++i)
+		{
+			p[i] = mx>i ? min(p[id * 2 - i], mx - i) : 1;
+			while (i - p[i] >= 0 && i + p[i]<t.size() && t[i + p[i]] == t[i - p[i]])
+			{
+				++p[i];
+			}
+			if (mx<i + p[i])
+			{
+				mx = i + p[i];
+				id = i;
+			}
+			if (resmx<p[i])
+			{
+				resmx = p[i];
+				resid = id;
+			}
+		}
+		return s.substr((resid - resmx) / 2, resmx - 1);
+	}
+};

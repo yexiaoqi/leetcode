@@ -86,3 +86,56 @@ public:
 		return newhead;
 	}
 };
+
+
+//ÍêÕûÊä³ö
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
+
+struct ListNode
+{
+	int val;
+	ListNode* next;
+	ListNode(int x) :val(x), next(NULL) {}
+};
+class Solution
+{
+public:
+	ListNode* Reverse(ListNode *node)
+	{
+		ListNode* dummy = new ListNode(-1);
+		ListNode* cur = node;
+		ListNode* pre = dummy;
+		pre->next = node;
+		while (cur&&cur->next)
+		{
+			ListNode* t = cur->next;
+			cur->next = t->next;
+			t->next = pre->next;
+			pre->next = t;
+		}
+		return dummy->next;
+	}
+};
+
+int main()
+{
+	Solution s;
+	ListNode a(1);
+	ListNode b(2);
+	ListNode c(3);
+	ListNode d(4);
+	a.next = &b;
+	b.next = &c;
+	c.next = &d;
+	ListNode* res = s.Reverse(&a);
+	while (res)
+	{
+		cout << res->val;
+		res = res->next;
+	}
+	return 0;
+}
