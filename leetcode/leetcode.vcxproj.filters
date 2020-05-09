@@ -1031,12 +1031,6 @@
     <ClCompile Include="zijieniuke_1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="python_computeiou.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="python_nms.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="aliniuke_FindMindiff.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -1142,5 +1136,19 @@
     <ClCompile Include="zhinan_7_1_change_two_num.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="zhinan7_6_Find a number that appears only once in an array where all other numbers appear k times.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan7_5_Find the number of odd occurrences in an array where all other occurrences are even.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="52.N-Queens II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="51.N-Queens.cpp">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

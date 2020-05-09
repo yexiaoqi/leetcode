@@ -321,6 +321,7 @@
     <ClCompile Include="5.Longest Palindromic Substring.cpp" />
     <ClCompile Include="50. Pow(x, n).cpp" />
     <ClCompile Include="518.Coin Change 2 .cpp" />
+    <ClCompile Include="52.N-Queens II.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
     <ClCompile Include="54. Spiral Matrix.cpp" />
     <ClCompile Include="543.Diameter of Binary Tree.cpp" />
@@ -352,6 +353,8 @@
     <ClCompile Include="78. Subsets.cpp" />
     <ClCompile Include="79. Word Search.cpp" />
     <ClCompile Include="796.Rotate String.cpp" />
+    <ClCompile Include="zhinan7_5_Find the number of odd occurrences in an array where all other occurrences are even.cpp" />
+    <ClCompile Include="zhinan7_6_Find a number that appears only once in an array where all other numbers appear k times.cpp" />
     <ClCompile Include="zhinan_7_1_change_two_num.cpp" />
     <ClCompile Include="8. String to Integer (atoi).cpp" />
     <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp" />
@@ -490,8 +493,6 @@
     <ClCompile Include="pinduoduobishi_1.cpp" />
     <ClCompile Include="pinduoduobishi_2.cpp" />
     <ClCompile Include="pinduoduobishi_3.cpp" />
-    <ClCompile Include="python_computeiou.cpp" />
-    <ClCompile Include="python_nms.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -526,6 +527,9 @@
     <ClCompile Include="zhinan5_1_Valid Anagram.cpp" />
     <ClCompile Include="zhinan5_12_The_minimum_distance_between_two_strings_in_the_array.cpp" />
     <ClCompile Include="zijieniuke_1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="51.N-Queens.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
