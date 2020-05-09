@@ -161,7 +161,6 @@
     <ClCompile Include="174.Dungeon Game.cpp" />
     <ClCompile Include="188.Best Time to Buy and Sell Stock IV.cpp" />
     <ClCompile Include="212.Word Search II .cpp" />
-    <ClCompile Include="222.Count Complete Tree Nodes .cpp" />
     <ClCompile Include="277. Find the Celebrity.cpp" />
     <ClCompile Include="285.Inorder Successor in BST.cpp" />
     <ClCompile Include="295.Find Median from Data Stream.cpp" />

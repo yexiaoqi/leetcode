@@ -1127,13 +1127,7 @@
     <ClCompile Include="zhinan5_9_Find_a_string_in_an_ordered_but_empty_array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="5_19_Find_a_new_type_character_of_the_specified_type.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="zhinan5_12_The_minimum_distance_between_two_strings_in_the_array.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="zhinan_7_1_change_two_num.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="zhinan7_6_Find a number that appears only once in an array where all other numbers appear k times.cpp">
@@ -1143,6 +1137,24 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="52.N-Queens II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_17_N_queens.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_16_Longest continuous sequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_15_Jump Game II .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_19_Find_a_new_type_character_of_the_specified_type.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan7_1_change_two_num.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="222.Count Complete Tree Nodes .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

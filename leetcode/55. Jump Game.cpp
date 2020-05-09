@@ -166,3 +166,38 @@ public:
 		return false;
 	}
 };
+
+//¸´Ï°
+class Solution {
+public:
+	bool canJump(vector<int>& nums) {
+		if (nums.size() == 0)
+		{
+			return true;
+		}
+		int n = nums.size() - 1;
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			nums[i] += i;
+		}
+		int jump = nums[0];
+		int i = 0;
+		while (i <= jump)
+		{
+			if (jump >= n)
+			{
+				return true;
+			}
+			if (jump<nums[i])
+			{
+				jump = nums[i];
+			}
+			++i;
+		}
+		if (jump >= n)
+		{
+			return true;
+		}
+		return false;
+	}
+};
