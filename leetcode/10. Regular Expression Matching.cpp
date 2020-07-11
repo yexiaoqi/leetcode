@@ -144,3 +144,48 @@ public:
 		}
 	}
 };
+
+
+//¸´Ï°
+class Solution {
+public:
+	bool isMatch(string s, string p) {
+		if (p.size() == 0)
+		{
+			return s.size() == 0;
+		}
+		if (p.size() == 1)
+		{
+			if (s.size() != 1 || !(p[0] == s[0] || p[0] == '.'))
+			{
+				return false;
+			}
+			else
+			{
+				return true;
+			}
+		}
+		if (p[1] != '*')
+		{
+			if (s.size()<1 || !(p[0] == s[0] || p[0] == '.'))
+			{
+				return false;
+			}
+			else
+			{
+				return isMatch(s.substr(1), p.substr(1));
+			}
+		}
+		else
+		{
+			if (s.size() >= 1 && (s[0] == p[0] || p[0] == '.'))
+			{
+				return isMatch(s.substr(1), p) || isMatch(s, p.substr(2));
+			}
+			else
+			{
+				return isMatch(s, p.substr(2));
+			}
+		}
+	}
+};

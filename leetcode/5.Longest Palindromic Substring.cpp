@@ -201,3 +201,47 @@ public:
 		return s.substr((resid - resmx) / 2, resmx - 1);
 	}
 };
+
+//复习，自己的写法
+class Solution {
+public:
+	string longestPalindrome(string s) {
+		if (s.size() == 0)
+		{
+			return s;
+		}
+		string res = "";
+		int maxcnt = 0;
+		for (int i = 0; i<s.size(); ++i)
+		{
+			string str = palindrome(s, i - 1, i + 1);
+			int cnt = str.size();
+			if (maxcnt<cnt)
+			{
+				maxcnt = cnt;
+				res = str;
+			}
+			str = palindrome(s, i, i + 1);
+			cnt = str.size();
+			if (maxcnt<cnt)
+			{
+				maxcnt = cnt;
+				res = str;
+			}
+		}
+		return res;
+	}
+	string palindrome(string s, int begin, int end)
+	{
+		while (begin >= 0 && end<s.size() && s[begin] == s[end])
+		{
+			--begin;
+			++end;
+		}
+		if (begin + 1 >= s.size())
+		{
+			return "";
+		}
+		return s.substr(begin + 1, end - begin - 1);
+	}
+};

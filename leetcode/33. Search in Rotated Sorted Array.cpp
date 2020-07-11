@@ -275,3 +275,72 @@ public:
 		return -1;
 	}
 };
+
+
+//
+class Solution {
+public:
+	int search(vector<int>& nums, int target) {
+		int size = nums.size();
+		if (size == 0)
+		{
+			return -1;
+		}
+		int begin = 0, end = size - 1;
+		while (begin <= end)
+		{
+			int mid = (begin + end) / 2;
+			if (target == nums[mid])
+			{
+				return mid;
+			}
+			if (nums[mid]<nums[end])
+			{
+				if (target<nums[mid])
+				{
+					end = mid - 1;
+				}
+				else
+				{
+					if (target>nums[end])
+					{
+						end = mid - 1;
+					}
+					else if (target == nums[end])
+					{
+						return end;
+					}
+					else
+					{
+						begin = mid + 1;
+					}
+				}
+			}
+			else
+			{
+				if (target>nums[mid])
+				{
+					begin = mid + 1;
+				}
+				else
+				{
+					if (target == nums[begin])
+					{
+						return begin;
+					}
+					else if (target<nums[begin])
+					{
+						begin = mid + 1;
+					}
+					else
+					{
+						end = mid - 1;
+					}
+				}
+			}
+			cout << begin << " " << end << endl;
+		}
+
+		return -1;
+	}
+};

@@ -91,3 +91,36 @@ public:
 		return false;
 	}
 };
+
+//¸´Ï°
+class Solution {
+public:
+	int findRepeatNumber(vector<int>& nums) {
+		int n = nums.size();
+		if (n == 0)
+		{
+			return -1;
+		}
+		int i = 0;
+		while (i<n)
+		{
+			if (nums[i] == i)
+			{
+				++i;
+
+			}
+			else
+			{
+				if (nums[i] == nums[nums[i]])
+				{
+					return nums[i];
+				}
+				else
+				{
+					swap(nums[i], nums[nums[i]]);
+				}
+			}
+		}
+		return -1;
+	}
+};

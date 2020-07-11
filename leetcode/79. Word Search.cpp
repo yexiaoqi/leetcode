@@ -449,3 +449,70 @@ public:
 		return judge;
 	}
 };
+
+
+//不用或的方法
+class Solution {
+public:
+	bool exist(vector<vector<char>>& board, string word) {
+		if (board.size() == 0 || board[0].size() == 0)
+		{
+			return word.size() == 0;
+		}
+		int m = board.size(), n = board[0].size();
+		string path;
+		bool judge = false;
+		vector<vector<int>> visit(m, vector<int>(n, 0));
+		for (int i = 0; i<m; ++i)
+		{
+			for (int j = 0; j<n; ++j)
+			{
+				if (visit[i][j] == 0 && board[i][j] == word[0])
+				{
+					DFS(board, visit, path, 0, i, j, judge, word);
+					if (judge)
+					{
+						return true;
+					}
+				}
+			}
+		}
+		return false;
+	}
+	void DFS(vector<vector<char>>& board, vector<vector<int>> &visit, string &path, int pos, int x, int y, bool &judge, string word)
+	{
+		if (path.size() == word.size() - 1)
+		{
+			if (board[x][y] == word[pos])
+			{
+				judge = true;
+			}
+			return;
+		}
+		int dx[4] = { 1,-1,0,0 };
+		int dy[4] = { 0,0,1,-1 };
+
+		visit[x][y] = 1;
+		path.push_back(word[pos]);
+		for (int i = 0; i<4; ++i)
+		{
+			int newx = x + dx[i];
+			int newy = y + dy[i];
+			if (newx<0 || newx >= board.size() || newy<0 || newy >= board[0].size())
+			{
+				continue;
+			}
+			if (visit[newx][newy] == 0 && board[newx][newy] == word[pos + 1])
+			{
+				DFS(board, visit, path, pos + 1, newx, newy, judge, word);
+				if (judge)
+				{
+					break;
+				}
+			}
+		}
+		visit[x][y] = 0;
+		path.pop_back();
+
+	}
+};

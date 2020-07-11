@@ -1157,6 +1157,63 @@
     <ClCompile Include="222.Count Complete Tree Nodes .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="zhinan3_24_Number of nodes in a complete binary tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_13_decode_ways.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="08_06_hanota.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan1_4_cat_and_dog_queue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan1_6_hanoi_with_restricts.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_1_Print the common part of two linked lists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_4_Reverse Linked List  .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_5_Reverse Linked List II .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_1_Tree_traversal .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_2_Minimum Path Sum .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_3_Coin Change.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_4_class Solution {.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_2_Remove Nth Node From End of List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_10_The length of the longest subarray in the unsorted positive array that has a cumulative sum of the given value.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_11_The length of the longest subarray in the unsorted array where the cumulative sum is the given value.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_6_Find the longest path length with the cumulative sum being the specified value in the binary tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_7_Largest BST Subtree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="746.Min Cost Climbing Stairs .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="109.Convert Sorted List to Binary Search Tree .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="51.N-Queens.cpp">

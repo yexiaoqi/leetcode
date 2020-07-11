@@ -53,3 +53,73 @@ public:
 		return false;
 	}
 };
+
+
+class Solution {
+public:
+	bool search(vector<int>& nums, int target) {
+		int size = nums.size();
+		if (size == 0)
+		{
+			return false;
+		}
+		int begin = 0, end = size - 1;
+		while (begin <= end)
+		{
+			int mid = (begin + end) / 2;
+			if (target == nums[mid])
+			{
+				return true;
+			}
+			if (nums[mid] == nums[end])
+			{
+				--end;
+			}//比没有重复情况只多着一个if
+			else if (nums[mid]<nums[end])
+			{
+				if (target<nums[mid])
+				{
+					end = mid - 1;
+				}
+				else
+				{
+					if (target>nums[end])
+					{
+						end = mid - 1;
+					}
+					else if (target == nums[end])
+					{
+						return true;
+					}
+					else
+					{
+						begin = mid + 1;
+					}
+				}
+			}
+			else
+			{
+				if (target>nums[mid])
+				{
+					begin = mid + 1;
+				}
+				else
+				{
+					if (target == nums[begin])
+					{
+						return true;
+					}
+					else if (target<nums[begin])
+					{
+						begin = mid + 1;
+					}
+					else
+					{
+						end = mid - 1;
+					}
+				}
+			}
+		}
+		return false;
+	}
+};

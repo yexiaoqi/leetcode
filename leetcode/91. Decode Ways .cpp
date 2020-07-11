@@ -1,4 +1,4 @@
-//同剑指offer 46
+//同剑指offer 46和指南4_13
 class Solution {
 public:
 	int numDecodings(string s) {

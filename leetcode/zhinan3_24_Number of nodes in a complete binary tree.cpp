@@ -1,4 +1,4 @@
-//同指南3_24
+//同leetcode222
 //O(n)解法
 class Solution {
 public:

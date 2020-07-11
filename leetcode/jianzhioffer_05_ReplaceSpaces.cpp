@@ -98,3 +98,41 @@ public:
 		}
 	}
 };
+
+
+//复习
+class Solution {
+public:
+	string replaceSpace(string s) {
+		if (s.size() == 0)
+		{
+			return s;
+		}
+		int cnt = 0;
+		for (int i = 0; i<s.size(); ++i)
+		{
+			if (s[i] == ' ')
+			{
+				++cnt;
+			}
+		}
+		int i = s.size() - 1;
+		int j = s.size() + 2 * cnt - 1;
+		s.insert(s.end(), 2 * cnt, ' ');//注意要加这句开新空间
+		while (i >= 0)
+		{
+			if (s[i] != ' ')
+			{
+				s[j--] = s[i--];
+			}
+			else
+			{
+				s[j--] = '0';
+				s[j--] = '2';
+				s[j--] = '%';
+				--i;
+			}
+		}
+		return s;
+	}
+};

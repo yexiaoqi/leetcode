@@ -28,3 +28,39 @@ public:
 		return cur;
 	}
 };
+
+//¸´Ï°
+/**
+* Definition for a binary tree node.
+* struct TreeNode {
+*     int val;
+*     TreeNode *left;
+*     TreeNode *right;
+*     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+* };
+*/
+class Solution {
+public:
+	TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
+		return buildTree(inorder, postorder, 0, inorder.size() - 1, 0, postorder.size() - 1);
+	}
+	TreeNode* buildTree(vector<int> &inorder, vector<int> &postorder, int ileft, int iright, int pleft, int pright)
+	{
+		if (ileft>iright || pleft>pright)
+		{
+			return NULL;
+		}
+		TreeNode* res = new TreeNode(postorder[pright]);
+		int i = ileft;
+		for (; i <= iright; ++i)
+		{
+			if (inorder[i] == postorder[pright])
+			{
+				break;
+			}
+		}
+		res->left = buildTree(inorder, postorder, ileft, i - 1, pleft, pleft + i - ileft - 1);
+		res->right = buildTree(inorder, postorder, i + 1, iright, pleft + i - ileft, pright - 1);
+		return res;
+	}
+};

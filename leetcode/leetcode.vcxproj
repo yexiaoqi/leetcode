@@ -149,7 +149,9 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="08_06_hanota.cpp" />
     <ClCompile Include="0_testcase.cpp" />
+    <ClCompile Include="109.Convert Sorted List to Binary Search Tree .cpp" />
     <ClCompile Include="1143.Longest Common Subsequence.cpp" />
     <ClCompile Include="123.Best Time to Buy and Sell Stock III .cpp" />
     <ClCompile Include="124.Binary Tree Maximum Path Sum .cpp" />
@@ -319,6 +321,17 @@
     <ClCompile Include="48. Rotate Image.cpp" />
     <ClCompile Include="486_Predict the Winner.cpp" />
     <ClCompile Include="49. Group Anagrams.cpp" />
+    <ClCompile Include="746.Min Cost Climbing Stairs .cpp" />
+    <ClCompile Include="zhinan1_4_cat_and_dog_queue.cpp" />
+    <ClCompile Include="zhinan1_6_hanoi_with_restricts.cpp" />
+    <ClCompile Include="zhinan2_1_Print the common part of two linked lists.cpp" />
+    <ClCompile Include="zhinan2_4_Reverse Linked List  .cpp" />
+    <ClCompile Include="zhinan2_5_Reverse Linked List II .cpp" />
+    <ClCompile Include="zhinan3_1_Tree_traversal .cpp" />
+    <ClCompile Include="zhinan3_24_Number of nodes in a complete binary tree.cpp" />
+    <ClCompile Include="zhinan3_6_Find the longest path length with the cumulative sum being the specified value in the binary tree.cpp" />
+    <ClCompile Include="zhinan3_7_Largest BST Subtree.cpp" />
+    <ClCompile Include="zhinan4_13_decode_ways.cpp" />
     <ClCompile Include="zhinan4_15_Jump Game II .cpp" />
     <ClCompile Include="5.Longest Palindromic Substring.cpp" />
     <ClCompile Include="50. Pow(x, n).cpp" />
@@ -333,6 +346,9 @@
     <ClCompile Include="56. Merge Intervals.cpp" />
     <ClCompile Include="572. Subtree of Another Tree.cpp" />
     <ClCompile Include="58. Length of Last Word.cpp" />
+    <ClCompile Include="zhinan4_2_Minimum Path Sum .cpp" />
+    <ClCompile Include="zhinan4_3_Coin Change.cpp" />
+    <ClCompile Include="zhinan4_4_class Solution {.cpp" />
     <ClCompile Include="zhinan5_19_Find_a_new_type_character_of_the_specified_type.cpp" />
     <ClCompile Include="6.ZigZag Conversion.cpp" />
     <ClCompile Include="60. Permutation Sequence.cpp" />
@@ -524,12 +540,15 @@
     <ClCompile Include="zhinan5_4.cpp" />
     <ClCompile Include="zhinan5_9_Find_a_string_in_an_ordered_but_empty_array.cpp" />
     <ClCompile Include="zhinan7_3.cpp" />
+    <ClCompile Include="zhinan8_10_The length of the longest subarray in the unsorted positive array that has a cumulative sum of the given value.cpp" />
+    <ClCompile Include="zhinan8_11_The length of the longest subarray in the unsorted array where the cumulative sum is the given value.cpp" />
     <ClCompile Include="zhinan9_1_random1to7.cpp" />
     <ClCompile Include="zhinan9_1_random1to6.cpp" />
     <ClCompile Include="zhinan9_1_random1ton.cpp" />
     <ClCompile Include="zhinan9_2FindMaxgcd.cpp" />
     <ClCompile Include="zhinan5_1_Valid Anagram.cpp" />
     <ClCompile Include="zhinan5_12_The_minimum_distance_between_two_strings_in_the_array.cpp" />
+    <ClCompile Include="zhinan2_2_Remove Nth Node From End of List.cpp" />
     <ClCompile Include="zijieniuke_1.cpp" />
   </ItemGroup>
   <ItemGroup>
