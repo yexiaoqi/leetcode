@@ -152,6 +152,7 @@
     <ClCompile Include="08_06_hanota.cpp" />
     <ClCompile Include="0_testcase.cpp" />
     <ClCompile Include="109.Convert Sorted List to Binary Search Tree .cpp" />
+    <ClCompile Include="111.Minimum Depth of Binary Tree.cpp" />
     <ClCompile Include="1143.Longest Common Subsequence.cpp" />
     <ClCompile Include="123.Best Time to Buy and Sell Stock III .cpp" />
     <ClCompile Include="124.Binary Tree Maximum Path Sum .cpp" />
@@ -322,6 +323,8 @@
     <ClCompile Include="486_Predict the Winner.cpp" />
     <ClCompile Include="49. Group Anagrams.cpp" />
     <ClCompile Include="746.Min Cost Climbing Stairs .cpp" />
+    <ClCompile Include="93.Restore IP Addresses  .cpp" />
+    <ClCompile Include="95.Unique Binary Search Trees II .cpp" />
     <ClCompile Include="zhinan1_4_cat_and_dog_queue.cpp" />
     <ClCompile Include="zhinan1_6_hanoi_with_restricts.cpp" />
     <ClCompile Include="zhinan2_1_Print the common part of two linked lists.cpp" />
@@ -542,7 +545,8 @@
     <ClCompile Include="zhinan7_3.cpp" />
     <ClCompile Include="zhinan8_10_The length of the longest subarray in the unsorted positive array that has a cumulative sum of the given value.cpp" />
     <ClCompile Include="zhinan8_11_The length of the longest subarray in the unsorted array where the cumulative sum is the given value.cpp" />
-    <ClCompile Include="zhinan9_1_random1to7.cpp" />
+    <ClCompile Include="zhinan8_1_spiral matrix.cpp" />
+    <ClCompile Include="zhinan9_1_random5to7.cpp" />
     <ClCompile Include="zhinan9_1_random1to6.cpp" />
     <ClCompile Include="zhinan9_1_random1ton.cpp" />
     <ClCompile Include="zhinan9_2FindMaxgcd.cpp" />

@@ -908,9 +908,6 @@
     <ClCompile Include="151.Reverse Words in a String.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="zhinan9_1_random1to7.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="470.Implement Rand10() Using Rand7()  .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -1006,9 +1003,6 @@
     </ClCompile>
     <ClCompile Include="kuaishoubishi1.cpp">
       <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="zhaohangbishi_1.cpp">
-      <Filter>头文件</Filter>
     </ClCompile>
     <ClCompile Include="zhinan4_1.cpp">
       <Filter>源文件</Filter>
@@ -1212,6 +1206,24 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="109.Convert Sorted List to Binary Search Tree .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="111.Minimum Depth of Binary Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="95.Unique Binary Search Trees II .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="93.Restore IP Addresses  .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan9_1_random5to7.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhaohangbishi_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_1_spiral matrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
