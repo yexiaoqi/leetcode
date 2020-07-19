@@ -322,7 +322,10 @@
     <ClCompile Include="48. Rotate Image.cpp" />
     <ClCompile Include="486_Predict the Winner.cpp" />
     <ClCompile Include="49. Group Anagrams.cpp" />
+    <ClCompile Include="498.Diagonal Traverse.cpp" />
+    <ClCompile Include="59.Spiral Matrix II.cpp" />
     <ClCompile Include="746.Min Cost Climbing Stairs .cpp" />
+    <ClCompile Include="76.Minimum Window Substring.cpp" />
     <ClCompile Include="93.Restore IP Addresses  .cpp" />
     <ClCompile Include="95.Unique Binary Search Trees II .cpp" />
     <ClCompile Include="zhinan1_4_cat_and_dog_queue.cpp" />
@@ -334,6 +337,7 @@
     <ClCompile Include="zhinan3_24_Number of nodes in a complete binary tree.cpp" />
     <ClCompile Include="zhinan3_6_Find the longest path length with the cumulative sum being the specified value in the binary tree.cpp" />
     <ClCompile Include="zhinan3_7_Largest BST Subtree.cpp" />
+    <ClCompile Include="zhinan4_11_ Dungeon Game.cpp" />
     <ClCompile Include="zhinan4_13_decode_ways.cpp" />
     <ClCompile Include="zhinan4_15_Jump Game II .cpp" />
     <ClCompile Include="5.Longest Palindromic Substring.cpp" />
@@ -352,6 +356,9 @@
     <ClCompile Include="zhinan4_2_Minimum Path Sum .cpp" />
     <ClCompile Include="zhinan4_3_Coin Change.cpp" />
     <ClCompile Include="zhinan4_4_class Solution {.cpp" />
+    <ClCompile Include="zhinan4_5_ Longest Consecutive Sequence.cpp" />
+    <ClCompile Include="zhinan4_7_Longest Common Subsequence.cpp" />
+    <ClCompile Include="zhinan4_9_Edit Distance.cpp" />
     <ClCompile Include="zhinan5_19_Find_a_new_type_character_of_the_specified_type.cpp" />
     <ClCompile Include="6.ZigZag Conversion.cpp" />
     <ClCompile Include="60. Permutation Sequence.cpp" />
@@ -376,6 +383,10 @@
     <ClCompile Include="796.Rotate String.cpp" />
     <ClCompile Include="zhinan4_16_Longest continuous sequence.cpp" />
     <ClCompile Include="zhinan4_17_N_queens.cpp" />
+    <ClCompile Include="zhinan5_20_Minimum Window Substring.cpp" />
+    <ClCompile Include="zhinan5_7_Statistics string.cpp" />
+    <ClCompile Include="zhinan7_2_Find the larger of the two numbers.cpp" />
+    <ClCompile Include="zhinan7_4_Number of 1 Bits .cpp" />
     <ClCompile Include="zhinan7_5_Find the number of odd occurrences in an array where all other occurrences are even.cpp" />
     <ClCompile Include="zhinan7_6_Find a number that appears only once in an array where all other numbers appear k times.cpp" />
     <ClCompile Include="zhinan7_1_change_two_num.cpp" />
@@ -542,10 +553,11 @@
     <ClCompile Include="zhinan5_3.cpp" />
     <ClCompile Include="zhinan5_4.cpp" />
     <ClCompile Include="zhinan5_9_Find_a_string_in_an_ordered_but_empty_array.cpp" />
-    <ClCompile Include="zhinan7_3.cpp" />
+    <ClCompile Include="zhinan7_3_Addition, subtraction, multiplication and division of integers.cpp" />
     <ClCompile Include="zhinan8_10_The length of the longest subarray in the unsorted positive array that has a cumulative sum of the given value.cpp" />
     <ClCompile Include="zhinan8_11_The length of the longest subarray in the unsorted array where the cumulative sum is the given value.cpp" />
     <ClCompile Include="zhinan8_1_spiral matrix.cpp" />
+    <ClCompile Include="zhinan8_3_Diagonal Traverse.cpp" />
     <ClCompile Include="zhinan9_1_random5to7.cpp" />
     <ClCompile Include="zhinan9_1_random1to6.cpp" />
     <ClCompile Include="zhinan9_1_random1ton.cpp" />

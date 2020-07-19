@@ -64,3 +64,24 @@ public:
 		return dummy->next;
 	}
 };
+
+//¸´Ï°
+class Solution {
+public:
+	ListNode* swapPairs(ListNode* head) {
+		ListNode* dummy = new ListNode(-1);
+		dummy->next = head;
+		ListNode* pre = dummy;
+		ListNode* cur = head;
+		while (cur&&cur->next)
+		{
+			ListNode *t = cur->next;
+			pre->next = t;
+			cur->next = t->next;
+			t->next = cur;
+			pre = pre->next->next;
+			cur = pre->next;
+		}
+		return dummy->next;
+	}
+};

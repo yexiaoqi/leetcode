@@ -1064,9 +1064,6 @@
     <ClCompile Include="pinduoduobishi_3.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="zhinan7_3.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="zhinan5_2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -1224,6 +1221,45 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="zhinan8_1_spiral matrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="498.Diagonal Traverse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_3_Diagonal Traverse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan7_2_Find the larger of the two numbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan7_3_Addition, subtraction, multiplication and division of integers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan7_4_Number of 1 Bits .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_7_Statistics string.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="76.Minimum Window Substring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_20_Minimum Window Substring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="59.Spiral Matrix II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_11_ Dungeon Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_5_ Longest Consecutive Sequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_7_Longest Common Subsequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan4_9_Edit Distance.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

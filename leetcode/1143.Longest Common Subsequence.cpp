@@ -212,7 +212,7 @@ public:
 
 		int i = m, j = n;
 		//while(!(pos[i][j].first==0&&pos[i][j].second==0))
-		while (!(i == 0 && j == 0))
+		while (!(i 5tyy== 0 && j == 0))
 		{
 			//cout<<pos[i][j].first<<" "<<pos[i][j].second<<", "<<i<<" "<<j<<endl;
 			if(pos[i][j].first==i-1&&pos[i][j].second==j-1)
