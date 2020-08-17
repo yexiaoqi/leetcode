@@ -1,12 +1,4 @@
-/**
-* Definition for a binary tree node.
-* struct TreeNode {
-*     int val;
-*     TreeNode *left;
-*     TreeNode *right;
-*     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-* };
-*/
+//同leetcode572，但最优解可以是用kmp算法的
 class Solution {
 public:
 	bool isSubtree(TreeNode* s, TreeNode* t) {
@@ -29,6 +21,3 @@ public:
 		return isSame(s->left, t->left) && isSame(s->right, t->right);
 	}
 };
-
-
-

@@ -15,7 +15,7 @@ public:
 		if (start<end)//这样清晰
 		{
 			int root = nums[end];
-			int i = start;
+			int i = start;//注意i从start而不是0开始
 			for (; i<end; ++i)
 			{
 				if (nums[i]>root)
@@ -32,8 +32,8 @@ public:
 				}
 			}
 			--end;
-			int left = Verify(nums, start, i - 1);
-			int right = Verify(nums, i, end);
+			int left = Verify(nums, start, value - 1);//注意start而不是0
+			int right = Verify(nums, value, end);
 			return left&&right;
 		}
 		else
@@ -209,8 +209,8 @@ public:
 				}
 			}
 			--end;
-			int left = Verify(nums, start, i - 1);
-			int right = Verify(nums, i, end);
+			int left = Verify(nums, start, value - 1);
+			int right = Verify(nums, value, end);
 			return left&&right;
 		}
 		else

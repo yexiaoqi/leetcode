@@ -1,3 +1,56 @@
+class Solution {
+public:
+	void solve(vector<vector<char>>& board) {
+		for (int i = 0; i<board.size(); ++i)
+		{
+			for (int j = 0; j<board[0].size(); ++j)
+			{
+				if (i == 0 || i == board.size() - 1 || j == 0 || j == board[0].size() - 1)
+				{
+					if (board[i][j] == 'O')
+					{
+						DFS(board, i, j);
+					}
+				}
+			}
+		}
+		for (int i = 0; i<board.size(); ++i)
+		{
+			for (int j = 0; j<board[0].size(); ++j)
+			{
+				if (board[i][j] == 'O')
+				{
+					board[i][j] = 'X';
+				}
+				if (board[i][j] == 'Q')
+				{
+					board[i][j] = 'O';
+				}
+			}
+		}
+	}
+	void DFS(vector<vector<char>>& board, int x, int y)
+	{
+		int dx[4] = { 1,-1,0,0 };
+		int dy[4] = { 0,0,1,-1 };
+		board[x][y] = 'Q';
+		for (int i = 0; i<4; ++i)
+		{
+			int newx = x + dx[i];
+			int newy = y + dy[i];
+			if (newx<0 || newx >= board.size() || newy<0 || newy >= board[0].size())
+			{
+				continue;
+			}
+			if (board[newx][newy] == 'O')
+			{
+				DFS(board, newx, newy);
+			}
+		}
+	}
+};
+
+
 //自己做出
 //DFS
 class Solution {

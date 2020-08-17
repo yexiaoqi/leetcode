@@ -32,7 +32,7 @@ public:
 		int i = 0;
 		return deserialize(data, i);
 	}
-	TreeNode* deserialize(string data, int &i)
+	TreeNode* deserialize(string data, int &i)//注意必须是&i，否则进入root->right = deserialize(data, i);又变回了root->left = deserialize(data, i);前的i
 	{
 		TreeNode *root = new TreeNode(-1);
 		int tmp = 0, flag = 1;

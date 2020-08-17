@@ -1262,6 +1262,42 @@
     <ClCompile Include="zhinan4_9_Edit Distance.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="zhinan3_9_Binary Tree Level Order Traversal .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_10_Recover Binary Search Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_12_Subtree of Another Tree .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_11_SubstructureInTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_13_Balanced Binary Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_14_SquenceOfBST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="huataibishi2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_4_Serialize and Deserialize Binary Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pinduoduobishi2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pinduoduobishi1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pinduoduobishi3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pinduoduobishi4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="51.N-Queens.cpp">

@@ -229,6 +229,7 @@ public:
 			return 0;
 		}
 		int m = haystack.size(), n = needle.size();
+		//注意不能直接i<haystack.size()-needle.size()+1,如果haystack.size()比needle.size()小，仍然会进入循环
 		for (int i = 0; i<m - n + 1; ++i)//必须m-n+1，不能只是m，否则会超出内存
 		{
 			if (issame(haystack.substr(i, n), needle))
