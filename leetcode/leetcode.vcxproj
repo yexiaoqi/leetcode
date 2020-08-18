@@ -344,7 +344,13 @@
     <ClCompile Include="zhinan3_12_Subtree of Another Tree .cpp" />
     <ClCompile Include="zhinan3_13_Balanced Binary Tree.cpp" />
     <ClCompile Include="zhinan3_14_SquenceOfBST.cpp" />
+    <ClCompile Include="zhinan3_15_Validate Binary Search Tree .cpp" />
+    <ClCompile Include="zhinan3_16_Convert Sorted Array to Binary Search Tree.cpp" />
+    <ClCompile Include="zhinan3_17_next_node_in_binary_tree.cpp" />
+    <ClCompile Include="zhinan3_18_Lowest Common Ancestor of a Binary Tree .cpp" />
+    <ClCompile Include="zhinan3_20_Diameter of Binary Tree.cpp" />
     <ClCompile Include="zhinan3_1_Tree_traversal .cpp" />
+    <ClCompile Include="zhinan3_21_Construct Binary Tree from Preorder and Postorder Traversal.cpp" />
     <ClCompile Include="zhinan3_24_Number of nodes in a complete binary tree.cpp" />
     <ClCompile Include="zhinan3_4_Serialize and Deserialize Binary Tree.cpp" />
     <ClCompile Include="zhinan3_6_Find the longest path length with the cumulative sum being the specified value in the binary tree.cpp" />

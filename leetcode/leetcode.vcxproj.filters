@@ -1298,6 +1298,27 @@
     <ClCompile Include="pinduoduobishi4.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="aliqiuzhaobishi1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_15_Validate Binary Search Tree .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_16_Convert Sorted Array to Binary Search Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_17_next_node_in_binary_tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_18_Lowest Common Ancestor of a Binary Tree .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_20_Diameter of Binary Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_21_Construct Binary Tree from Preorder and Postorder Traversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="51.N-Queens.cpp">
