@@ -9,6 +9,99 @@ int main()
 {
 	int n;
 	cin >> n;
+	string str;
+	cin >> str;
+	vector<string> words(n);
+	for (int i = 0; i<n; ++i)
+	{
+		cin >> words[i];
+	}
+	if (str == "")
+	{
+		for (int i = 0; i<n; ++i)
+		{
+			if (words[i] == str)
+			{
+				cout << i;
+				return 0;
+			}
+		}
+	}
+	int begin = 0, end = n - 1;
+	int res = INT_MAX;
+	while (begin <= end)//注意=
+	{
+		int mid = (begin + end) / 2;
+		if (words[mid] == str)
+		{
+			res = mid;
+			end = mid - 1;
+		}
+		else if (words[mid] == "0")
+		{
+			int tmp = mid - 1;
+			while (tmp >= 0 && words[tmp] == "0")
+			{
+				--tmp;
+			}
+			if (tmp<0)
+			{
+				begin = mid + 1;
+			}
+			else
+			{
+				if (words[tmp] == str)
+				{
+					res = tmp;
+					end = mid - 1;
+				}
+				else if (words[tmp]<str)
+				{
+					begin = mid + 1;
+				}
+				else
+				{
+					end = tmp - 1;
+				}
+			}
+		}
+		else
+		{
+			if (words[mid]<str)
+			{
+				begin = mid + 1;
+			}
+			else
+			{
+				end = mid - 1;
+			}
+		}
+	}
+	if (res == INT_MAX)
+	{
+		cout << -1;
+		return 0;
+	}
+	cout << res;
+	return 0;
+}
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <limits.h>
+using namespace std;
+int main()
+{
+	int n;
+	cin >> n;
 	if (n <= 0)
 	{
 		cout << -1;

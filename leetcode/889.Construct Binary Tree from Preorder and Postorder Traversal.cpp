@@ -1,10 +1,12 @@
-//先序和后序，同leetcode889
-
-//前序和中序，同leetcode105
-
-//中序和后序，同leetcode106
-
-//889
+/**
+* Definition for a binary tree node.
+* struct TreeNode {
+*     int val;
+*     TreeNode *left;
+*     TreeNode *right;
+*     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+* };
+*/
 class Solution {
 public:
 	TreeNode* constructFromPrePost(vector<int>& pre, vector<int>& post) {
