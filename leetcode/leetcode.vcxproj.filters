@@ -1340,6 +1340,12 @@
     <ClCompile Include="zhinan2_6_Joseph question.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="416.Partition Equal Subset Sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="887.Super Egg Drop.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="51.N-Queens.cpp">

@@ -305,6 +305,7 @@
     <ClCompile Include="41.First Missing Positive .cpp" />
     <ClCompile Include="412.Fizz Buzz.cpp" />
     <ClCompile Include="415.Add Strings .cpp" />
+    <ClCompile Include="416.Partition Equal Subset Sum.cpp" />
     <ClCompile Include="42.Trapping Rain Water .cpp" />
     <ClCompile Include="43Multiply Strings.cpp" />
     <ClCompile Include="437. Path Sum III .cpp" />
@@ -326,6 +327,7 @@
     <ClCompile Include="59.Spiral Matrix II.cpp" />
     <ClCompile Include="746.Min Cost Climbing Stairs .cpp" />
     <ClCompile Include="76.Minimum Window Substring.cpp" />
+    <ClCompile Include="887.Super Egg Drop.cpp" />
     <ClCompile Include="889.Construct Binary Tree from Preorder and Postorder Traversal.cpp" />
     <ClCompile Include="93.Restore IP Addresses  .cpp" />
     <ClCompile Include="95.Unique Binary Search Trees II .cpp" />
