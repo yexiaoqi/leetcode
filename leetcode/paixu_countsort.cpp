@@ -30,7 +30,8 @@ void count_sort(vector<int> &arr, int maxval)
 	}
 	for (int i = len - 1; i >= 0; --i)
 	{
-		arr[count[tmp[i]] - 1] = tmp[i];
+		arr[count[tmp[i]] - 1] = tmp[i];//count[tmp[i]]代表小于等于 tmp[i]的一共有count[tmp[i]]个，由于下标从
+		//0开始，所以把它放在count[tmp[i]] - 1的位置
 		--count[tmp[i]];
 	}
 }

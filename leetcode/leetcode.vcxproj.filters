@@ -1070,9 +1070,6 @@
     <ClCompile Include="zhinan5_3.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="zhinan3_2.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="wangyihuyubishi_4.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -1344,6 +1341,75 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="887.Super Egg Drop.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_7_ Palindrome Linked List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tengxunbishi1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tengxunbishi3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan_8_23_1_Partial adjustment of the array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan_8_23_2_Partial adjustment of the array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_9_Copy List with Random Pointer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_10_Add two linked lists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_12_Reverse Nodes in k-Group.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_11_Intersect singly linked lists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="203.Remove Linked List Elements.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_14_Remove Linked List Elements.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_15_ConvertBinarySearchTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_19_Merge Two Sorted Lists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_17_delete node strangely.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_20_Recombination of linked lists.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_13_Delete duplicate nodes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_8_divide single list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan2_16_Selection sort of singly linked list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan3_2_Boundary node of binary tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_10_ReplaceSpaces.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_11_ReverseWordsInSentence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_14_Valid parentheses.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_6_Replacement character.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
