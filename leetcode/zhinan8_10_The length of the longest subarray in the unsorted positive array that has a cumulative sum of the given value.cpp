@@ -1,3 +1,4 @@
+//思路类似于剑指offer57_2
 #include <iostream>
 #include <vector>
 #include <algorithm>

@@ -1412,6 +1412,48 @@
     <ClCompile Include="zhinan5_6_Replacement character.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="zhinan5_8_judge if all char exist once.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="921.Minimum Add to Make Parentheses Valid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_18_Longest Substring Without Repeating Characters .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_23_Implement Trie (Prefix Tree) .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="516. Longest Palindromic Subsequence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1312.Minimum Insertion Steps to Make a String Palindrome.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan5_13_Minimum Insertion Steps to Make a String Palindrome.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_2_Rotate Image.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_4_smallest k nums.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="581.Shortest Unsorted Continuous Subarray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_5_Shortest Unsorted Continuous Subarray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_7_FindInPartiallySortedMatrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_8_The length of the longest integrable sub-array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_9_two sum and three sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="51.N-Queens.cpp">

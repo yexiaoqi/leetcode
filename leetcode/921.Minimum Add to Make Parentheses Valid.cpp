@@ -1,4 +1,3 @@
-//ͬleetcode921
 class Solution {
 public:
 	int minAddToMakeValid(string str) {
