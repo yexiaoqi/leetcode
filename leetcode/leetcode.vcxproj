@@ -162,6 +162,7 @@
     <ClCompile Include="153.Find Minimum in Rotated Sorted Array .cpp" />
     <ClCompile Include="154.Find Minimum in Rotated Sorted Array II.cpp" />
     <ClCompile Include="167.Two Sum II - Input array is sorted.cpp" />
+    <ClCompile Include="17.24.Largest submatrix.cpp" />
     <ClCompile Include="174.Dungeon Game.cpp" />
     <ClCompile Include="188.Best Time to Buy and Sell Stock IV.cpp" />
     <ClCompile Include="203.Remove Linked List Elements.cpp" />
@@ -334,6 +335,7 @@
     <ClCompile Include="887.Super Egg Drop.cpp" />
     <ClCompile Include="889.Construct Binary Tree from Preorder and Postorder Traversal.cpp" />
     <ClCompile Include="921.Minimum Add to Make Parentheses Valid.cpp" />
+    <ClCompile Include="922.Sort Array By Parity II.cpp" />
     <ClCompile Include="93.Restore IP Addresses  .cpp" />
     <ClCompile Include="95.Unique Binary Search Trees II .cpp" />
     <ClCompile Include="aliqiuzhaobishi1.cpp" />
@@ -612,6 +614,10 @@
     <ClCompile Include="zhinan7_3_Addition, subtraction, multiplication and division of integers.cpp" />
     <ClCompile Include="zhinan8_10_The length of the longest subarray in the unsorted positive array that has a cumulative sum of the given value.cpp" />
     <ClCompile Include="zhinan8_11_The length of the longest subarray in the unsorted array where the cumulative sum is the given value.cpp" />
+    <ClCompile Include="zhinan8_14_Sort of natural arrays.cpp" />
+    <ClCompile Include="zhinan8_15_odd is odd or eval is eval.cpp" />
+    <ClCompile Include="zhinan8_17_Largest submatrix.cpp" />
+    <ClCompile Include="zhinan8_16_Maximum Subarray.cpp" />
     <ClCompile Include="zhinan8_1_spiral matrix.cpp" />
     <ClCompile Include="zhinan8_2_Rotate Image.cpp" />
     <ClCompile Include="zhinan8_3_Diagonal Traverse.cpp" />
@@ -627,8 +633,8 @@
     <ClCompile Include="zhinan5_1_Valid Anagram.cpp" />
     <ClCompile Include="zhinan5_12_The_minimum_distance_between_two_strings_in_the_array.cpp" />
     <ClCompile Include="zhinan2_2_Remove Nth Node From End of List.cpp" />
-    <ClCompile Include="zhinan_8_23_1_Partial adjustment of the array.cpp" />
-    <ClCompile Include="zhinan_8_23_2_Partial adjustment of the array.cpp" />
+    <ClCompile Include="zhinan8_23_1_Partial adjustment of the array.cpp" />
+    <ClCompile Include="zhinan8_23_2_Partial adjustment of the array.cpp" />
     <ClCompile Include="zijieniuke_1.cpp" />
   </ItemGroup>
   <ItemGroup>

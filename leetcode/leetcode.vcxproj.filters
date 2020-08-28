@@ -1352,12 +1352,6 @@
     <ClCompile Include="tengxunbishi3.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="zhinan_8_23_1_Partial adjustment of the array.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="zhinan_8_23_2_Partial adjustment of the array.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="zhinan2_9_Copy List with Random Pointer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -1452,6 +1446,30 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="zhinan8_9_two sum and three sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_14_Sort of natural arrays.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="922.Sort Array By Parity II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_15_odd is odd or eval is eval.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_16_Maximum Subarray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_23_1_Partial adjustment of the array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_23_2_Partial adjustment of the array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="17.24.Largest submatrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_17_Largest submatrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
