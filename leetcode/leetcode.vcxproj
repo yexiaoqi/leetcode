@@ -217,7 +217,7 @@
     <ClCompile Include="155. Min Stack.cpp" />
     <ClCompile Include="16. 3Sum Closest.cpp" />
     <ClCompile Include="160. Intersection of Two Linked Lists.cpp" />
-    <ClCompile Include="162. Find Peak Element   .cpp" />
+    <ClCompile Include="162. Find Peak Element .cpp" />
     <ClCompile Include="166. Fraction to Recurring Decimal  .cpp" />
     <ClCompile Include="169. Majority Element .cpp" />
     <ClCompile Include="17.Letter Combinations of a Phone Number.cpp" />
@@ -350,6 +350,7 @@
     <ClCompile Include="zhinan1_2_Implement Queue using Stacks.cpp" />
     <ClCompile Include="zhinan1_3_reverse a stack.cpp" />
     <ClCompile Include="zhinan1_4_cat_and_dog_queue.cpp" />
+    <ClCompile Include="zhinan1_5_sort a stack by a stack.cpp" />
     <ClCompile Include="zhinan1_6_hanoi_with_restricts.cpp" />
     <ClCompile Include="zhinan2_10_Add two linked lists.cpp" />
     <ClCompile Include="zhinan2_11_Intersect singly linked lists.cpp" />
@@ -618,7 +619,10 @@
     <ClCompile Include="zhinan8_15_odd is odd or eval is eval.cpp" />
     <ClCompile Include="zhinan8_17_Largest submatrix.cpp" />
     <ClCompile Include="zhinan8_16_Maximum Subarray.cpp" />
+    <ClCompile Include="zhinan8_18_Find local minimum.cpp" />
+    <ClCompile Include="zhinan8_19_Maximum Product Subarray.cpp" />
     <ClCompile Include="zhinan8_1_spiral matrix.cpp" />
+    <ClCompile Include="zhinan8_20_top k in n array.cpp" />
     <ClCompile Include="zhinan8_2_Rotate Image.cpp" />
     <ClCompile Include="zhinan8_3_Diagonal Traverse.cpp" />
     <ClCompile Include="zhinan8_4_smallest k nums.cpp" />

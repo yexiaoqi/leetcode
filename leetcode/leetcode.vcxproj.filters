@@ -680,9 +680,6 @@
     <ClCompile Include="152. Maximum Product Subarray.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="162. Find Peak Element   .cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="169. Majority Element .cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -1470,6 +1467,21 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="zhinan8_17_Largest submatrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="162. Find Peak Element .cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_18_Find local minimum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_19_Maximum Product Subarray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan8_20_top k in n array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zhinan1_5_sort a stack by a stack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
