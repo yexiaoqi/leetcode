@@ -180,3 +180,44 @@ private:
 * int param_1 = obj->get(key);
 * obj->put(key,value);
 */
+
+//fuxi 
+class LRUCache {
+public:
+	LRUCache(int capacity) {
+		cap = capacity;
+	}
+
+	int get(int key) {
+		auto it = m.find(key);
+		if (it == m.end())
+		{
+			return -1;
+		}
+		auto kv = *m[key];
+		l.erase(m[key]);
+		l.push_front(kv);
+		m[key] = l.begin();
+		return kv.second;
+	}
+
+	void put(int key, int value) {
+		auto it = m.find(key);
+		if (it != m.end())
+		{
+			l.erase(m[key]);
+		}
+		l.push_front(make_pair(key, value));
+		m[key] = l.begin();
+		if (m.size()>cap)
+		{
+			int k = l.rbegin()->first;
+			l.pop_back();
+			m.erase(k);
+		}
+	}
+private:
+	int cap;
+	list<pair<int, int>> l;
+	unordered_map<int, list<pair<int, int>>::iterator> m;
+};

@@ -1,3 +1,45 @@
+//类似题目78，90，39，40，46，47
+class Solution {
+public:
+	vector<vector<int>> permuteUnique(vector<int>& nums) {
+		if (nums.empty())
+		{
+			return vector<vector<int>>();
+		}
+		sort(nums.begin(), nums.end());
+		vector<int> visit(nums.size());
+		vector<int> path;
+		vector<vector<int>> res;
+		permuteUnique(nums, visit, path, res);
+		return res;
+	};
+	void permuteUnique(vector<int>& nums, vector<int> &visit, vector<int> &path, vector<vector<int>> &res)
+	{
+		if (nums.size() == path.size())
+		{
+			res.push_back(path);
+			return;
+		}
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			if (visit[i] == 0)
+			{
+				path.push_back(nums[i]);
+				visit[i] = 1;
+				permuteUnique(nums, visit, path, res);
+				visit[i] = 0;
+				path.pop_back();
+				while (i + 1<nums.size() && nums[i] == nums[i + 1])
+				{
+					++i;
+				}
+			}
+		}
+	}
+};
+
+
+
 //dfs回溯法
 class Solution {
 public:
@@ -147,6 +189,43 @@ public:
 			swap(nums[level], nums[i]);
 			find(nums, res, level + 1);
 			swap(nums[level], nums[i]);
+		}
+	}
+};
+
+
+//
+class Solution {
+public:
+	vector<vector<int>> permuteUnique(vector<int>& nums) {
+		sort(nums.begin(), nums.end());
+		vector<vector<int>> res;
+		vector<int> visit(nums.size(), 0);
+		vector<int> path;
+		permute(nums, path, visit, res);
+		return res;
+	}
+	void permute(vector<int> &nums, vector<int> &path, vector<int> &visit, vector<vector<int>> &res)
+	{
+		if (nums.size() == path.size())
+		{
+			res.push_back(path);
+			return;
+		}
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			if (i>0 && nums[i] == nums[i - 1] && visit[i - 1] == 0)
+			{
+				continue;
+			}
+			if (visit[i] == 0)
+			{
+				path.push_back(nums[i]);
+				visit[i] = 1;
+				permute(nums, path, visit, res);
+				visit[i] = 0;
+				path.pop_back();
+			}
 		}
 	}
 };

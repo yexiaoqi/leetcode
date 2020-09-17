@@ -192,3 +192,47 @@ public:
 		return true;
 	}
 };
+
+
+//¸´Ï°
+class Solution {
+public:
+	bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+		vector<vector<int>> graph(numCourses);
+		vector<int> cnt(numCourses);
+		for (auto a : prerequisites)
+		{
+			graph[a[1]].push_back(a[0]);
+			++cnt[a[0]];
+		}
+		queue<int> q;
+		for (int i = 0; i<numCourses; ++i)
+		{
+			if (cnt[i] == 0)
+			{
+				q.push(i);
+			}
+		}
+		while (!q.empty())
+		{
+			int t = q.front();
+			q.pop();
+			for (auto a : graph[t])
+			{
+				--cnt[a];
+				if (cnt[a] == 0)
+				{
+					q.push(a);
+				}
+			}
+		}
+		for (int i = 0; i<numCourses; ++i)
+		{
+			if (cnt[i] != 0)
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+};

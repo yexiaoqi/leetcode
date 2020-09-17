@@ -1,3 +1,4 @@
+//类似题目78，90，39，40，46，47
 //位运算法
 class Solution {
 public:
@@ -129,4 +130,29 @@ public:
 		return res;
 	}
 
+};
+
+class Solution {
+public:
+	vector<vector<int>> subsets(vector<int>& nums) {
+		int n = nums.size();
+		vector<int> path;
+		vector<vector<int>> res;
+		int pos = 0;
+		subs(nums, path, res, pos);
+		res.push_back({});
+		return res;
+	}
+	void subs(vector<int>& nums, vector<int> &path, vector<vector<int>> &res, int pos)
+	{
+		if (pos >= nums.size())
+		{
+			return;
+		}
+		path.push_back(nums[pos]);
+		res.push_back(path);
+		subs(nums, path, res, pos + 1);
+		path.pop_back();
+		subs(nums, path, res, pos + 1);
+	}
 };

@@ -76,3 +76,35 @@ public:
 		return cur;
 	}
 };
+
+//
+class Solution {
+public:
+	TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+		if (preorder.size() == 0 || inorder.size() == 0)
+		{
+			return NULL;
+		}
+		return buildTree(preorder, inorder, 0, preorder.size() - 1, 0, inorder.size() - 1);
+	}
+	TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder, int pleft, int pright,
+		int ileft, int iright)
+	{
+		if (ileft>iright || pleft>pright)
+		{
+			return NULL;
+		}
+		int i = ileft;
+		for (; i <= iright; ++i)
+		{
+			if (preorder[pleft] == inorder[i])
+			{
+				break;
+			}
+		}
+		TreeNode *root = new TreeNode(preorder[pleft]);
+		root->left = buildTree(preorder, inorder, pleft + 1, pleft + i - ileft, ileft, i - 1);
+		root->right = buildTree(preorder, inorder, pleft + i - ileft + 1, pright, i + 1, iright);
+		return root;
+	}
+};

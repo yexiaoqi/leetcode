@@ -161,6 +161,7 @@
     <ClCompile Include="151.Reverse Words in a String.cpp" />
     <ClCompile Include="153.Find Minimum in Rotated Sorted Array .cpp" />
     <ClCompile Include="154.Find Minimum in Rotated Sorted Array II.cpp" />
+    <ClCompile Include="164.Maximum Gap.cpp" />
     <ClCompile Include="167.Two Sum II - Input array is sorted.cpp" />
     <ClCompile Include="17.24.Largest submatrix.cpp" />
     <ClCompile Include="174.Dungeon Game.cpp" />
@@ -360,9 +361,11 @@
     <ClCompile Include="zhinan2_15_ConvertBinarySearchTree.cpp" />
     <ClCompile Include="zhinan2_16_Selection sort of singly linked list.cpp" />
     <ClCompile Include="zhinan2_17_delete node strangely.cpp" />
+    <ClCompile Include="zhinan2_18_insert a node into a circular list.cpp" />
     <ClCompile Include="zhinan2_19_Merge Two Sorted Lists.cpp" />
     <ClCompile Include="zhinan2_1_Print the common part of two linked lists.cpp" />
     <ClCompile Include="zhinan2_20_Recombination of linked lists.cpp" />
+    <ClCompile Include="zhinan2_3_delete kth node.cpp" />
     <ClCompile Include="zhinan2_4_Reverse Linked List  .cpp" />
     <ClCompile Include="zhinan2_5_Reverse Linked List II .cpp" />
     <ClCompile Include="zhinan2_6_Joseph question.cpp" />

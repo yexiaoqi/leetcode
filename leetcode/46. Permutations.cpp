@@ -1,3 +1,38 @@
+//¿‡À∆Ã‚ƒø78£¨90£¨39£¨40£¨46£¨47
+class Solution {
+public:
+	vector<vector<int>> permute(vector<int>& nums) {
+		int n = nums.size();
+		if (n == 0)
+		{
+			return vector<vector<int>>();
+		}
+		vector<int> visit(n);
+		vector<int> path;
+		vector<vector<int>> res;
+		permute(nums, visit, path, res);
+		return res;
+	}
+	void permute(vector<int> &nums, vector<int> &visit, vector<int> &path, vector<vector<int>> &res)
+	{
+		if (path.size() == nums.size())
+		{
+			res.push_back(path);
+		}
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			if (visit[i] == 0)
+			{
+				visit[i] = 1;
+				path.push_back(nums[i]);
+				permute(nums, visit, path, res);
+				path.pop_back();
+				visit[i] = 0;
+			}
+		}
+	}
+};
+
 //Given a collection of distinct numbers, return all possible permutations.
 //
 //For example,
@@ -180,4 +215,39 @@ public:
 		}
 	}
 
+};
+
+//
+class Solution {
+public:
+	vector<vector<int>> permute(vector<int>& nums) {
+		int n = nums.size();
+		vector<int> path;
+		vector<vector<int>> res;
+		int pos = 0;
+		vector<int> visit(n);
+		permute(nums, path, res, pos, visit);
+		return res;
+	}
+	void permute(vector<int> &nums, vector<int> &path, vector<vector<int>> &res, int pos,
+		vector<int> &visit)
+	{
+		if (pos == nums.size())
+		{
+			res.push_back(path);
+			return;
+		}
+		for (int i = 0; i<nums.size(); ++i)
+		{
+			if (visit[i] == 1)
+			{
+				continue;
+			}
+			path.push_back(nums[i]);
+			visit[i] = 1;
+			permute(nums, path, res, pos + 1, visit);
+			path.pop_back();
+			visit[i] = 0;
+		}
+	}
 };

@@ -99,3 +99,75 @@ public:
 		return true;
 	}
 };
+
+
+//复习
+logo
+探索
+题库
+圈子
+竞赛
+面试
+职位
+商店
+25
+
+
+课程表 II
+提交记录
+44 / 44 个通过测试用例
+状态：通过
+执行用时 : 52 ms
+	内存消耗 : 14.1 MB
+	提交时间：9 天前
+	执行用时分布图表
+	执行消耗内存分布图表
+	邀请好友来挑战 课程表 II
+	提交的代码： 9 天前
+	语言： cpp
+
+
+	class Solution {
+	public:
+		vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+			vector<vector<int>> graph(numCourses);
+			vector<int> cnt(numCourses);
+			for (auto a : prerequisites)
+			{
+				graph[a[1]].push_back(a[0]);
+				++cnt[a[0]];
+			}
+			queue<int> q;
+			vector<int> res;
+			for (int i = 0; i<numCourses; ++i)
+			{
+				if (cnt[i] == 0)
+				{
+					q.push(i);
+					res.push_back(i);
+				}
+			}
+			while (!q.empty())
+			{
+				int t = q.front();
+				q.pop();
+				for (auto a : graph[t])
+				{
+					--cnt[a];
+					if (cnt[a] == 0)
+					{
+						q.push(a);
+						res.push_back(a);
+					}
+				}
+			}
+			for (int i = 0; i<numCourses; ++i)
+			{
+				if (cnt[i] != 0)
+				{
+					return vector<int>();
+				}
+			}
+			return res;
+		}
+};

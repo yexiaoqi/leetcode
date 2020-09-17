@@ -87,3 +87,45 @@ public:
 		}
 	}
 };
+
+
+//
+class Solution {
+public:
+	vector<vector<string>> partition(string s) {
+		vector<vector<string>> res;
+		vector<string> path;
+		int n = s.size();
+		vector<vector<bool>> dp(n, vector<bool>(n));
+		for (int i = 0; i<n; ++i)
+		{
+			for (int j = 0; j <= i; ++j)
+			{
+				if (s[i] == s[j] && (i - j <= 2 || dp[j + 1][i - 1]))
+				{
+					dp[j][i] = true;
+				}
+			}
+		}
+		GetPath(s, 0, path, res, dp);
+		return res;
+	}
+	void GetPath(string s, int start, vector<string> &path, vector<vector<string>> &res,
+		vector<vector<bool>> dp)
+	{
+		if (start == s.size())
+		{
+			res.push_back(path);
+		}
+		for (int i = start; i<s.size(); ++i)
+		{
+			if (!dp[start][i])
+			{
+				continue;
+			}
+			path.push_back(s.substr(start, i - start + 1));
+			GetPath(s, i + 1, path, res, dp);
+			path.pop_back();
+		}
+	}
+};

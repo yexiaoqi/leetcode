@@ -47,3 +47,43 @@ public:
 		return res + s;
 	}
 };
+
+
+//¸´Ï°
+lass Solution{
+public:
+	string fractionToDecimal(int numerator, int denominator) {
+		int flag1 = numerator >= 0 ? 1 : -1;
+		int flag2 = denominator >= 0 ? 1 : -1;
+		long num = labs(long(numerator));
+		long den = labs(long(denominator));
+		string res = to_string(num / den);
+		long rem = num%den;
+		if (flag1*flag2 == -1 && num != 0)
+		{
+			res = "-" + res;
+		}
+		if (rem == 0)
+		{
+			return res;
+		}
+		res += ".";
+		string s = "";
+		unordered_map<long,int> m;
+		int pos = 0;
+		while (rem)
+		{
+			if (m.count(rem))
+			{
+				s.insert(m[rem],"(");
+				s += ")";
+				return res + s;
+			}
+			m[rem] = pos;
+			s += to_string(rem * 10 / den);
+			rem = rem * 10 % den;
+			++pos;
+		}
+		return res + s;
+	}
+};

@@ -136,3 +136,44 @@ public:
 		return s.top();
 	}
 };
+
+//¸´Ï°
+class Solution {
+public:
+	int evalRPN(vector<string>& tokens) {
+		stack<string> s;
+		for (int i = 0; i<tokens.size(); ++i)
+		{
+			if (tokens[i] != "+"&&tokens[i] != "-"&&tokens[i] != "*"&&tokens[i] != "/")
+			{
+				s.push(tokens[i]);
+			}
+			else
+			{
+				long tmp2 = stoi(s.top());
+				s.pop();
+				long tmp1 = stoi(s.top());
+				s.pop();
+				long tmpres = 0;
+				if (tokens[i] == "+")
+				{
+					tmpres = tmp1 + tmp2;
+				}
+				else if (tokens[i] == "-")
+				{
+					tmpres = tmp1 - tmp2;
+				}
+				else if (tokens[i] == "*")
+				{
+					tmpres = tmp1*tmp2;
+				}
+				else
+				{
+					tmpres = tmp1 / tmp2;
+				}
+				s.push(to_string(tmpres));
+			}
+		}
+		return stoi(s.top());
+	}
+};
