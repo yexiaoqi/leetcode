@@ -84,3 +84,72 @@ int main()
 	}
 	return 0;
 }
+
+
+
+
+
+
+
+
+//¸´Ï°
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+void adjustheap(vector<int> &arr, int i, int len)
+{
+	int tmp = arr[i];
+	for (int k = 2 * i + 1; k < len; k = 2 * k + 1)
+	{
+		if (k + 1 < len&&arr[k] < arr[k + 1])
+		{
+			k += 1;
+		}
+		if (tmp < arr[k])
+		{
+			arr[i] = arr[k];
+			i = k;
+		}
+		else
+		{
+			break;
+		}
+	}
+	arr[i] = tmp;
+}
+
+void heapsort(vector<int> &arr)
+{
+	int n = arr.size();
+	for (int i = n / 2 - 1; i >= 0; --i)
+	{
+		adjustheap(arr, i, n);
+	}
+	for (int i = n - 1; i>0; --i)
+	{
+		swap(arr[0], arr[i]);
+		adjustheap(arr, 0, i);
+	}
+}
+int main()
+{
+	int n;
+	cin >> n;
+	vector<int> arr(n);
+	for (int i = 0; i<n; ++i)
+	{
+		cin >> arr[i];
+	}
+	heapsort(arr);
+	for (int i = 0; i<n - 1; ++i)
+	{
+		if (arr[i] == arr[i + 1])
+		{
+			cout << "NO";
+			return 0;
+		}
+	}
+	cout << "YES";
+	return 0;
+}

@@ -84,10 +84,38 @@ public:
 		ListNode *dummy = new ListNode(-1);
 		ListNode *pre = head;
 		dummy->next = head;
-		while (pre&&pre->next)//注意先判空
+		while (pre&&pre->next)//注意先判空，while(pre)就可以
 		{
 			ListNode* cur = pre->next;
 			while (cur&&cur->val == pre->val)//注意先判空
+			{
+				cur = cur->next;
+			}
+			pre->next = cur;
+			pre = pre->next;
+		}
+		return dummy->next;
+	}
+};
+
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	ListNode* deleteDuplicates(ListNode* head) {
+		ListNode *dummy = new ListNode(INT_MIN);
+		dummy->next = head;
+		ListNode *pre = dummy;
+		while (pre&&pre->next)
+		{
+			ListNode *cur = pre->next;
+			while (cur&&cur->val == pre->val)
 			{
 				cur = cur->next;
 			}
